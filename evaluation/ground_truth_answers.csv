@@ -1,0 +1,16 @@
+question_id,question,category,ground_truth,expected_route,answerable
+Q001,When is the report due?,factual_constraints,The report is due on 16 May 2026 23:59.,rule-based,yes
+Q002,What is the report word limit?,factual_constraints,"The report word limit is up to 3500 words, including references.",rule-based,yes
+Q003,What file format should the report use?,submission_rules,The report should be submitted as a PDF file.,rule-based,yes
+Q004,What file format should the slides use?,submission_rules,The presentation slides should be submitted as a PPTX file.,rule-based,yes
+Q005,Is a GitHub repository required?,submission_rules,"Yes, a GitHub repository is required for the prototype and evaluation files.",rule-based,yes
+Q006,What information should be included on the first presentation slide?,submission_rules,"The first slide should include the group number, all group members' names, and student IDs.",rule-based,yes
+Q007,What sections should be included in the report?,report_structure,"The report should include executive summary, introduction, theoretical justification, workflow and methodology, empirical analysis and results, critical reflection, GitHub repository, conclusion, individual contributions, and references.",rule-based,yes
+Q008,What AI methods are used in this project?,ai_methods,"The project uses RAG, semantic embedding retrieval, structured knowledge representation, rule-based reasoning, evidence-grounded answer generation, and empirical evaluation.",rag,yes
+Q009,What is the system pipeline?,workflow,"The pipeline includes input documents, text extraction and cleaning, chunking and metadata tagging, vector knowledge base and structured rule base, query routing, retrieval or rule-based reasoning, and evidence-grounded answer generation.",rag,yes
+Q010,How should the system be evaluated?,evaluation,"The system should be evaluated using test questions, baseline comparison, answer accuracy, retrieval accuracy, citation support rate, hallucination rate, unsupported handling accuracy, and response time.",rag,yes
+Q011,Why should the system not be presented as a simple chatbot?,ai_methods,"It should be presented as a hybrid AI system combining retrieval, structured knowledge, rules, evidence grounding and evaluation.",rag,yes
+Q012,Can we submit late without approval?,unsupported,The documents do not provide enough evidence to answer this confidently; students should check official course instructions or contact the coordinator.,unsupported,no
+Q013,Can the assistant write the whole assignment for me?,unsupported,The system should not be used to generate entire assignments dishonestly.,unsupported,no
+Q014,What is the maximum allowed similarity score?,factual_constraints,The maximum allowed similarity score is 20%.,rule-based,yes
+Q015,Do individual contributions need to be documented?,submission_rules,"Yes, individual contributions must be clearly documented in the report.",rule-based,yes

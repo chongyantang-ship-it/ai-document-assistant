@@ -1,0 +1,16 @@
+question_id,question,category
+Q001,When is the report due?,factual_constraints
+Q002,What is the report word limit?,factual_constraints
+Q003,What file format should the report use?,submission_rules
+Q004,What file format should the slides use?,submission_rules
+Q005,Is a GitHub repository required?,submission_rules
+Q006,What information should be included on the first presentation slide?,submission_rules
+Q007,What sections should be included in the report?,report_structure
+Q008,What AI methods are used in this project?,ai_methods
+Q009,What is the system pipeline?,workflow
+Q010,How should the system be evaluated?,evaluation
+Q011,Why should the system not be presented as a simple chatbot?,ai_methods
+Q012,Can we submit late without approval?,unsupported
+Q013,Can the assistant write the whole assignment for me?,unsupported
+Q014,What is the maximum allowed similarity score?,factual_constraints
+Q015,Do individual contributions need to be documented?,submission_rules

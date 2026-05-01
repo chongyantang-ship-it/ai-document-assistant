@@ -1,0 +1,45 @@
+Project Title:
+AI-Powered Academic Document Assistant Using Retrieval-Augmented Generation, Structured Knowledge Representation and Rule-Based Reasoning.
+
+Project Goal:
+The project aims to develop an AI-powered academic document assistant that helps students understand complex assignment documents, rubrics, templates and presentation requirements.
+
+The system can answer questions such as:
+- When is the report due?
+- What is the report word limit?
+- What sections must be included in the report?
+- What does the rubric require for HD?
+- Does the project need a GitHub repository?
+- How should a group divide the work?
+- What are the limitations and ethical risks of using AI for assignment support?
+
+The system should not be presented as a simple chatbot. It should be presented as a hybrid AI system that combines:
+1. Retrieval-Augmented Generation
+2. Semantic embedding retrieval
+3. Structured knowledge representation
+4. Rule-based reasoning
+5. Evidence-grounded answer generation
+6. Empirical evaluation against baseline methods
+
+System Pipeline:
+Input Documents
+Text Extraction and Cleaning
+Chunking and Metadata Tagging
+Vector Knowledge Base and Structured Rule Base
+Query Router
+Retrieval or Rule-Based Reasoning
+Evidence-Grounded Answer Generation
+Final Answer with Evidence and Confidence Level
+
+AI Methods:
+RAG retrieves relevant document chunks before generating an answer.
+Semantic embedding retrieval converts each document chunk and user question into vector representations and retrieves relevant chunks using cosine similarity.
+Structured knowledge representation stores important facts such as due date, word limit, file format, similarity limit, presentation duration and GitHub requirement.
+Rule-based reasoning answers deterministic assessment constraints directly from structured facts.
+Query router decides whether to use rule-based answer, RAG answer, hybrid answer or unsupported answer.
+Evidence-grounded answer generation produces answers using retrieved evidence only.
+
+Evaluation:
+The system should be evaluated using test questions across factual constraints, submission rules, rubric interpretation, workflow planning, and unsupported questions.
+Baseline methods may include keyword search and RAG-only retrieval.
+Metrics may include answer accuracy, retrieval accuracy at 3, citation support rate, hallucination rate, unsupported handling accuracy and average response time.

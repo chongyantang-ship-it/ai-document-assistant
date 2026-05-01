@@ -1,0 +1,53 @@
+Assessment 3: Real World Applications of Artificial Intelligence
+
+Purpose:
+In Assessment 3 students focus on how to apply AI techniques to solve real-world problems, showcasing theoretical knowledge, collaboration, and practical implementation.
+
+Type:
+Report and Oral Presentation.
+
+Groupwork:
+Group assignment with individually assessed contributions.
+
+Weighting:
+40%.
+
+Length:
+Up to 3500 words, including references. Use 11-point Times or Arial fonts.
+
+Similarity checks:
+Similarity checks on the report will be done by Turnitin. The maximum allowed similarity score is 20%, including quoted material and excluding references.
+
+Submission format:
+Report submission: PDF. Only one member from the group needs to submit the report.
+The first page must clearly list all group members' names and student IDs.
+Please also submit the PowerPoint slide file along with the report submission.
+
+Presentation session:
+8 minutes total, including a 7-minute presentation plus 1-minute Q&A.
+The PowerPoint file should be submitted before the class presentation session.
+
+Submission Due:
+Report due in Week 13, 16 May 2026.
+Presentation due in Week 12 for Group A and Week 13 for Group B.
+
+Task Overview:
+This is a group assignment. Each group member must clearly document their contributions at the end of the report.
+The assessment requires application of AI techniques, critical evaluation, comparative analysis, and research-informed decision-making.
+
+Objective:
+Identify a real-world problem that can be effectively addressed using artificial intelligence techniques.
+The solution must demonstrate:
+- Integration of multiple AI paradigms.
+- Strong theoretical justification.
+- Rigorous empirical evaluation.
+- Critical reflection on limitations, trade-offs, and scalability.
+
+Example domains:
+- Intelligent document processing.
+- Decision support systems.
+- Recommendation systems.
+- Autonomous agents or optimisation problems.
+
+Report Sections:
+The report should include Introduction, Theoretical Justification, Workflow and Empirical Analysis, Critical Reflection, GitHub Repository, Conclusion, Individual Contributions, and References.

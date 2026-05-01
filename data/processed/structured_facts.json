@@ -1,0 +1,42 @@
+{
+  "assessment_name": "Assessment 3: Real World Applications of Artificial Intelligence",
+  "course": "36121 Artificial Intelligence Principles and Applications",
+  "report_due_date": "16 May 2026 23:59",
+  "report_word_limit": "Up to 3500 words, including references",
+  "report_font": "11-point Times or Arial fonts",
+  "report_format": "PDF",
+  "report_filename": "AT3_Report_Group_xxxx.pdf",
+  "slide_format": "PPTX",
+  "slide_filename": "AT3_Slide_Group_xxxx.pptx",
+  "presentation_duration": "7-minute presentation plus 1-minute Q&A",
+  "presentation_submission": "Submit the PowerPoint presentation before the in-class presentation",
+  "similarity_limit": "20%",
+  "group_submission": "Only one member from the group needs to submit the report and presentation file",
+  "first_slide_requirements": [
+    "Group Number",
+    "All group members' names",
+    "Student IDs"
+  ],
+  "report_sections": [
+    "Executive Summary",
+    "Introduction",
+    "Theoretical Justification",
+    "Workflow and Methodology",
+    "Empirical Analysis and Results",
+    "Critical Reflection",
+    "GitHub Repository",
+    "Conclusion",
+    "Individual Contributions",
+    "References"
+  ],
+  "github_required": true,
+  "individual_contribution_required": true,
+  "required_ai_methods": [
+    "Retrieval-Augmented Generation",
+    "Semantic embedding retrieval",
+    "Structured knowledge representation",
+    "Rule-based reasoning",
+    "Evidence-grounded answer generation",
+    "Empirical evaluation against baseline methods"
+  ]
+}

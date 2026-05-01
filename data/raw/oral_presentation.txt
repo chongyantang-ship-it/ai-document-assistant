@@ -1,0 +1,27 @@
+Assessment 3: Real World Applications of Artificial Intelligence - Oral Presentation
+
+In-class assessment. Oral presentation of Assignment 3 group project.
+
+Submission:
+Please submit the group's PowerPoint presentation before the in-class presentation.
+Only one member from the group needs to submit the presentation file.
+
+PowerPoint Presentation Filename:
+AT3_Slide_Group_xxxx.pptx, where xxxx is the Group Number.
+
+First slide requirements:
+The first slide must clearly list:
+1. Group Number
+2. All group members' names
+3. Student IDs
+
+Presentation:
+Each group will deliver a presentation to demonstrate their proposed solution and project outcomes.
+All members of the group are required to be present for the group presentation.
+
+The presentation should:
+- Highlight the real-world problem.
+- Explain the AI-based approach.
+- Present findings.
+- Explain individual and group contributions.
+- Be prepared to answer questions from the class about the problem, solution, and project insights.
