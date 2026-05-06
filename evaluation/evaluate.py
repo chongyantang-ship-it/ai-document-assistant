@@ -5,9 +5,10 @@ from pathlib import Path
 
 import pandas as pd
 
-SRC_DIR = Path("/content/ai-document-assistant/src")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+SRC_DIR = PROJECT_ROOT / "src"
 if str(SRC_DIR) not in sys.path:
-    sys.path.append(str(SRC_DIR))
+    sys.path.insert(0, str(SRC_DIR))
 
 from app import AcademicDocumentAssistant
 
@@ -73,7 +74,7 @@ def judge_answer(question, predicted_answer, ground_truth, predicted_route, expe
 
 
 def run_evaluation():
-    project_root = Path("/content/ai-document-assistant")
+    project_root = Path(__file__).resolve().parent.parent
     eval_dir = project_root / "evaluation"
 
     ground_truth_path = eval_dir / "ground_truth_answers.csv"

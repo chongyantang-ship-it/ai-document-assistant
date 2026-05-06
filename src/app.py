@@ -2,9 +2,10 @@
 import sys
 from pathlib import Path
 
-SRC_DIR = Path("/content/ai-document-assistant/src")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+SRC_DIR = PROJECT_ROOT / "src"
 if str(SRC_DIR) not in sys.path:
-    sys.path.append(str(SRC_DIR))
+    sys.path.insert(0, str(SRC_DIR))
 
 from rule_checker import load_facts, check_rule_based_answer
 from retrieval import SemanticRetriever
@@ -49,6 +50,8 @@ def print_answer(question, result):
     print("\n" + "=" * 80)
     print("Question:", question)
     print("Route:", result.get("route"))
+    if result.get("generation_mode"):
+        print("Generation Mode:", result.get("generation_mode"))
     print("Confidence:", result.get("confidence"))
 
     print("\nAnswer:")

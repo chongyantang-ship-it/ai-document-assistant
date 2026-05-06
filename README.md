@@ -33,6 +33,17 @@ pip install -r requirements.txt
 ## How to Run
 python src/app.py
 
+### Optional LLM Integration
+You can enable LLM-based answer generation for RAG questions.
+If no API key is provided, the system automatically falls back to template-based generation.
+
+Set your key in the `.env` file (already created in project root):
+OPENAI_API_KEY=your_api_key_here
+OPENAI_MODEL=gpt-4o-mini
+
+Then run normally:
+python src/app.py
+
 ## Example Questions
 - When is the report due?
 - What is the report word limit?
@@ -57,7 +68,7 @@ The evaluation compares Keyword Search and the Proposed Hybrid System.
 
 ## Limitations
 - The dataset is small and based on limited assignment documents.
-- The answer generator is template-based rather than a full LLM.
+- LLM-based generation requires an API key and network access.
 - Retrieval quality depends on chunking quality.
 - The evaluation dataset is manually created and relatively small.
 - The system should not replace official advice from lecturers or tutors.
@@ -67,7 +78,6 @@ The assistant is designed as a learning support tool. It should help students un
 The system should provide evidence, show uncertainty when documents are insufficient, and encourage students to check official course instructions for high-stakes decisions.
 
 ## Future Work
-- Add an LLM-based answer generator.
 - Improve query classification.
 - Expand the evaluation dataset.
 - Support more course documents.

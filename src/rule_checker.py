@@ -7,7 +7,7 @@ from pathlib import Path
 def load_facts(facts_path=None):
     """Load structured facts from JSON."""
     if facts_path is None:
-        facts_path = Path("/content/ai-document-assistant/data/processed/structured_facts.json")
+        facts_path = Path(__file__).resolve().parent.parent / "data" / "processed" / "structured_facts.json"
     else:
         facts_path = Path(facts_path)
 

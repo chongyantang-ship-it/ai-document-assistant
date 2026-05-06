@@ -1,9 +1,19 @@
 
 import json
+import re
 import numpy as np
 from pathlib import Path
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
+
+
+STOPWORDS = {
+    "the", "a", "an", "and", "or", "of", "to", "for", "in", "on", "at", "is", "are",
+    "was", "were", "be", "been", "being", "it", "this", "that", "with", "as", "by",
+    "from", "can", "could", "should", "would", "will", "what", "which", "when", "where",
+    "who", "how", "why", "do", "does", "did", "i", "we", "you", "they", "he", "she",
+    "my", "our", "your", "their", "me", "us", "about", "kind", "kinds", "use", "using"
+}
 
 
 class SemanticRetriever:
@@ -19,7 +29,7 @@ class SemanticRetriever:
         model_name="sentence-transformers/all-MiniLM-L6-v2"
     ):
         if chunks_path is None:
-            chunks_path = Path("/content/ai-document-assistant/data/processed/chunks.json")
+            chunks_path = Path(__file__).resolve().parent.parent / "data" / "processed" / "chunks.json"
         else:
             chunks_path = Path(chunks_path)
 
@@ -52,7 +62,29 @@ class SemanticRetriever:
         )
 
         scores = cosine_similarity(question_embedding, self.chunk_embeddings)[0]
-        top_indices = np.argsort(scores)[::-1][:top_k]
+
+        # Hybrid reranking: semantic similarity + lightweight lexical overlap.
+        candidate_k = min(len(self.chunks), max(top_k * 3, top_k))
+        candidate_indices = np.argsort(scores)[::-1][:candidate_k]
+        query_tokens = {
+            token for token in re.findall(r"[a-zA-Z0-9]+", question.lower())
+            if len(token) >= 3 and token not in STOPWORDS
+        }
+
+        ranked = []
+        for idx in candidate_indices:
+            text = self.chunks[idx]["text"].lower()
+            if not query_tokens:
+                overlap = 0.0
+            else:
+                match_count = sum(1 for token in query_tokens if token in text)
+                overlap = match_count / len(query_tokens)
+
+            combined_score = (0.8 * float(scores[idx])) + (0.2 * overlap)
+            ranked.append((idx, combined_score))
+
+        ranked.sort(key=lambda item: item[1], reverse=True)
+        top_indices = [idx for idx, _ in ranked[:top_k]]
 
         results = []
         for rank, idx in enumerate(top_indices, start=1):

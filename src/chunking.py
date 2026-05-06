@@ -101,7 +101,7 @@ def create_chunks(raw_dir, output_path, max_words=180):
 
 
 if __name__ == "__main__":
-    project_root = Path("/content/ai-document-assistant")
+    project_root = Path(__file__).resolve().parent.parent
     raw_dir = project_root / "data" / "raw"
     output_path = project_root / "data" / "processed" / "chunks.json"
 
