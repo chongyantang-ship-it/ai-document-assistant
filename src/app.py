@@ -1,6 +1,7 @@
 
 import sys
 from pathlib import Path
+import os
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 SRC_DIR = PROJECT_ROOT / "src"
@@ -11,6 +12,7 @@ from rule_checker import load_facts, check_rule_based_answer
 from retrieval import SemanticRetriever
 from query_router import route_query
 from answer_generator import generate_rag_answer, generate_unsupported_answer
+from openai_self_check import build_openai_self_check, format_openai_self_check
 
 
 class AcademicDocumentAssistant:
@@ -24,10 +26,12 @@ class AcademicDocumentAssistant:
     """
 
     def __init__(self):
+        """Load structured facts and initialize the semantic retriever."""
         self.facts = load_facts()
         self.retriever = SemanticRetriever()
 
-    def answer(self, question, top_k=3):
+    def answer(self, question, top_k=4):
+        """Answer a user question with rules first and RAG as fallback."""
         route = route_query(question)
 
         if route == "unsupported":
@@ -47,6 +51,7 @@ class AcademicDocumentAssistant:
 
 
 def print_answer(question, result):
+    """Print a formatted answer record for the command-line interface."""
     print("\n" + "=" * 80)
     print("Question:", question)
     print("Route:", result.get("route"))
@@ -73,6 +78,8 @@ def print_answer(question, result):
 
 
 if __name__ == "__main__":
+    run_remote_check = os.getenv("OPENAI_SELF_CHECK_REMOTE", "0").strip() == "1"
+    print(format_openai_self_check(build_openai_self_check(run_remote_check=run_remote_check)))
     assistant = AcademicDocumentAssistant()
 
     print("AI Academic Document Assistant")

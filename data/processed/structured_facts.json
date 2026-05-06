@@ -10,12 +10,26 @@
   "slide_filename": "AT3_Slide_Group_xxxx.pptx",
   "presentation_duration": "7-minute presentation plus 1-minute Q&A",
   "presentation_submission": "Submit the PowerPoint presentation before the in-class presentation",
+  "presentation_due_dates": {
+    "group_a": "7 May 2026",
+    "group_b": "14 May 2026"
+  },
   "similarity_limit": "20%",
   "group_submission": "Only one member from the group needs to submit the report and presentation file",
+  "first_page_requirements": [
+    "All group members' names",
+    "Student IDs"
+  ],
   "first_slide_requirements": [
     "Group Number",
     "All group members' names",
     "Student IDs"
+  ],
+  "presentation_highlights": [
+    "Real-world problem",
+    "AI-based approach",
+    "Findings",
+    "Individual and group contributions"
   ],
   "report_sections": [
     "Executive Summary",
@@ -31,6 +45,56 @@
   ],
   "github_required": true,
   "individual_contribution_required": true,
+  "system_positioning": "The system should be presented as a hybrid AI system rather than a simple chatbot because it combines retrieval, structured knowledge, rule-based reasoning, evidence-grounded answer generation and empirical evaluation.",
+  "system_pipeline_steps": [
+    "Input document collection",
+    "Text extraction and cleaning",
+    "Chunking and metadata tagging",
+    "Vector knowledge base and structured rule base",
+    "Query router",
+    "Retrieval or rule-based reasoning",
+    "Evidence-grounded answer generation",
+    "Final answer with evidence and confidence level"
+  ],
+  "exact_question_strategy": "Exact factual questions are answered using structured knowledge representation and rule-based reasoning over stored assessment facts.",
+  "open_ended_question_strategy": "Open-ended rubric questions are answered using retrieval-augmented generation, which retrieves relevant document chunks before answer generation and grounds the final answer in evidence.",
+  "evaluation_summary": "The system should be evaluated with representative test questions, baseline comparisons, answer accuracy, retrieval accuracy at 3, citation support rate, hallucination rate, unsupported handling accuracy, and average response time.",
+  "evaluation_baselines": [
+    "Keyword Search",
+    "RAG-only",
+    "LLM-only"
+  ],
+  "evaluation_metrics": [
+    "Answer accuracy",
+    "Retrieval accuracy at 3",
+    "Citation support rate",
+    "Hallucination rate",
+    "Unsupported handling accuracy",
+    "Average response time"
+  ],
+  "evaluation_question_categories": [
+    "Factual constraints",
+    "Submission rules",
+    "Rubric interpretation",
+    "Workflow planning",
+    "Unsupported questions"
+  ],
+  "unsupported_question_rationale": "Unsupported questions should be included so the system can be assessed on unsupported handling accuracy and cautious behaviour.",
+  "rubric_hd_requirements": {
+    "executive_summary_and_introduction": "A comprehensive and concise executive summary with clear objectives, AI approach and key findings, plus a well-structured introduction that defines a significant real-world problem, explains constraints and impact, links the problem to the AI solution, and acknowledges ethical implications.",
+    "theoretical_justification": "A rigorous and well-structured explanation of the AI methods with strong theoretical foundations, clear justification of suitability, clear reasons to justify why the methods fit the problem, comparison with alternatives when relevant, and support from academic literature.",
+    "workflow_and_methodology": "A clear, logical and well-structured workflow that thoroughly explains preprocessing, feature preparation, model design, algorithmic choices and effective integration of multiple AI paradigms, while clearly distinguishing design decisions from implementation details.",
+    "empirical_analysis_and_results": "Comprehensive experiments with a well-defined setup, datasets or test collections, parameters and appropriate evaluation metrics, plus clearly presented tables or figures, insightful interpretation, reproducibility through GitHub, and relevant ethical considerations.",
+    "critical_reflection": "Deep and critical evaluation of limitations, failure cases and trade-offs, with analysis of scalability, computational constraints and situations where alternative approaches may be more suitable.",
+    "conclusion_future_work_and_references": "A clear, concise and insightful conclusion that links findings back to project objectives, realistic and technically justified future work, and relevant academic references that are consistently integrated into the report.",
+    "individual_contribution": "Specific, substantial and verifiable contributions for each member that demonstrate balanced and active participation."
+  },
+  "presentation_rubric_hd_requirements": {
+    "content_and_relevance": "A highly relevant real-world problem and AI solution with strong alignment, clear significance, impact and ethical considerations, delivered within the time limit.",
+    "ai_method_explanation_and_justification": "A clear and concise explanation of the AI method that demonstrates deep understanding, justifies method selection and explains trade-offs and alternatives.",
+    "findings_contributions_and_limitations": "Insightful findings and contributions supported by empirical results, with critical analysis of limitations and ethical implications.",
+    "delivery_and_interaction": "An engaging, confident and well-paced presentation with effective visuals, clear articulation and insightful responses to questions."
+  },
   "required_ai_methods": [
     "Retrieval-Augmented Generation",
     "Semantic embedding retrieval",

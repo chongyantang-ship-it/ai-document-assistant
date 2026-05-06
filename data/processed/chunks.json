@@ -1,50 +1,337 @@
 [
   {
-    "chunk_id": "chunk_001",
+    "chunk_id": "assessment_brief__document_overview__01",
     "source_file": "assessment_brief.txt",
-    "section": "auto_chunked_section",
+    "section": "Document Overview",
+    "category": "general",
+    "text": "Assessment 3: Real World Applications of Artificial Intelligence"
+  },
+  {
+    "chunk_id": "assessment_brief__purpose__01",
+    "source_file": "assessment_brief.txt",
+    "section": "Purpose",
+    "category": "general",
+    "text": "In Assessment 3 students focus on how to apply AI techniques to solve real-world problems, showcasing theoretical knowledge, collaboration, and practical implementation."
+  },
+  {
+    "chunk_id": "assessment_brief__type__01",
+    "source_file": "assessment_brief.txt",
+    "section": "Type",
+    "category": "general",
+    "text": "Report and Oral Presentation."
+  },
+  {
+    "chunk_id": "assessment_brief__groupwork__01",
+    "source_file": "assessment_brief.txt",
+    "section": "Groupwork",
+    "category": "general",
+    "text": "Group assignment with individually assessed contributions."
+  },
+  {
+    "chunk_id": "assessment_brief__weighting__01",
+    "source_file": "assessment_brief.txt",
+    "section": "Weighting",
+    "category": "general",
+    "text": "40%."
+  },
+  {
+    "chunk_id": "assessment_brief__length__01",
+    "source_file": "assessment_brief.txt",
+    "section": "Length",
+    "category": "general",
+    "text": "Up to 3500 words, including references. Use 11-point Times or Arial fonts."
+  },
+  {
+    "chunk_id": "assessment_brief__similarity_checks__01",
+    "source_file": "assessment_brief.txt",
+    "section": "Similarity checks",
     "category": "factual_constraints",
-    "text": "Assessment 3: Real World Applications of Artificial Intelligence\n\nPurpose:\nIn Assessment 3 students focus on how to apply AI techniques to solve real-world problems, showcasing theoretical knowledge, collaboration, and practical implementation.\n\nType:\nReport and Oral Presentation.\n\nGroupwork:\nGroup assignment with individually assessed contributions.\n\nWeighting:\n40%.\n\nLength:\nUp to 3500 words, including references. Use 11-point Times or Arial fonts.\n\nSimilarity checks:\nSimilarity checks on the report will be done by Turnitin. The maximum allowed similarity score is 20%, including quoted material and excluding references.\n\nSubmission format:\nReport submission: PDF. Only one member from the group needs to submit the report.\nThe first page must clearly list all group members' names and student IDs.\nPlease also submit the PowerPoint slide file along with the report submission.\n\nPresentation session:\n8 minutes total, including a 7-minute presentation plus 1-minute Q&A.\nThe PowerPoint file should be submitted before the class presentation session.\n\nSubmission Due:\nReport due in Week 13, 16 May 2026.\nPresentation due in Week 12 for Group A and Week 13 for Group B."
+    "text": "Similarity checks on the report will be done by Turnitin. The maximum allowed similarity score is 20%, including quoted material and excluding references."
   },
   {
-    "chunk_id": "chunk_002",
+    "chunk_id": "assessment_brief__submission_format__01",
     "source_file": "assessment_brief.txt",
-    "section": "auto_chunked_section",
+    "section": "Submission format",
+    "category": "factual_constraints",
+    "text": "Report submission: PDF. Only one member from the group needs to submit the report.\nThe first page must clearly list all group members' names and student IDs.\nPlease also submit the PowerPoint slide file along with the report submission."
+  },
+  {
+    "chunk_id": "assessment_brief__presentation_session__01",
+    "source_file": "assessment_brief.txt",
+    "section": "Presentation session",
+    "category": "factual_constraints",
+    "text": "8 minutes total, including a 7-minute presentation plus 1-minute Q&A.\nThe PowerPoint file should be submitted before the class presentation session."
+  },
+  {
+    "chunk_id": "assessment_brief__submission_due__01",
+    "source_file": "assessment_brief.txt",
+    "section": "Submission Due",
+    "category": "factual_constraints",
+    "text": "Report due in Week 13, 16 May 2026.\nPresentation due in Week 12 for Group A and Week 13 for Group B."
+  },
+  {
+    "chunk_id": "assessment_brief__task_overview__01",
+    "source_file": "assessment_brief.txt",
+    "section": "Task Overview",
     "category": "evaluation",
-    "text": "Task Overview:\nThis is a group assignment. Each group member must clearly document their contributions at the end of the report.\nThe assessment requires application of AI techniques, critical evaluation, comparative analysis, and research-informed decision-making.\n\nObjective:\nIdentify a real-world problem that can be effectively addressed using artificial intelligence techniques.\nThe solution must demonstrate:\n- Integration of multiple AI paradigms.\n- Strong theoretical justification.\n- Rigorous empirical evaluation.\n- Critical reflection on limitations, trade-offs, and scalability.\n\nExample domains:\n- Intelligent document processing.\n- Decision support systems.\n- Recommendation systems.\n- Autonomous agents or optimisation problems.\n\nReport Sections:\nThe report should include Introduction, Theoretical Justification, Workflow and Empirical Analysis, Critical Reflection, GitHub Repository, Conclusion, Individual Contributions, and References."
+    "text": "This is a group assignment. Each group member must clearly document their contributions at the end of the report.\nThe assessment requires application of AI techniques, critical evaluation, comparative analysis, and research-informed decision-making."
   },
   {
-    "chunk_id": "chunk_003",
+    "chunk_id": "assessment_brief__objective__01",
+    "source_file": "assessment_brief.txt",
+    "section": "Objective",
+    "category": "general",
+    "text": "Identify a real-world problem that can be effectively addressed using artificial intelligence techniques."
+  },
+  {
+    "chunk_id": "assessment_brief__the_solution_must_demonstrate__01",
+    "source_file": "assessment_brief.txt",
+    "section": "The solution must demonstrate",
+    "category": "evaluation",
+    "text": "- Integration of multiple AI paradigms.\n- Strong theoretical justification.\n- Rigorous empirical evaluation.\n- Critical reflection on limitations, trade-offs, and scalability."
+  },
+  {
+    "chunk_id": "assessment_brief__example_domains__01",
+    "source_file": "assessment_brief.txt",
+    "section": "Example domains",
+    "category": "general",
+    "text": "- Intelligent document processing.\n- Decision support systems.\n- Recommendation systems.\n- Autonomous agents or optimisation problems."
+  },
+  {
+    "chunk_id": "assessment_brief__report_sections__01",
+    "source_file": "assessment_brief.txt",
+    "section": "Report Sections",
+    "category": "general",
+    "text": "The report should include Introduction, Theoretical Justification, Workflow and Empirical Analysis, Critical Reflection, GitHub Repository, Conclusion, Individual Contributions, and References."
+  },
+  {
+    "chunk_id": "oral_presentation__document_overview__01",
     "source_file": "oral_presentation.txt",
-    "section": "auto_chunked_section",
+    "section": "Document Overview",
     "category": "presentation",
-    "text": "Assessment 3: Real World Applications of Artificial Intelligence - Oral Presentation\n\nIn-class assessment. Oral presentation of Assignment 3 group project.\n\nSubmission:\nPlease submit the group's PowerPoint presentation before the in-class presentation.\nOnly one member from the group needs to submit the presentation file.\n\nPowerPoint Presentation Filename:\nAT3_Slide_Group_xxxx.pptx, where xxxx is the Group Number.\n\nFirst slide requirements:\nThe first slide must clearly list:\n1. Group Number\n2. All group members' names\n3. Student IDs\n\nPresentation:\nEach group will deliver a presentation to demonstrate their proposed solution and project outcomes.\nAll members of the group are required to be present for the group presentation.\n\nThe presentation should:\n- Highlight the real-world problem.\n- Explain the AI-based approach.\n- Present findings.\n- Explain individual and group contributions.\n- Be prepared to answer questions from the class about the problem, solution, and project insights."
+    "text": "Assessment 3: Real World Applications of Artificial Intelligence - Oral Presentation\n\nIn-class assessment. Oral presentation of Assignment 3 group project."
   },
   {
-    "chunk_id": "chunk_004",
+    "chunk_id": "oral_presentation__submission__01",
+    "source_file": "oral_presentation.txt",
+    "section": "Submission",
+    "category": "presentation",
+    "text": "Please submit the group's PowerPoint presentation before the in-class presentation.\nOnly one member from the group needs to submit the presentation file."
+  },
+  {
+    "chunk_id": "oral_presentation__powerpoint_presentation_filename__01",
+    "source_file": "oral_presentation.txt",
+    "section": "PowerPoint Presentation Filename",
+    "category": "presentation",
+    "text": "AT3_Slide_Group_xxxx.pptx, where xxxx is the Group Number."
+  },
+  {
+    "chunk_id": "oral_presentation__the_first_slide_must_clearly_list__01",
+    "source_file": "oral_presentation.txt",
+    "section": "The first slide must clearly list",
+    "category": "presentation",
+    "text": "1. Group Number\n2. All group members' names\n3. Student IDs"
+  },
+  {
+    "chunk_id": "oral_presentation__presentation__01",
+    "source_file": "oral_presentation.txt",
+    "section": "Presentation",
+    "category": "presentation",
+    "text": "Each group will deliver a presentation to demonstrate their proposed solution and project outcomes.\nAll members of the group are required to be present for the group presentation."
+  },
+  {
+    "chunk_id": "oral_presentation__the_presentation_should__01",
+    "source_file": "oral_presentation.txt",
+    "section": "The presentation should",
+    "category": "presentation",
+    "text": "- Highlight the real-world problem.\n- Explain the AI-based approach.\n- Present findings.\n- Explain individual and group contributions.\n- Be prepared to answer questions from the class about the problem, solution, and project insights."
+  },
+  {
+    "chunk_id": "presentation_rubric__content_and_relevance__01",
+    "source_file": "presentation_rubric.txt",
+    "section": "Content and Relevance",
+    "category": "presentation_rubric",
+    "text": "HD requires a highly relevant real-world problem and AI solution with strong alignment between the problem and chosen methods. The presentation should clearly explain significance, impact and ethical considerations while staying within the time limit."
+  },
+  {
+    "chunk_id": "presentation_rubric__ai_method_explanation_and_justification__01",
+    "source_file": "presentation_rubric.txt",
+    "section": "AI Method Explanation and Justification",
+    "category": "presentation_rubric",
+    "text": "HD requires a clear and concise explanation of the AI-based method with deep understanding. The presentation should justify the selected methods, compare them with alternatives where useful, and explain trade-offs convincingly."
+  },
+  {
+    "chunk_id": "presentation_rubric__findings_contributions_and_limitations__01",
+    "source_file": "presentation_rubric.txt",
+    "section": "Findings, Contributions and Limitations",
+    "category": "presentation_rubric",
+    "text": "HD requires insightful findings and contributions with clear empirical results that show effectiveness and innovation. Limitations should be critically analysed, including ethical implications."
+  },
+  {
+    "chunk_id": "presentation_rubric__presentation_delivery_and_interaction__01",
+    "source_file": "presentation_rubric.txt",
+    "section": "Presentation Delivery and Interaction",
+    "category": "presentation_rubric",
+    "text": "HD requires engaging, confident and well-paced delivery with effective visuals and clear articulation. Responses to questions should be accurate, insightful and demonstrate deep understanding of the project and its ethical implications."
+  },
+  {
+    "chunk_id": "project_design__project_title__01",
     "source_file": "project_design.txt",
-    "section": "auto_chunked_section",
+    "section": "Project Title",
     "category": "system_design",
-    "text": "Project Title:\nAI-Powered Academic Document Assistant Using Retrieval-Augmented Generation, Structured Knowledge Representation and Rule-Based Reasoning.\n\nProject Goal:\nThe project aims to develop an AI-powered academic document assistant that helps students understand complex assignment documents, rubrics, templates and presentation requirements.\n\nThe system can answer questions such as:\n- When is the report due?\n- What is the report word limit?\n- What sections must be included in the report?\n- What does the rubric require for HD?\n- Does the project need a GitHub repository?\n- How should a group divide the work?\n- What are the limitations and ethical risks of using AI for assignment support?\n\nThe system should not be presented as a simple chatbot. It should be presented as a hybrid AI system that combines:\n1. Retrieval-Augmented Generation\n2. Semantic embedding retrieval\n3. Structured knowledge representation\n4. Rule-based reasoning\n5. Evidence-grounded answer generation\n6. Empirical evaluation against baseline methods"
+    "text": "AI-Powered Academic Document Assistant Using Retrieval-Augmented Generation, Structured Knowledge Representation and Rule-Based Reasoning."
   },
   {
-    "chunk_id": "chunk_005",
+    "chunk_id": "project_design__project_goal__01",
     "source_file": "project_design.txt",
-    "section": "auto_chunked_section",
+    "section": "Project Goal",
     "category": "system_design",
-    "text": "System Pipeline:\nInput Documents\nText Extraction and Cleaning\nChunking and Metadata Tagging\nVector Knowledge Base and Structured Rule Base\nQuery Router\nRetrieval or Rule-Based Reasoning\nEvidence-Grounded Answer Generation\nFinal Answer with Evidence and Confidence Level\n\nAI Methods:\nRAG retrieves relevant document chunks before generating an answer.\nSemantic embedding retrieval converts each document chunk and user question into vector representations and retrieves relevant chunks using cosine similarity.\nStructured knowledge representation stores important facts such as due date, word limit, file format, similarity limit, presentation duration and GitHub requirement.\nRule-based reasoning answers deterministic assessment constraints directly from structured facts.\nQuery router decides whether to use rule-based answer, RAG answer, hybrid answer or unsupported answer.\nEvidence-grounded answer generation produces answers using retrieved evidence only.\n\nEvaluation:\nThe system should be evaluated using test questions across factual constraints, submission rules, rubric interpretation, workflow planning, and unsupported questions.\nBaseline methods may include keyword search and RAG-only retrieval.\nMetrics may include answer accuracy, retrieval accuracy at 3, citation support rate, hallucination rate, unsupported handling accuracy and average response time."
+    "text": "The project aims to develop an AI-powered academic document assistant that helps students understand complex assignment documents, rubrics, templates and presentation requirements."
   },
   {
-    "chunk_id": "chunk_006",
+    "chunk_id": "project_design__the_system_can_answer_questions_such_as__01",
+    "source_file": "project_design.txt",
+    "section": "The system can answer questions such as",
+    "category": "system_design",
+    "text": "- When is the report due?\n- What is the report word limit?\n- What sections must be included in the report?\n- What does the rubric require for HD?\n- Does the project need a GitHub repository?\n- How should a group divide the work?\n- What are the limitations and ethical risks of using AI for assignment support?\n\nThe system should not be presented as a simple chatbot. It should be presented as a hybrid AI system that combines:\n1. Retrieval-Augmented Generation\n2. Semantic embedding retrieval\n3. Structured knowledge representation\n4. Rule-based reasoning\n5. Evidence-grounded answer generation\n6. Empirical evaluation against baseline methods"
+  },
+  {
+    "chunk_id": "project_design__system_pipeline__01",
+    "source_file": "project_design.txt",
+    "section": "System Pipeline",
+    "category": "system_design",
+    "text": "Input Documents\nText Extraction and Cleaning\nChunking and Metadata Tagging\nVector Knowledge Base and Structured Rule Base\nQuery Router\nRetrieval or Rule-Based Reasoning\nEvidence-Grounded Answer Generation\nFinal Answer with Evidence and Confidence Level"
+  },
+  {
+    "chunk_id": "project_design__ai_methods__01",
+    "source_file": "project_design.txt",
+    "section": "AI Methods",
+    "category": "system_design",
+    "text": "RAG retrieves relevant document chunks before generating an answer.\nSemantic embedding retrieval converts each document chunk and user question into vector representations and retrieves relevant chunks using cosine similarity.\nStructured knowledge representation stores important facts such as due date, word limit, file format, similarity limit, presentation duration and GitHub requirement.\nRule-based reasoning answers deterministic assessment constraints directly from structured facts.\nQuery router decides whether to use rule-based answer, RAG answer, hybrid answer or unsupported answer.\nEvidence-grounded answer generation produces answers using retrieved evidence only."
+  },
+  {
+    "chunk_id": "project_design__evaluation__01",
+    "source_file": "project_design.txt",
+    "section": "Evaluation",
+    "category": "system_design",
+    "text": "The system should be evaluated using test questions across factual constraints, submission rules, rubric interpretation, workflow planning, and unsupported questions.\nBaseline methods may include keyword search and RAG-only retrieval.\nMetrics may include answer accuracy, retrieval accuracy at 3, citation support rate, hallucination rate, unsupported handling accuracy and average response time."
+  },
+  {
+    "chunk_id": "report_rubric__executive_summary_and_introduction__01",
+    "source_file": "report_rubric.txt",
+    "section": "Executive Summary and Introduction",
+    "category": "rubric",
+    "text": "HD requires a comprehensive and concise executive summary that captures the project objectives, AI approach and key findings. The introduction should clearly define a real-world problem with strong significance, explain impact and constraints, and show a clear link between the problem and the AI-based solution. Ethical and real-world implications should be acknowledged."
+  },
+  {
+    "chunk_id": "report_rubric__theoretical_justification__01",
+    "source_file": "report_rubric.txt",
+    "section": "Theoretical Justification",
+    "category": "rubric",
+    "text": "HD requires a rigorous and well-structured explanation of the AI methods with strong theoretical foundations. The report should justify why the chosen methods fit the problem, compare them with alternatives when relevant, and support the argument with academic literature. The discussion should show critical engagement with theory rather than only describing implementation."
+  },
+  {
+    "chunk_id": "report_rubric__workflow_and_methodology__01",
+    "source_file": "report_rubric.txt",
+    "section": "Workflow and Methodology",
+    "category": "rubric",
+    "text": "HD requires a clear, logical and well-structured workflow. The report should thoroughly explain data preprocessing, chunking or feature preparation, model design, algorithmic choices and how multiple AI paradigms are integrated. Design decisions should be separated clearly from implementation details."
+  },
+  {
+    "chunk_id": "report_rubric__empirical_analysis_and_results__01",
+    "source_file": "report_rubric.txt",
+    "section": "Empirical Analysis and Results",
+    "category": "rubric",
+    "text": "HD requires comprehensive experiments with a well-defined setup, datasets or test collections, parameters, and appropriate evaluation metrics. Results should be presented clearly with tables or figures and interpreted insightfully. The analysis should demonstrate solution effectiveness, include reproducibility through the GitHub repository, and discuss ethical considerations where relevant."
+  },
+  {
+    "chunk_id": "report_rubric__critical_reflection__01",
+    "source_file": "report_rubric.txt",
+    "section": "Critical Reflection",
+    "category": "rubric",
+    "text": "HD requires deep and critical evaluation of limitations, failure cases and trade-offs. The report should analyse scalability and computational constraints, explain when alternative approaches may be more suitable, and show thoughtful reflection instead of only listing generic weaknesses."
+  },
+  {
+    "chunk_id": "report_rubric__conclusion_future_work_and_references__01",
+    "source_file": "report_rubric.txt",
+    "section": "Conclusion, Future Work and References",
+    "category": "rubric",
+    "text": "HD requires a clear, concise and insightful conclusion that links findings back to project objectives and key AI-related insights. Future work should be realistic, technically sound and justified by the observed limitations. References should be relevant, high quality and consistently integrated into the report."
+  },
+  {
+    "chunk_id": "report_rubric__individual_contribution__01",
+    "source_file": "report_rubric.txt",
+    "section": "Individual Contribution",
+    "category": "rubric",
+    "text": "HD requires specific, substantial and verifiable contributions for each member, showing balanced and active participation across the group."
+  },
+  {
+    "chunk_id": "report_template__document_overview__01",
     "source_file": "report_template.txt",
-    "section": "auto_chunked_section",
+    "section": "Document Overview",
     "category": "report_template",
-    "text": "Artificial Intelligence Group Assignment Report\n36121 Artificial Intelligence Principles and Applications\n\nTable of Contents:\n1. Executive Summary\n1.1 Overview of the Project\n1.2 Objectives\n1.3 Key Findings\n\n2. Introduction\n2.1 Background and Context\n2.2 Problem Statement\n2.3 Significance and Impact\n2.4 Challenges and Constraints\n2.5 Project Objectives and Scope\n\n3. Theoretical Justification\n3.1 Overview of AI Methods Used\n3.2 Theoretical Foundations\n3.3 Justification of Selected Methods\n3.4 Related Work / Literature Support\n\n4. Workflow and Methodology\n4.1 System Architecture Overview\n4.2 Data Collection and Preprocessing\n4.3 Feature Engineering\n4.4 Model Design and Algorithmic Approach\n4.5 Integration of AI Paradigms\n4.6 Design Decisions vs Implementation Details\n\n5. Empirical Analysis and Results\n5.1 Experimental Setup\n5.2 Dataset Description\n5.3 Evaluation Metrics\n5.4 Results Tables and Figures\n5.5 Result Interpretation and Discussion\n\n6. Critical Reflection\n6.1 Limitations of the Approach\n6.2 Failure Cases\n6.3 Trade-offs\n6.4 Scalability and Computational Constraints\n6.5 Alternative Methods and Improvements\n\n7. GitHub Repository\n7.1 Repository Link\n7.2 Instructions to Run the Project\n\n8. Conclusion\n8.1 Summary of Findings\n8.2 Key Insights\n8.3 Future Work"
+    "text": "Artificial Intelligence Group Assignment Report"
   },
   {
-    "chunk_id": "chunk_007",
+    "chunk_id": "report_template__table_of_contents__01",
     "source_file": "report_template.txt",
-    "section": "auto_chunked_section",
+    "section": "Table of Contents",
+    "category": "report_template",
+    "text": "1. Executive Summary"
+  },
+  {
+    "chunk_id": "report_template__key_findings__01",
+    "source_file": "report_template.txt",
+    "section": "Key Findings",
+    "category": "report_template",
+    "text": "2. Introduction"
+  },
+  {
+    "chunk_id": "report_template__project_objectives_and_scope__01",
+    "source_file": "report_template.txt",
+    "section": "Project Objectives and Scope",
+    "category": "report_template",
+    "text": "3. Theoretical Justification"
+  },
+  {
+    "chunk_id": "report_template__related_work_literature_support__01",
+    "source_file": "report_template.txt",
+    "section": "Related Work / Literature Support",
+    "category": "report_template",
+    "text": "4. Workflow and Methodology"
+  },
+  {
+    "chunk_id": "report_template__design_decisions_vs_implementation_details__01",
+    "source_file": "report_template.txt",
+    "section": "Design Decisions vs Implementation Details",
+    "category": "report_template",
+    "text": "5. Empirical Analysis and Results"
+  },
+  {
+    "chunk_id": "report_template__result_interpretation_and_discussion__01",
+    "source_file": "report_template.txt",
+    "section": "Result Interpretation and Discussion",
+    "category": "report_template",
+    "text": "6. Critical Reflection"
+  },
+  {
+    "chunk_id": "report_template__alternative_methods_and_improvements__01",
+    "source_file": "report_template.txt",
+    "section": "Alternative Methods and Improvements",
+    "category": "report_template",
+    "text": "7. GitHub Repository"
+  },
+  {
+    "chunk_id": "report_template__instructions_to_run_the_project__01",
+    "source_file": "report_template.txt",
+    "section": "Instructions to Run the Project",
+    "category": "report_template",
+    "text": "8. Conclusion"
+  },
+  {
+    "chunk_id": "report_template__future_work__01",
+    "source_file": "report_template.txt",
+    "section": "Future Work",
     "category": "report_template",
     "text": "9. Individual Contributions\n10. References"
   }

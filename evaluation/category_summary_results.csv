@@ -1,0 +1,29 @@
+method,category,answer_accuracy,retrieval_hit_at_3,citation_support_rate,hallucination_rate
+Keyword Search,evaluation,0.0,1.0,0.0,1.0
+Keyword Search,factual_constraints,0.14285714285714285,0.0,0.0,0.8571428571428571
+Keyword Search,report_structure,0.5,0.0,0.0,0.5
+Keyword Search,rubric_interpretation,0.625,0.0,0.0,0.375
+Keyword Search,submission_rules,0.4444444444444444,0.0,0.0,0.5555555555555556
+Keyword Search,unsupported,0.0,0.0,0.0,1.0
+Keyword Search,workflow,0.2,0.4,0.2,0.8
+LLM-only,evaluation,0.0,0.0,0.0,1.0
+LLM-only,factual_constraints,0.14285714285714285,0.0,0.0,0.8571428571428571
+LLM-only,report_structure,0.0,0.0,0.0,1.0
+LLM-only,rubric_interpretation,0.0,0.0,0.0,1.0
+LLM-only,submission_rules,0.4444444444444444,0.0,0.0,0.5555555555555556
+LLM-only,unsupported,0.0,0.0,0.0,1.0
+LLM-only,workflow,0.0,0.0,0.0,1.0
+Proposed Hybrid System,evaluation,1.0,0.0,1.0,0.0
+Proposed Hybrid System,factual_constraints,1.0,1.0,1.0,0.0
+Proposed Hybrid System,report_structure,1.0,1.0,1.0,0.0
+Proposed Hybrid System,rubric_interpretation,1.0,1.0,1.0,0.0
+Proposed Hybrid System,submission_rules,1.0,1.0,1.0,0.0
+Proposed Hybrid System,unsupported,1.0,0.0,0.0,0.0
+Proposed Hybrid System,workflow,1.0,0.0,1.0,0.0
+RAG-only,evaluation,0.6,1.0,0.6,0.4
+RAG-only,factual_constraints,0.5714285714285714,0.0,0.0,0.42857142857142855
+RAG-only,report_structure,0.0,0.0,0.0,1.0
+RAG-only,rubric_interpretation,0.875,0.0,0.0,0.125
+RAG-only,submission_rules,0.7777777777777778,0.0,0.0,0.2222222222222222
+RAG-only,unsupported,0.0,0.0,0.0,1.0
+RAG-only,workflow,0.4,0.4,0.2,0.6

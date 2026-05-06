@@ -1,0 +1,13 @@
+Presentation Rubric: HD Criteria
+
+Content and Relevance:
+HD requires a highly relevant real-world problem and AI solution with strong alignment between the problem and chosen methods. The presentation should clearly explain significance, impact and ethical considerations while staying within the time limit.
+
+AI Method Explanation and Justification:
+HD requires a clear and concise explanation of the AI-based method with deep understanding. The presentation should justify the selected methods, compare them with alternatives where useful, and explain trade-offs convincingly.
+
+Findings, Contributions and Limitations:
+HD requires insightful findings and contributions with clear empirical results that show effectiveness and innovation. Limitations should be critically analysed, including ethical implications.
+
+Presentation Delivery and Interaction:
+HD requires engaging, confident and well-paced delivery with effective visuals and clear articulation. Responses to questions should be accurate, insightful and demonstrate deep understanding of the project and its ethical implications.

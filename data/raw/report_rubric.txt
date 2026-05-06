@@ -1,0 +1,22 @@
+Report Rubric: HD Criteria
+
+Executive Summary and Introduction:
+HD requires a comprehensive and concise executive summary that captures the project objectives, AI approach and key findings. The introduction should clearly define a real-world problem with strong significance, explain impact and constraints, and show a clear link between the problem and the AI-based solution. Ethical and real-world implications should be acknowledged.
+
+Theoretical Justification:
+HD requires a rigorous and well-structured explanation of the AI methods with strong theoretical foundations. The report should justify why the chosen methods fit the problem, compare them with alternatives when relevant, and support the argument with academic literature. The discussion should show critical engagement with theory rather than only describing implementation.
+
+Workflow and Methodology:
+HD requires a clear, logical and well-structured workflow. The report should thoroughly explain data preprocessing, chunking or feature preparation, model design, algorithmic choices and how multiple AI paradigms are integrated. Design decisions should be separated clearly from implementation details.
+
+Empirical Analysis and Results:
+HD requires comprehensive experiments with a well-defined setup, datasets or test collections, parameters, and appropriate evaluation metrics. Results should be presented clearly with tables or figures and interpreted insightfully. The analysis should demonstrate solution effectiveness, include reproducibility through the GitHub repository, and discuss ethical considerations where relevant.
+
+Critical Reflection:
+HD requires deep and critical evaluation of limitations, failure cases and trade-offs. The report should analyse scalability and computational constraints, explain when alternative approaches may be more suitable, and show thoughtful reflection instead of only listing generic weaknesses.
+
+Conclusion, Future Work and References:
+HD requires a clear, concise and insightful conclusion that links findings back to project objectives and key AI-related insights. Future work should be realistic, technically sound and justified by the observed limitations. References should be relevant, high quality and consistently integrated into the report.
+
+Individual Contribution:
+HD requires specific, substantial and verifiable contributions for each member, showing balanced and active participation across the group.

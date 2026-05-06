@@ -1,7 +1,12 @@
+# Core retrieval and embedding stack
 sentence-transformers
 scikit-learn
-pandas
 numpy
+
+# Evaluation, tables, and report figures
+pandas
 matplotlib
+
+# OpenAI-compatible LLM access and environment loading
 openai
 python-dotenv

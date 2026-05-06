@@ -1,0 +1,491 @@
+question_id,category,method,question,answer,route,retrieval_hit_at_3,hallucinated
+Q001,factual_constraints,Keyword Search,When is the report due?,"Keyword baseline retrieved this evidence: Report due in Week 13, 16 May 2026. Presentation due in Week 12 for Group A and Week 13 for Group B.",keyword,0,1
+Q001,factual_constraints,RAG-only,When is the report due?,"Direct Answer: The report is due in Week 13, on 16 May 2026.
+
+Key Points:
+- The submission deadline is 16 May 2026.
+- This corresponds to Week 13 of the assessment schedule.
+
+Evidence Used:
+- assessment_brief.txt: Report due in Week 13, 16 May 2026.",rag,0,1
+Q001,factual_constraints,LLM-only,When is the report due?,"Please check your course syllabus, assignment prompt, or learning management system (e.g., Canvas, Blackboard, or Moodle) for the specific due date, as I do not have access to your personal course materials.",llm-only,0,1
+Q002,factual_constraints,Keyword Search,What is the report word limit?,Keyword baseline retrieved this evidence: - When is the report due? - What is the report word limit? - What sections must be included in the report? - What does the rubric require for HD? - Does the project need a GitHub repository? - How should a group divide the work? - What are the limitations and ,keyword,0,1
+Q002,factual_constraints,LLM-only,What is the report word limit?,"Please check your specific course syllabus, assignment prompt, or module handbook, as the word limit is determined by your instructor or institution. If you can provide the name of the course or the specific assignment instructions, I may be able to help you interpret them.",llm-only,0,1
+Q004,factual_constraints,Keyword Search,What font should the report use?,Keyword baseline retrieved this evidence: Report and Oral Presentation.,keyword,0,1
+Q004,factual_constraints,LLM-only,What font should the report use?,"In academic and professional reporting, the standard convention is to use a **highly legible, professional serif or sans-serif font**.
+
+*   **Serif fonts** (e.g., Times New Roman, Garamond, Cambria) are traditional and often preferred for long-form printed documents as they are considered easier to read in print.
+*   **Sans-serif fonts** (e.g., Arial, Calibri, Helvetica, Roboto) are modern, clean, and generally preferred for digital documents or screen-based reading.
+
+**General Guidelines:**
+*   **Size:** 11 or 12 points for body text.
+*   **Consistency:** Use the same font throughout the document, varying only for headings (e.g., bolding or increasing size).
+*   **Institutional Requirements:** Always check your specific assignment rubric or style guide (e.g., APA, MLA, Chicago), as they may mandate a specific font (e.g., APA 7th edition allows Calibri 11, Arial 11, Lucida Sans Unicode 10, Times New Roman 12, or Georgia 11).",llm-only,0,1
+Q005,factual_constraints,Keyword Search,How long is the presentation?,Keyword baseline retrieved this evidence: Report and Oral Presentation.,keyword,0,1
+Q005,factual_constraints,LLM-only,How long is the presentation?,"Please provide the specific context, document, or assignment instructions you are referring to. Without additional information, I cannot determine the required length of your presentation.",llm-only,0,1
+Q006,factual_constraints,Keyword Search,When is the Group A presentation due?,"Keyword baseline retrieved this evidence: Report due in Week 13, 16 May 2026. Presentation due in Week 12 for Group A and Week 13 for Group B.",keyword,0,1
+Q006,factual_constraints,RAG-only,When is the Group A presentation due?,"Direct Answer: The Group A presentation is due in Week 12.
+
+Key Points:
+- The presentation schedule is divided by group, with Group A presenting in Week 12 and Group B in Week 13.
+
+Evidence Used:
+- [3] Presentation due in Week 12 for Group A and Week 13 for Group B.",rag,0,1
+Q006,factual_constraints,LLM-only,When is the Group A presentation due?,"I do not have access to your specific course syllabus, schedule, or internal documents. Please check your course portal (such as Canvas, Blackboard, or Moodle) or consult your instructor to confirm the due date for the Group A presentation.",llm-only,0,1
+Q007,factual_constraints,Keyword Search,When is the Group B presentation due?,"Keyword baseline retrieved this evidence: Report due in Week 13, 16 May 2026. Presentation due in Week 12 for Group A and Week 13 for Group B.",keyword,0,1
+Q007,factual_constraints,RAG-only,When is the Group B presentation due?,"Direct Answer: The Group B presentation is due in Week 13.
+
+Key Points:
+- Group B is scheduled to present during Week 13.
+- This is distinct from Group A, which is scheduled for Week 12.
+
+Evidence Used:
+- assessment_brief.txt: Presentation due in Week 12 for Group A and Week 13 for Group B.",rag,0,1
+Q007,factual_constraints,LLM-only,When is the Group B presentation due?,"Please check your course syllabus, learning management system (e.g., Canvas, Blackboard), or the assignment prompt provided by your instructor, as I do not have access to your specific class schedule or course materials.",llm-only,0,1
+Q009,submission_rules,Keyword Search,What file format should the slides use?,Keyword baseline retrieved this evidence: Report submission: PDF. Only one member from the group needs to submit the report. The first page must clearly list all group members' names and student IDs. Please also submit the PowerPoint slide file along with the report submission.,keyword,0,1
+Q010,submission_rules,Keyword Search,What filename should the report use?,Keyword baseline retrieved this evidence: Report and Oral Presentation.,keyword,0,1
+Q010,submission_rules,RAG-only,What filename should the report use?,"Direct Answer: The provided evidence does not specify a required filename for the report.
+
+Key Points:
+- The assessment brief specifies the submission format (PDF) and content requirements but does not mention naming conventions.
+
+Evidence Used:
+- [1] assessment_brief.txt (Submission format)",rag,0,1
+Q010,submission_rules,LLM-only,What filename should the report use?,"The filename should follow the specific naming convention provided in your assignment instructions (e.g., `CourseCode_AssignmentName_StudentName.pdf`). 
+
+If no specific convention was provided, use a clear, descriptive format such as:
+**`[AssignmentName]_[YourLastName]_[YourFirstName].pdf`**",llm-only,0,1
+Q011,submission_rules,LLM-only,What filename should the slides use?,"The filename should follow the naming convention specified in your assignment rubric or syllabus. If no specific convention is provided, a standard professional format is:
+
+**`CourseCode_AssignmentName_LastName_FirstName.pptx`**
+
+(e.g., `HIST101_Presentation_Doe_Jane.pptx`)",llm-only,0,1
+Q012,submission_rules,Keyword Search,What should be included on the first presentation slide?,Keyword baseline retrieved this evidence: Report submission: PDF. Only one member from the group needs to submit the report. The first page must clearly list all group members' names and student IDs. Please also submit the PowerPoint slide file along with the report submission.,keyword,0,1
+Q012,submission_rules,RAG-only,What should be included on the first presentation slide?,"Direct Answer: The provided evidence does not specify what content must be included on the first presentation slide.
+
+Key Points:
+- The provided documents outline submission requirements, file naming conventions, and presentation duration, but do not detail slide-by-slide content requirements.
+
+Evidence Used:
+- oral_presentation.txt (sections: Presentation, Submission, PowerPoint Presentation Filename)
+- assessment_brief.txt (section: Presentation session)",rag,0,1
+Q012,submission_rules,LLM-only,What should be included on the first presentation slide?,"The first slide (the title slide) should include the following four essential elements:
+
+1.  **Presentation Title:** A clear, concise, and descriptive title that identifies the topic.
+2.  **Subtitle (Optional):** A brief phrase that provides context or clarifies the scope of the presentation.
+3.  **Presenter Name(s):** Your full name and, if applicable, the names of any co-presenters or team members.
+4.  **Institutional/Professional Affiliation:** Your department, organization, university, or course name to establish context and credibility.
+
+**Optional additions:** The date of the presentation, the name of the instructor or event, and a relevant high-quality image or logo to enhance visual appeal.",llm-only,0,1
+Q013,submission_rules,LLM-only,What should be included on the first page of the report?,"The first page of a formal report (typically the **Title Page**) should include the following elements:
+
+1.  **Report Title:** A clear, descriptive title that indicates the subject of the report.
+2.  **Subtitle (Optional):** Further clarification of the report’s scope or purpose.
+3.  **Author(s):** The name(s) of the person(s) who prepared the report.
+4.  **Recipient:** The name and/or title of the person or organization for whom the report was prepared.
+5.  **Date:** The date of submission or completion.
+6.  **Institutional/Organizational Information:** The name of the department, course, or organization associated with the report.
+7.  **Reference/Project Number:** If applicable, any internal tracking or project codes.
+
+*Note: If the report does not require a separate title page, these elements should appear at the top of the first page of the body text.*",llm-only,0,1
+Q014,submission_rules,LLM-only,Who needs to submit the group report and presentation?,"Please refer to your specific course syllabus or assignment instructions, as requirements vary by instructor. 
+
+Typically, in academic settings, **one designated member** of the group is responsible for submitting the final report and presentation files on behalf of the entire team via the course management system (e.g., Canvas, Blackboard). However, some professors require **every individual member** to submit the files to ensure proper tracking and grading. 
+
+If the instructions are unclear, you should check your assignment prompt or contact your instructor for clarification.",llm-only,0,1
+Q015,submission_rules,Keyword Search,Is a GitHub repository required?,"Keyword baseline retrieved this evidence: The report should include Introduction, Theoretical Justification, Workflow and Empirical Analysis, Critical Reflection, GitHub Repository, Conclusion, Individual Contributions, and References.",keyword,0,1
+Q016,submission_rules,Keyword Search,Do individual contributions need to be documented?,Keyword baseline retrieved this evidence: Group assignment with individually assessed contributions.,keyword,0,1
+Q017,report_structure,Keyword Search,What sections should be included in the report?,Keyword baseline retrieved this evidence: - When is the report due? - What is the report word limit? - What sections must be included in the report? - What does the rubric require for HD? - Does the project need a GitHub repository? - How should a group divide the work? - What are the limitations and ,keyword,0,1
+Q017,report_structure,RAG-only,What sections should be included in the report?,"Direct Answer: The report must include eight specific sections as outlined in the assessment brief.
+
+Key Points:
+- Introduction
+- Theoretical Justification
+- Workflow and Empirical Analysis
+- Critical Reflection
+- GitHub Repository
+- Conclusion
+- Individual Contributions
+- References
+
+Evidence Used:
+- [1] assessment_brief.txt: The report should include Introduction, Theoretical Justification, Workflow and Empirical Analysis, Critical Reflection, GitHub Repository, Conclusion, Individual Contributions, and References.",rag,0,1
+Q017,report_structure,LLM-only,What sections should be included in the report?,"While the specific requirements depend on your field of study, a standard academic report typically includes the following sections in this order:
+
+1.  **Title Page:** Includes the report title, author name, institutional affiliation, and date.
+2.  **Abstract/Executive Summary:** A concise overview of the entire report, including the objective, methodology, key findings, and conclusions.
+3.  **Table of Contents:** A list of headings and subheadings with corresponding page numbers.
+4.  **Introduction:** Defines the scope, purpose, and background of the report, as well as the problem statement or research question.
+5.  **Methodology:** Describes the methods, tools, and procedures used to gather or analyze data.
+6.  **Results/Findings:** Presents the data collected or the outcomes of the analysis objectively, often using tables, charts, or graphs.
+7.  **Discussion/Analysis:** Interprets the findings, explains their significance, and relates them back to the research question or existing literature.
+8.  **Conclusion:** Summarizes the main points and provides a final synthesis of the findings.
+9.  **Recommendations:** Offers actionable suggestions based on the conclusions (if applicable).
+10. **References/Bibliography:** A list of all sources cited in the report, formatted according to the required style guide (e.g., APA, MLA, Chicago).
+11. **Appendices:** Supplementary material that is too detailed or bulky for the main body (e.g., raw data, survey forms, or technical diagrams).",llm-only,0,1
+Q018,report_structure,RAG-only,What should the presentation highlight?,"Direct Answer: The presentation should highlight the group's proposed solution and the project outcomes.
+
+Key Points:
+- Demonstrate the proposed solution.
+- Present the project outcomes.
+
+Evidence Used:
+- [1] source=oral_presentation.txt section=Presentation chunk_id=oral_presentation__presentation__01",rag,0,1
+Q018,report_structure,LLM-only,What should the presentation highlight?,"To provide an effective presentation, you should highlight the following core elements:
+
+1.  **The Core Problem:** Clearly define the issue or research gap you are addressing.
+2.  **The Thesis/Solution:** State your primary argument or proposed solution early and concisely.
+3.  **Key Evidence:** Present the most compelling data, logical arguments, or theoretical frameworks that support your thesis.
+4.  **Methodology/Approach:** Briefly explain how you arrived at your conclusions to establish credibility.
+5.  **Significance/Impact:** Explain why your findings matter and how they contribute to the broader field of study.
+6.  **Conclusion/Takeaway:** Summarize the main points and provide a clear ""so what"" for the audience.
+
+**Tip:** Focus on the ""narrative arc"" of your research rather than listing every detail; prioritize clarity and impact over exhaustive information.",llm-only,0,1
+Q019,rubric_interpretation,Keyword Search,What does HD require in the executive summary and introduction?,"Keyword baseline retrieved this evidence: HD requires a comprehensive and concise executive summary that captures the project objectives, AI approach and key findings. The introduction should clearly define a real-world problem with strong significance, explain impact and constraints, and show a clear",keyword,0,1
+Q019,rubric_interpretation,LLM-only,What does HD require in the executive summary and introduction?,"In the context of academic or professional writing (specifically regarding **Human Development** or **Humanitarian/Development** reports), the requirements for an executive summary and introduction are as follows:
+
+### Executive Summary
+The executive summary must function as a standalone document that provides a high-level overview of the entire report. It typically requires:
+*   **Problem Statement:** A concise definition of the issue or development challenge being addressed.
+*   **Methodology:** A brief summary of the research approach or data sources used.
+*   **Key Findings:** The most significant results or evidence uncovered.
+*   **Recommendations:** Actionable, evidence-based solutions or policy interventions.
+*   **Conciseness:** It must be brief (usually 5–10% of the total document length) and written for a non-specialist audience.
+
+### Introduction
+The introduction serves to frame the scope and context of the work. It typically requires:
+*   **Background/Context:** The historical, social, or economic setting of the development issue.
+*   **Purpose/Objectives:** A clear statement of what the report aims to achieve or analyze.
+*   **Significance:** An explanation of why the topic is important (e.g., its impact on human well-being, policy, or sustainability).
+*   **Scope and Limitations:** A definition of the boundaries of the study (what is included and what is excluded).
+*   **Structure/Roadmap:** A brief outline of how the rest of the report is organized.
+
+***Note:** If ""HD"" refers to a specific institutional framework (such as the **Human Development Report** by the UNDP), the requirements emphasize the **Human Development Index (HDI)** metrics, a focus on ""people-centered"" development, and an analysis of agency, equity, and sustainability.*",llm-only,0,1
+Q020,rubric_interpretation,Keyword Search,What does HD require in theoretical justification?,"Keyword baseline retrieved this evidence: HD requires a rigorous and well-structured explanation of the AI methods with strong theoretical foundations. The report should justify why the chosen methods fit the problem, compare them with alternatives when relevant, and support the argument with academic",keyword,0,1
+Q020,rubric_interpretation,RAG-only,What does HD require in theoretical justification?,"Direct Answer: HD requires a rigorous, well-structured explanation of AI methods that demonstrates strong theoretical foundations and critical engagement with theory.
+
+Key Points:
+- Provide a justification for why the chosen methods are appropriate for the problem.
+- Compare selected methods with relevant alternatives.
+- Support arguments using academic literature rather than focusing solely on implementation details.
+
+Evidence Used:
+- [2] source=report_rubric.txt section=Theoretical Justification",rag,0,1
+Q020,rubric_interpretation,LLM-only,What does HD require in theoretical justification?,"In the context of the **Hypothetico-Deductive (HD) model** of scientific inquiry, theoretical justification requires the following components:
+
+1.  **Deductive Derivation:** A hypothesis must be formulated such that, when combined with initial conditions and auxiliary assumptions, it logically entails an observable consequence (the *explanandum*).
+2.  **Empirical Testability:** The theory must be capable of generating predictions that can be verified or falsified through observation or experimentation.
+3.  **Logical Consistency:** The theoretical framework must be internally consistent; it cannot contain contradictory premises that would render the deduction of consequences logically invalid.
+4.  **Explanatory Power:** The theory must provide a mechanism or structure that accounts for the phenomena in question, moving beyond mere correlation to provide a causal or structural explanation.
+5.  **Corroboration (or Non-Falsification):** Justification is achieved when the deduced consequences are empirically confirmed. Under the HD model, a theory is considered ""justified"" (or corroborated) to the extent that it survives rigorous attempts at falsification.
+
+**Crucial Caveat:** In strict philosophical terms (notably per Karl Popper), the HD model does not provide *absolute* justification or proof of truth. Instead, it provides **provisional justification**, where a theory is accepted only as long as it remains unfalsified by empirical evidence.",llm-only,0,1
+Q021,rubric_interpretation,LLM-only,What does HD require in workflow and methodology?,"In the context of **High Definition (HD)** production, the workflow and methodology require a shift toward higher data management standards and technical precision compared to Standard Definition (SD). The requirements include:
+
+### 1. Data Management and Storage
+*   **High Bandwidth:** HD files (especially uncompressed or high-bitrate codecs like ProRes or DNxHR) require significantly higher storage capacity and faster read/write speeds (e.g., SSDs or RAID arrays) to prevent dropped frames during capture and playback.
+*   **Asset Management:** Because HD files are larger, robust Digital Asset Management (DAM) systems are necessary to track versions, proxies, and metadata effectively.
+
+### 2. Technical Standards and Signal Flow
+*   **Resolution and Aspect Ratio:** Workflows must be locked to specific standards (typically 1920x1080) and a 16:9 aspect ratio. All equipment—from cameras and switchers to monitors—must be compatible with these HD standards.
+*   **Signal Integrity:** HD requires high-quality cabling (e.g., SDI/BNC cables capable of 3G-SDI speeds) to maintain signal integrity over distance, as HD signals are more susceptible to degradation than analog SD signals.
+
+### 3. Monitoring and Calibration
+*   **Critical Monitoring:** HD requires high-resolution, color-accurate monitors. Methodology dictates that all displays in the chain must be calibrated to ensure that the increased detail and color depth are accurately represented during editing and color grading.
+
+### 4. Workflow Methodology (The ""Pipeline"")
+*   **Proxy Workflow:** To maintain efficiency, many HD workflows utilize ""offline/online"" editing. Editors work with low-resolution ""proxy"" files for speed and performance, then ""re-link"" to the high-resolution master files for final color grading and export.
+*   **Color Space Management:** HD production requires strict adherence to color spaces (typically Rec. 709). Methodology must ensure that the color pipeline remains consistent from acquisition through post-production to avoid color shifts.
+*   **Compression Management:** Understanding the impact of codecs is vital. The workflow must balance the need for high-quality acquisition (high bitrate) with the limitations of processing power during the edit.
+
+### 5. Quality Control (QC)
+*   **Technical QC:** Because HD reveals more artifacts (noise, focus errors, compression blocking), the methodology must include rigorous QC passes to ensure the final output meets broadcast or streaming specifications (e.g., bit depth, frame rate consistency, and audio levels).",llm-only,0,1
+Q022,rubric_interpretation,Keyword Search,What does HD require in empirical analysis and results?,"Keyword baseline retrieved this evidence: HD requires comprehensive experiments with a well-defined setup, datasets or test collections, parameters, and appropriate evaluation metrics. Results should be presented clearly with tables or figures and interpreted insightfully. The analysis should demonstr",keyword,0,1
+Q022,rubric_interpretation,LLM-only,What does HD require in empirical analysis and results?,"In empirical analysis, **HD (Heteroskedasticity)** requires specific diagnostic testing, robust estimation, and transparent reporting to ensure the validity of statistical inferences. Its requirements include:
+
+1.  **Diagnostic Testing:** Researchers must formally test for the presence of heteroskedasticity using statistical tests such as the **Breusch-Pagan test** (for linear forms) or the **White test** (for general forms). These tests determine if the variance of the error term is non-constant across observations.
+2.  **Robust Standard Errors:** If HD is detected, the standard OLS standard errors are biased. The analysis must employ **Heteroskedasticity-Consistent (HC) standard errors** (often called ""White"" or ""Huber-White"" standard errors). This adjustment ensures that hypothesis tests (t-tests and F-tests) remain valid even when the assumption of homoskedasticity is violated.
+3.  **Model Specification/Transformation:** In some cases, researchers may address HD by transforming the dependent variable (e.g., using logarithms) or by employing **Weighted Least Squares (WLS)** or **Feasible Generalized Least Squares (FGLS)** if the functional form of the heteroskedasticity is known.
+4.  **Reporting and Transparency:** Empirical results must explicitly state whether robust standard errors were used. If the analysis relies on OLS, the researcher must provide evidence that HD is not present or that its impact on the standard errors is negligible.
+5.  **Inference Validity:** Because HD affects the efficiency of estimators and the validity of confidence intervals, the analysis must demonstrate that the chosen estimation method maintains the integrity of the p-values and the precision of the coefficient estimates.",llm-only,0,1
+Q023,rubric_interpretation,LLM-only,What does HD require in critical reflection?,"In the context of academic assessment, achieving a High Distinction (HD) in critical reflection requires moving beyond simple description to demonstrate **metacognition, synthesis, and transformative learning.**
+
+To achieve an HD, a reflection must typically demonstrate the following:
+
+*   **Depth of Analysis:** Rather than just stating *what* happened, you must analyze *why* it happened and *how* it influenced your thinking. This involves deconstructing your own assumptions, biases, and prior knowledge.
+*   **Integration of Theory:** You must explicitly connect your personal experiences to relevant academic theories, literature, or professional frameworks. An HD response uses theory as a lens to interpret the experience, rather than just citing it as an afterthought.
+*   **Critical Evaluation:** You must evaluate the effectiveness of your actions or decisions. This includes identifying what went well, what failed, and—crucially—what you would do differently if faced with a similar situation in the future.
+*   **Evidence of Transformation:** You must articulate how the experience has changed your perspective, professional identity, or future practice. It requires a clear ""so what?"" factor that demonstrates intellectual growth.
+*   **Reflexivity:** You must maintain a high level of self-awareness, acknowledging the limitations of your own perspective and demonstrating an ability to view the situation from multiple angles (e.g., the perspectives of others involved).
+*   **Sophisticated Structure and Tone:** The writing must be cohesive, academic, and objective, even when discussing personal experiences. It should demonstrate a logical flow from the experience to the analysis and finally to the synthesis/future application.
+
+**In short:** An HD reflection is not a diary entry; it is a rigorous, evidence-based critique of your own learning process.",llm-only,0,1
+Q024,rubric_interpretation,LLM-only,What does HD require in the conclusion and future work section?,"In the context of an academic thesis or dissertation (often referred to as an ""HD"" or Higher Degree), the **Conclusion and Future Work** section serves to synthesize the research and provide a roadmap for subsequent inquiry. It typically requires the following components:
+
+### 1. Conclusion
+*   **Restatement of the Thesis:** Briefly reiterate the central research problem and your primary argument or findings, ensuring they align with the introduction.
+*   **Synthesis of Findings:** Summarize the key results of your research. Do not simply list them; explain how they collectively answer your research questions or address the problem statement.
+*   **Contribution to Knowledge:** Explicitly state the ""so what?"" factor. Explain how your work advances the field, fills a gap in existing literature, or challenges established theories.
+*   **Implications:** Discuss the broader significance of your findings—whether theoretical, practical, or policy-oriented—and how they impact the discipline.
+
+### 2. Future Work
+*   **Limitations:** Acknowledge the boundaries of your study (e.g., sample size, methodology, scope). This demonstrates academic maturity and honesty.
+*   **Unresolved Questions:** Identify specific areas or sub-problems that emerged during your research that were beyond the scope of your current study.
+*   **Recommendations for Further Research:** Propose concrete directions for future scholars. This might include suggesting different methodologies, longitudinal studies, or the application of your findings to different contexts or populations.
+*   **Potential Extensions:** Suggest how your current model, framework, or data could be expanded or refined to achieve greater depth or broader applicability.
+
+### Key Requirements for Success:
+*   **No New Data:** You must not introduce new evidence or arguments that were not previously discussed in the body of the work.
+*   **Conciseness:** The section should be focused and avoid unnecessary repetition.
+*   **Forward-Looking Tone:** While the conclusion looks back at what was achieved, the ""Future Work"" section must look forward, positioning your research as a foundational step in a larger, ongoing academic conversation.",llm-only,0,1
+Q025,rubric_interpretation,LLM-only,What does HD require for individual contributions?,"In the context of academic grading, an **HD (High Distinction)** typically requires individual contributions that demonstrate:
+
+*   **Exceptional Depth and Insight:** Moving beyond mere description to provide critical analysis, original synthesis, and sophisticated evaluation of the subject matter.
+*   **Mastery of Concepts:** A comprehensive and accurate application of theoretical frameworks, demonstrating a nuanced understanding of complex ideas.
+*   **Originality and Innovation:** The ability to offer unique perspectives, creative problem-solving, or independent research that extends beyond the provided course materials.
+*   **Superior Communication:** Clear, concise, and highly structured articulation of arguments, supported by rigorous evidence and impeccable academic integrity (proper citation and referencing).
+*   **Excellence in Execution:** Flawless attention to detail, logical flow, and the ability to address all aspects of the assessment criteria at a level that exceeds standard expectations.
+
+In group-based assessments, an HD individual contribution specifically requires **proactive leadership, high-quality output that elevates the entire project, and clear evidence of significant, high-level intellectual input** that distinguishes the individual's work from the group average.",llm-only,0,1
+Q026,rubric_interpretation,LLM-only,What does HD require for presentation delivery and interaction?,"High-Definition (HD) presentation delivery and interaction require the following core components:
+
+1.  **High-Resolution Display Hardware:** A display device (monitor, projector, or LED wall) capable of a native resolution of at least 1920x1080 (1080p).
+2.  **High-Bandwidth Connectivity:** Cables and interfaces capable of carrying uncompressed digital video signals, such as HDMI (High-Definition Multimedia Interface), DisplayPort, or SDI (Serial Digital Interface).
+3.  **High-Quality Source Content:** Presentation files (slides, videos, or graphics) designed with high-resolution assets to prevent pixelation or blurring when scaled to the display.
+4.  **Processing Power:** A computer or media player with a dedicated graphics processing unit (GPU) capable of rendering and outputting high-resolution signals without latency.
+5.  **Interactive Interface:** For interaction, this requires touch-sensitive hardware (e.g., interactive whiteboards or touch-screen overlays) or peripheral input devices (e.g., wireless presenters, air mice) that communicate with the host system to manipulate the HD content in real-time.
+6.  **Stable Data Transmission:** If the presentation is remote or networked, it requires high-speed, low-latency network infrastructure to stream or transmit HD data without buffering or frame drops.",llm-only,0,1
+Q027,workflow,Keyword Search,What AI methods are used in this project?,Keyword baseline retrieved this evidence: - When is the report due? - What is the report word limit? - What sections must be included in the report? - What does the rubric require for HD? - Does the project need a GitHub repository? - How should a group divide the work? - What are the limitations and ,keyword,0,1
+Q027,workflow,LLM-only,What AI methods are used in this project?,"To provide an accurate answer, please specify which project you are referring to. 
+
+If you are asking about a specific research paper, software repository, or case study, please provide the title or a link. Without that context, I cannot identify the specific AI methods employed.",llm-only,0,1
+Q028,workflow,RAG-only,What is the system pipeline?,"Direct Answer: The system pipeline is a hybrid AI architecture that integrates six distinct components to facilitate evidence-grounded answer generation and reasoning.
+
+Key Points:
+- Retrieval-Augmented Generation
+- Semantic embedding retrieval
+- Structured knowledge representation
+- Rule-based reasoning
+- Evidence-grounded answer generation
+- Empirical evaluation against baseline methods
+
+Evidence Used:
+- [2] project_design.txt: The system is a hybrid AI system combining six specific methodologies.",rag,0,1
+Q028,workflow,LLM-only,What is the system pipeline?,"In computing and systems engineering, a **system pipeline** is a technique where a process is broken down into a series of sequential stages, with the output of one stage serving as the input to the next. 
+
+The primary goal of a pipeline is to increase **throughput** by allowing multiple tasks to be processed simultaneously at different stages, rather than waiting for one task to be fully completed before starting the next.
+
+Key characteristics include:
+
+1.  **Parallelism:** While one unit of work is being processed in stage $N$, another unit is being processed in stage $N-1$.
+2.  **Pipelining Stages:** The process is divided into discrete, balanced steps (e.g., in a CPU: Fetch, Decode, Execute, Memory Access, Write Back).
+3.  **Latency vs. Throughput:** While the time to complete a single task (latency) may remain the same or slightly increase due to overhead, the total number of tasks completed over time (throughput) increases significantly.
+4.  **Pipeline Hazards:** These are conditions that prevent the next instruction from executing in its designated clock cycle, such as data dependencies (waiting for a previous result) or structural conflicts (resource contention).
+
+Common examples include **instruction pipelining** in microprocessors, **graphics pipelines** in GPUs, and **data processing pipelines** in software engineering (e.g., ETL processes).",llm-only,0,1
+Q029,workflow,Keyword Search,Why should the system not be presented as a simple chatbot?,Keyword baseline retrieved this evidence: - When is the report due? - What is the report word limit? - What sections must be included in the report? - What does the rubric require for HD? - Does the project need a GitHub repository? - How should a group divide the work? - What are the limitations and ,keyword,1,1
+Q029,workflow,LLM-only,Why should the system not be presented as a simple chatbot?,"Presenting a system as a ""simple chatbot"" is often avoided for the following reasons:
+
+1.  **Expectation Management:** The term ""chatbot"" is historically associated with limited, rule-based scripts or low-intelligence interfaces. Labeling a sophisticated system this way lowers user expectations, leading them to anticipate errors, repetitive loops, or an inability to handle complex reasoning.
+2.  **Perceived Value:** ""Chatbot"" carries a connotation of a trivial utility. Positioning the system as an ""AI Assistant,"" ""Co-pilot,"" or ""Decision Support System"" elevates its perceived utility, professional relevance, and strategic importance.
+3.  **Functional Scope:** A simple chatbot implies a conversational interface for basic Q&A. If the system performs complex tasks—such as data analysis, code generation, or workflow automation—the term ""chatbot"" fails to capture its functional depth and technical capabilities.
+4.  **Trust and Reliability:** Users often associate chatbots with frustration (e.g., customer service loops). Using more precise terminology helps distinguish the system as a reliable, high-performance tool, which is essential for user adoption in professional or academic environments.
+5.  **Anthropomorphism Risks:** Labeling a system as a ""chat"" partner can lead users to anthropomorphize the technology, potentially resulting in misplaced trust or emotional reliance, whereas more formal terminology reinforces the system's nature as a tool rather than a sentient entity.",llm-only,0,1
+Q030,workflow,Keyword Search,How are exact factual questions answered?,"Keyword baseline retrieved this evidence: The system should be evaluated using test questions across factual constraints, submission rules, rubric interpretation, workflow planning, and unsupported questions. Baseline methods may include keyword search and RAG-only retrieval. Metrics may include answe",keyword,0,1
+Q030,workflow,RAG-only,How are exact factual questions answered?,"Direct Answer: Exact factual questions are answered by a query router that determines whether to utilize rule-based reasoning for deterministic constraints or RAG-based evidence-grounded generation.
+
+Key Points:
+- Rule-based reasoning is used to answer deterministic assessment constraints directly from structured facts.
+- RAG-based methods retrieve relevant document chunks via semantic embedding and cosine similarity to generate evidence-grounded answers.
+- The query router selects the appropriate method (rule-based, RAG, hybrid, or unsupported) to ensure accuracy.
+
+Evidence Used:
+- project_design.txt: AI Methods (chunk_id=project_design__ai_methods__01)
+- project_design.txt: System Pipeline (chunk_id=project_design__system_pipeline__01)",rag,1,1
+Q030,workflow,LLM-only,How are exact factual questions answered?,"Exact factual questions are answered by identifying the specific, verifiable piece of information that corresponds to the query. The process typically involves:
+
+1.  **Identifying the core entity and attribute:** Determining the subject (e.g., a person, place, or event) and the specific property being asked about (e.g., a date, a name, or a numerical value).
+2.  **Retrieving verified data:** Accessing a reliable knowledge base or source where the information is documented as a consensus fact.
+3.  **Synthesizing the answer:** Providing the information directly and concisely, often in a single word, phrase, or sentence, without extraneous interpretation or subjective analysis.
+4.  **Verification:** Ensuring the answer is objective, falsifiable, and supported by evidence that remains consistent across authoritative sources.",llm-only,0,1
+Q031,workflow,Keyword Search,How are open-ended rubric questions answered?,Keyword baseline retrieved this evidence: - When is the report due? - What is the report word limit? - What sections must be included in the report? - What does the rubric require for HD? - Does the project need a GitHub repository? - How should a group divide the work? - What are the limitations and ,keyword,0,1
+Q031,workflow,RAG-only,How are open-ended rubric questions answered?,"Direct Answer: Open-ended rubric questions are answered using evidence-grounded generation, which produces responses based solely on retrieved document evidence.
+
+Key Points:
+- The system utilizes a query router to determine the appropriate method, such as RAG or hybrid approaches, to generate answers.
+- Responses must be accurate, insightful, and demonstrate a deep understanding of the project and its ethical implications.
+- The system employs evidence-grounded generation to ensure answers are derived only from retrieved document chunks.
+
+Evidence Used:
+- Evidence-grounded answer generation produces answers using retrieved evidence only [4].
+- Responses to questions should be accurate, insightful and demonstrate deep understanding of the project and its ethical implications [2].
+- The query router decides whether to use rule-based, RAG, hybrid, or unsupported answer methods [4].",rag,0,1
+Q031,workflow,LLM-only,How are open-ended rubric questions answered?,"Open-ended rubric questions are answered by providing a **substantive, evidence-based response** that aligns with the specific criteria and performance levels defined in the rubric. 
+
+To answer them effectively, follow these steps:
+
+1.  **Analyze the Criteria:** Identify the specific skills, knowledge, or behaviors the rubric is measuring. Each criterion acts as a prompt for what must be included in your response.
+2.  **Target the ""Exemplary"" Column:** Review the highest performance level (often labeled ""Exemplary,"" ""Advanced,"" or ""Distinguished"") to understand the depth, complexity, and quality expected.
+3.  **Provide Evidence:** Support your claims with specific examples, data, or references. A high-scoring response demonstrates not just *what* you know, but *how* you apply it.
+4.  **Structure for Clarity:** Organize your answer to mirror the rubric’s structure. Use clear headings or paragraphs that correspond to the rubric’s categories to ensure the evaluator can easily map your content to the scoring requirements.
+5.  **Address All Components:** Ensure every part of the prompt is addressed. If a rubric criterion asks for ""analysis and reflection,"" your answer must contain both a breakdown of the subject and a personal or critical synthesis of its implications.
+6.  **Review Against the Rubric:** Before finalizing, perform a self-assessment. Read your response while holding the rubric to ensure you have met the requirements for the highest possible score.",llm-only,0,1
+Q032,evaluation,Keyword Search,How should the system be evaluated?,"Keyword baseline retrieved this evidence: The system should be evaluated using test questions across factual constraints, submission rules, rubric interpretation, workflow planning, and unsupported questions. Baseline methods may include keyword search and RAG-only retrieval. Metrics may include answe",keyword,1,1
+Q032,evaluation,RAG-only,How should the system be evaluated?,"Direct Answer: The system should be evaluated using specific test categories, baseline comparisons, and defined performance metrics to demonstrate effectiveness.
+
+Evaluation Steps:
+1. Test the system across factual constraints, submission rules, rubric interpretation, workflow planning, and unsupported questions.
+2. Compare performance against baseline methods such as keyword search and RAG-only retrieval.
+3. Measure effectiveness using metrics including answer accuracy, retrieval accuracy at 3, citation support rate, hallucination rate, unsupported handling accuracy, and average response time.
+4. Ensure the analysis includes a well-defined experimental setup, clear presentation of results, and reproducibility via a GitHub repository.
+
+Evidence Used:
+- [1] Evaluation categories, baseline methods, and performance metrics.
+- [3] Requirements for comprehensive experiments, clear results, and reproducibility.",rag,1,1
+Q032,evaluation,LLM-only,How should the system be evaluated?,"To evaluate a system effectively, you should employ a multi-dimensional approach that balances technical performance with user-centric outcomes. The evaluation framework should include the following four pillars:
+
+**1. Technical Performance Metrics (Quantitative)**
+*   **Accuracy/Precision/Recall:** Measure the correctness of the system’s outputs (e.g., F1-score for classification, BLEU/ROUGE for generation).
+*   **Latency and Throughput:** Assess the system’s speed (response time) and its ability to handle concurrent requests.
+*   **Robustness:** Test the system against edge cases, adversarial inputs, and data drift to ensure stability.
+
+**2. User-Centric Evaluation (Qualitative)**
+*   **Usability (UX):** Evaluate the interface, ease of navigation, and intuitiveness through heuristic analysis or user testing.
+*   **Utility/Relevance:** Determine if the system actually solves the user's problem or meets their specific needs.
+*   **Satisfaction:** Use surveys (e.g., CSAT, NPS) or feedback loops to gauge user sentiment.
+
+**3. Operational and Business Impact**
+*   **Efficiency Gains:** Measure the reduction in time or cost required to complete tasks compared to the previous process.
+*   **Reliability/Availability:** Track uptime and error rates to ensure the system is dependable under real-world conditions.
+*   **ROI:** Analyze whether the system provides measurable value relative to the cost of development and maintenance.
+
+**4. Ethical and Safety Assessment**
+*   **Bias and Fairness:** Audit the system for discriminatory outputs or skewed data representations.
+*   **Security and Privacy:** Ensure compliance with data protection standards (e.g., GDPR) and verify that the system is resistant to unauthorized access or data leakage.
+
+**Methodology Recommendation:**
+Use a **""Human-in-the-loop"" (HITL)** approach, combining automated benchmarking (for speed and consistency) with expert human review (for nuance, safety, and quality) to ensure the system is both technically sound and practically effective.",llm-only,0,1
+Q033,evaluation,Keyword Search,Which baseline methods are appropriate for comparison?,Keyword baseline retrieved this evidence: - When is the report due? - What is the report word limit? - What sections must be included in the report? - What does the rubric require for HD? - Does the project need a GitHub repository? - How should a group divide the work? - What are the limitations and ,keyword,1,1
+Q033,evaluation,LLM-only,Which baseline methods are appropriate for comparison?,"The selection of appropriate baseline methods depends on the specific domain and the nature of your research, but generally, they should fall into the following categories:
+
+1.  **State-of-the-Art (SOTA) Models:** The current leading approaches in the literature for your specific task. Comparing against these demonstrates the competitiveness of your method.
+2.  **Standard/Classical Algorithms:** Established, ""gold-standard"" methods that have historically defined the field. These provide a benchmark for the minimum performance expected.
+3.  **Ablation Baselines:** Simplified versions of your own model (e.g., removing specific components or modules). This is essential to justify the necessity and contribution of your proposed architectural choices.
+4.  **Heuristic or Rule-Based Baselines:** Simple, non-learning-based approaches (e.g., random guessing, majority class, or simple linear regression). These establish a ""lower bound"" to ensure your model is actually learning meaningful patterns.
+5.  **Domain-Specific Baselines:** If your work addresses a specific sub-problem, include methods that are widely used in that niche, even if they are not the global SOTA.
+
+**Selection Criteria:**
+*   **Fairness:** Ensure baselines are evaluated under the same conditions (same dataset, preprocessing, and evaluation metrics).
+*   **Relevance:** Choose methods that address the same problem formulation and constraints.
+*   **Diversity:** Include a mix of simple and complex models to show the trade-off between performance and computational cost.",llm-only,0,1
+Q034,evaluation,Keyword Search,Which metrics should be reported in the evaluation?,"Keyword baseline retrieved this evidence: The system should be evaluated using test questions across factual constraints, submission rules, rubric interpretation, workflow planning, and unsupported questions. Baseline methods may include keyword search and RAG-only retrieval. Metrics may include answe",keyword,1,1
+Q034,evaluation,LLM-only,Which metrics should be reported in the evaluation?,"The metrics reported in an evaluation depend on the nature of the task, but they generally fall into the following categories:
+
+### 1. Classification Metrics
+*   **Accuracy:** The proportion of total predictions that were correct.
+*   **Precision:** The accuracy of positive predictions (minimizing false positives).
+*   **Recall (Sensitivity):** The ability to find all positive instances (minimizing false negatives).
+*   **F1-Score:** The harmonic mean of precision and recall, useful for imbalanced datasets.
+*   **AUC-ROC:** Measures the model's ability to distinguish between classes across various thresholds.
+
+### 2. Regression Metrics
+*   **Mean Absolute Error (MAE):** The average magnitude of errors in a set of predictions.
+*   **Mean Squared Error (MSE):** Penalizes larger errors more heavily by squaring them.
+*   **Root Mean Squared Error (RMSE):** Provides error in the same units as the target variable.
+*   **R-squared ($R^2$):** Indicates the proportion of variance in the dependent variable explained by the model.
+
+### 3. Generative/NLP Metrics
+*   **Perplexity:** Measures how well a probability model predicts a sample.
+*   **BLEU/ROUGE:** Used for translation or summarization to compare generated text against reference text.
+*   **BERTScore:** Measures semantic similarity using contextual embeddings.
+
+### 4. Operational/Efficiency Metrics
+*   **Latency:** The time taken to generate a prediction or response.
+*   **Throughput:** The number of requests processed per unit of time.
+*   **Resource Utilization:** Memory and CPU/GPU usage during inference.
+
+### 5. Business/Domain-Specific Metrics
+*   **Conversion Rate:** The percentage of users who take a desired action.
+*   **Customer Lifetime Value (CLV):** The total revenue expected from a single customer.
+*   **Fairness/Bias Metrics:** Disparate impact or equalized odds to ensure ethical performance.
+
+**Recommendation:** Always report a combination of **performance metrics** (e.g., F1-score) and **operational metrics** (e.g., latency) to provide a holistic view of the model's utility.",llm-only,0,1
+Q035,evaluation,Keyword Search,What categories should the evaluation questions cover?,Keyword baseline retrieved this evidence: - When is the report due? - What is the report word limit? - What sections must be included in the report? - What does the rubric require for HD? - Does the project need a GitHub repository? - How should a group divide the work? - What are the limitations and ,keyword,1,1
+Q035,evaluation,LLM-only,What categories should the evaluation questions cover?,"To ensure a comprehensive assessment, evaluation questions should generally cover the following five categories:
+
+1.  **Relevance:** Does the initiative or project address the actual needs, priorities, and problems of the target audience or stakeholders?
+2.  **Effectiveness:** To what extent were the intended objectives and outcomes achieved? Did the intervention produce the desired results?
+3.  **Efficiency:** How well were resources (time, budget, personnel) utilized to achieve the results? Could the same outcomes have been reached with fewer resources?
+4.  **Impact:** What are the broader, long-term effects of the intervention—both intended and unintended, positive and negative—on the target population or environment?
+5.  **Sustainability:** Is the intervention likely to continue providing benefits after the initial funding or support ends? Are the structures or systems in place to maintain the results?
+
+*Note: These categories are based on the standard evaluation criteria established by the OECD Development Assistance Committee (OECD-DAC).*",llm-only,0,1
+Q036,evaluation,Keyword Search,Why should unsupported questions be included in the evaluation?,Keyword baseline retrieved this evidence: - When is the report due? - What is the report word limit? - What sections must be included in the report? - What does the rubric require for HD? - Does the project need a GitHub repository? - How should a group divide the work? - What are the limitations and ,keyword,1,1
+Q036,evaluation,RAG-only,Why should unsupported questions be included in the evaluation?,"Direct Answer: The provided evidence does not state why unsupported questions should be included in the evaluation, only that they are a required component of the system's testing process.
+
+Evaluation Steps:
+1. Review the ""Evaluation"" section of the project design document.
+2. Identify the list of required test question categories.
+3. Search for a stated rationale or justification for including unsupported questions within the provided text.
+
+Evidence Used:
+- [1] The system should be evaluated using test questions across factual constraints, submission rules, rubric interpretation, workflow planning, and unsupported questions.",rag,1,1
+Q036,evaluation,LLM-only,Why should unsupported questions be included in the evaluation?,"Unsupported questions—those for which the provided source material contains no answer—should be included in an evaluation for the following reasons:
+
+1.  **Testing Robustness and Hallucination:** They measure a model’s ability to recognize its own knowledge boundaries. A high-performing model should identify that the information is missing rather than ""hallucinating"" or fabricating an answer to satisfy the prompt.
+2.  **Evaluating Refusal Accuracy:** They test whether the model follows instructions to rely *only* on provided context. If a model answers an unsupported question using external knowledge, it fails the constraint of groundedness.
+3.  **Preventing Over-Reliance:** Including these questions prevents the model from developing a bias toward assuming that every prompt has a valid answer within the provided text, which is critical for safety and reliability in real-world applications.
+4.  **Measuring Precision:** They help distinguish between a model that is merely ""helpful"" (but potentially inaccurate) and one that is ""truthful"" (prioritizing factual integrity over compliance).",llm-only,0,1
+Q037,unsupported,Keyword Search,Can we submit late without approval?,Keyword baseline retrieved this evidence: Report submission: PDF. Only one member from the group needs to submit the report. The first page must clearly list all group members' names and student IDs. Please also submit the PowerPoint slide file along with the report submission.,keyword,0,1
+Q037,unsupported,RAG-only,Can we submit late without approval?,The provided documents do not contain enough evidence to answer this question confidently.,rag,0,1
+Q037,unsupported,LLM-only,Can we submit late without approval?,"Whether you can submit late without approval depends entirely on your institution's specific policies and your instructor's syllabus.
+
+In most academic settings, the answer is **no**. Submitting late without prior approval typically results in one of the following:
+
+1.  **Automatic Grade Penalties:** Many instructors apply a percentage deduction (e.g., 10% per day) for late work.
+2.  **Zero Credit:** Many syllabi state that late work is not accepted at all, resulting in a grade of zero.
+3.  **Loss of Feedback:** Even if an instructor accepts the work, they may prioritize grading on-time submissions, meaning you may not receive feedback or your grade may be posted significantly later.
+
+**Recommendation:** Check your course syllabus under the ""Late Policy"" section. If you are already past the deadline, contact your instructor immediately, acknowledge the delay, and ask if they will accept the submission, rather than submitting it without notice.",llm-only,0,1
+Q038,unsupported,Keyword Search,Can the assistant write the whole assignment for me?,"Keyword baseline retrieved this evidence: The project aims to develop an AI-powered academic document assistant that helps students understand complex assignment documents, rubrics, templates and presentation requirements.",keyword,0,1
+Q038,unsupported,RAG-only,Can the assistant write the whole assignment for me?,"Direct Answer: No, the assistant cannot write the assignment for you. Its purpose is to help you understand assignment requirements, rubrics, and templates.
+
+Key Points:
+- The assessment requires individual application of AI techniques, critical evaluation, and research-informed decision-making.
+- Each group member must document their own contributions to the report.
+- The assistant is designed to support comprehension of documents rather than complete the work.
+
+Evidence Used:
+- [1] The assistant helps students understand complex assignment documents, rubrics, and requirements.
+- [2] The assessment requires individual application of AI techniques, critical evaluation, and documentation of personal contributions.",rag,0,1
+Q038,unsupported,LLM-only,Can the assistant write the whole assignment for me?,"No. As an AI, I cannot write your assignment for you, as that would constitute academic dishonesty. I can, however, help you brainstorm ideas, explain complex concepts, outline your work, or provide feedback on your drafts to support your own learning process.",llm-only,0,1
+Q039,unsupported,Keyword Search,Can we bypass Turnitin if the answer looks correct?,"Keyword baseline retrieved this evidence: Similarity checks on the report will be done by Turnitin. The maximum allowed similarity score is 20%, including quoted material and excluding references.",keyword,0,1
+Q039,unsupported,RAG-only,Can we bypass Turnitin if the answer looks correct?,"Direct Answer: No. The provided evidence does not suggest that the correctness of an answer allows for bypassing Turnitin; rather, it states that all reports are subject to Turnitin similarity checks with a maximum allowed score of 20%.
+
+Key Points:
+- Turnitin similarity checks are mandatory for the report.
+- The maximum allowed similarity score is 20%, which includes quoted material but excludes references.
+
+Evidence Used:
+- Assessment brief: Similarity checks on the report will be done by Turnitin.
+- Assessment brief: The maximum allowed similarity score is 20%, including quoted material and excluding references.",rag,0,1
+Q039,unsupported,LLM-only,Can we bypass Turnitin if the answer looks correct?,"No. Turnitin does not evaluate the ""correctness"" of an answer; it evaluates the **originality** of the text by comparing it against a massive database of academic papers, journals, websites, and previously submitted student work.
+
+Even if an answer is factually correct, Turnitin will flag it if:
+1. **The text is copied:** If the wording matches existing sources, it will be flagged as plagiarism.
+2. **The structure is identical:** Even with minor word changes (paraphrasing), sophisticated algorithms can detect patterns of ""patchwriting"" or AI-generated text.
+3. **AI Detection:** Turnitin now includes AI writing detection tools that identify patterns, syntax, and probability distributions typical of Large Language Models (LLMs), regardless of whether the information provided is accurate.
+
+Attempting to ""bypass"" these systems often leads to academic integrity investigations, which can result in failing grades, suspension, or expulsion. The only reliable way to pass a Turnitin check is to write original content and properly cite all sources.",llm-only,0,1
+Q040,unsupported,Keyword Search,Can the assistant replace official course guidance?,"Keyword baseline retrieved this evidence: AI-Powered Academic Document Assistant Using Retrieval-Augmented Generation, Structured Knowledge Representation and Rule-Based Reasoning.",keyword,0,1
+Q040,unsupported,RAG-only,Can the assistant replace official course guidance?,"Direct Answer: The provided evidence does not state whether the assistant can replace official course guidance.
+
+Key Points:
+- The project aims to assist students in understanding assignment documents, rubrics, templates, and presentation requirements.
+- The evidence defines the assistant as a tool for document comprehension rather than a replacement for official guidance.
+
+Evidence Used:
+- [1] project_design.txt: The project aims to help students understand complex assignment documents, rubrics, templates and presentation requirements.",rag,0,1
+Q040,unsupported,LLM-only,Can the assistant replace official course guidance?,"No. An AI assistant cannot replace official course guidance. 
+
+Official guidance—provided by instructors, syllabi, and institutional handbooks—is the authoritative source for course policies, grading criteria, and academic requirements. AI tools may provide inaccurate, outdated, or hallucinated information and lack the context of specific classroom expectations. You should always prioritize official course materials and consult your instructor for definitive answers.",llm-only,0,1
