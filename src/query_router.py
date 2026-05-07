@@ -1,53 +1,66 @@
-RULE_KEYWORDS = [
+EXACT_RULE_KEYWORDS = [
     "due",
     "deadline",
     "word limit",
     "how many words",
+    "font",
     "duration",
     "minutes",
     "how long",
     "similarity",
     "turnitin",
-    "plagiarism",
+    "plagiarism score",
     "file format",
     "file type",
     "pdf",
     "pptx",
-    "slides",
-    "powerpoint",
-    "github",
-    "repository",
-    "submit",
-    "submission",
     "filename",
-    "sections",
-    "table of contents",
-    "individual contribution",
+    "report sections",
+    "sections should be included in the report",
+    "what sections should be included in the report",
     "first slide",
     "first presentation slide",
-    "presentation slide",
     "first page",
     "student id",
     "group number",
-    "group member",
-    "font",
-    "highlight",
+    "who needs to submit",
+    "who should submit",
+    "submit the group report",
+    "submit the presentation",
+    "group size",
+    "maximum group size",
+    "how many students per group",
+]
+
+OPEN_ENDED_RAG_KEYWORDS = [
     "rubric",
     "high distinction",
     "hd",
     "criterion",
+    "criteria",
     "ai methods",
     "system pipeline",
-    "simple chatbot",
-    "exact factual",
-    "open-ended rubric",
-    "open ended rubric",
-    "baseline",
-    "metrics",
+    "workflow",
+    "methodology",
     "evaluation",
-    "evaluated",
-    "evaluation questions",
-    "unsupported handling",
+    "baseline",
+    "metric",
+    "how should",
+    "how do we",
+    "why should",
+    "why is",
+    "plan",
+    "roadmap",
+    "timeline",
+    "divide the work",
+    "role allocation",
+    "genai",
+    "ethical",
+    "ethics",
+    "risk",
+    "limitation",
+    "story",
+    "scenario",
 ]
 
 UNSUPPORTED_PATTERNS = [
@@ -55,6 +68,17 @@ UNSUPPORTED_PATTERNS = [
     "can we submit late without approval",
     "can i ignore",
     "can we ignore",
+    "exact six-person role split",
+    "exact six person role split",
+    "exact role split",
+    "exact role allocation",
+    "exactly how should six group members divide the work",
+    "day-by-day schedule",
+    "day by day schedule",
+    "guarantee a high distinction",
+    "guarantee high distinction",
+    "guarantee an hd",
+    "guarantee hd",
     "write the whole assignment",
     "write my whole assignment",
     "cheat",
@@ -72,10 +96,18 @@ def is_unsupported_question(question):
     return any(pattern in lower_question for pattern in UNSUPPORTED_PATTERNS)
 
 
-def is_rule_question(question):
-    """Return True when the question is best served by structured facts and rules."""
+def is_open_ended_rag_question(question):
+    """Return True when the question asks for interpretation, planning, or synthesis."""
     lower_question = question.lower()
-    return any(keyword in lower_question for keyword in RULE_KEYWORDS)
+    return any(keyword in lower_question for keyword in OPEN_ENDED_RAG_KEYWORDS)
+
+
+def is_rule_question(question):
+    """Return True when the question is best served by deterministic structured facts."""
+    lower_question = question.lower()
+    if is_open_ended_rag_question(question):
+        return False
+    return any(keyword in lower_question for keyword in EXACT_RULE_KEYWORDS)
 
 
 def route_query(question):
@@ -83,8 +115,8 @@ def route_query(question):
     Decide which component should answer the question.
 
     Routes:
-    - rule: exact assessment constraints or rubric criteria stored in facts
-    - rag: open-ended document interpretation
+    - rule: exact assessment constraints stored in facts
+    - rag: open-ended interpretation, planning, and policy questions
     - unsupported: questions that should not be answered confidently
     """
     if is_unsupported_question(question):

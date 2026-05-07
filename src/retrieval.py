@@ -29,13 +29,53 @@ def detect_query_focus(question):
     """Infer a coarse focus label that can boost matching chunk categories."""
     lower_question = question.lower()
 
+    if any(
+        token in lower_question
+        for token in [
+            "plan",
+            "roadmap",
+            "timeline",
+            "prioritise",
+            "prioritize",
+            "workstream",
+            "workstreams",
+            "stay on track",
+            "before submission",
+            "before the deadline",
+            "prepare",
+            "divide the work",
+            "role allocation",
+            "group members",
+            "member",
+            "more time",
+            "future work",
+            "story",
+            "scenario",
+        ]
+    ):
+        return "planning"
+    if any(
+        token in lower_question
+        for token in [
+            "ethic",
+            "ethical",
+            "genai",
+            "ai use",
+            "allowed",
+            "policy",
+            "integrity",
+            "limitation",
+            "hallucination",
+        ]
+    ):
+        return "policy"
     if any(token in lower_question for token in ["rubric", "hd", "high distinction", "criterion"]):
         return "rubric"
     if any(token in lower_question for token in ["presentation", "slide", "powerpoint"]):
         return "presentation"
     if any(token in lower_question for token in ["evaluate", "evaluation", "metric", "baseline", "experiment"]):
         return "evaluation"
-    if any(token in lower_question for token in ["workflow", "methodology", "pipeline", "system"]):
+    if any(token in lower_question for token in ["workflow", "methodology", "pipeline", "system", "ai methods"]):
         return "workflow"
 
     return "general"
@@ -45,6 +85,32 @@ def category_bonus(query_focus, chunk):
     """Return a small score bonus when a chunk matches the inferred query focus."""
     category = chunk.get("category", "")
     section = chunk.get("section", "").lower()
+    authority = chunk.get("authority", "project")
+
+    if query_focus == "planning" and category in {"workflow_planning", "factual_constraints", "presentation", "evaluation"}:
+        return 0.14
+    if query_focus == "planning" and category in {"system_design", "ai_methods", "report_template"}:
+        return 0.10
+    if query_focus == "planning" and authority == "official":
+        return 0.08
+    if query_focus == "planning" and any(
+        token in section
+        for token in [
+            "task overview",
+            "objective",
+            "requirements",
+            "report sections",
+            "submission due",
+            "presentation",
+            "workflow",
+            "empirical analysis",
+        ]
+    ):
+        return 0.14
+    if query_focus == "policy" and category in {"ethics_policy", "rubric"}:
+        return 0.14
+    if query_focus == "policy" and authority == "official":
+        return 0.06
 
     if query_focus == "rubric" and "rubric" in category:
         return 0.12
@@ -56,6 +122,60 @@ def category_bonus(query_focus, chunk):
         category in {"system_design", "ai_methods"} or "workflow" in section or "methodology" in section
     ):
         return 0.10
+
+    return 0.0
+
+
+def question_specific_bonus(question, chunk):
+    """Return a stronger bonus for exact section matches on high-value open-ended queries."""
+    lower_question = question.lower()
+    section = chunk.get("section", "").lower()
+    text = chunk.get("text", "").lower()
+
+    if "ai methods" in lower_question and "ai methods" in section:
+        return 0.22
+    if ("system pipeline" in lower_question or "pipeline" in lower_question) and "system pipeline" in section:
+        return 0.22
+    if "how should the system be evaluated" in lower_question and "evaluation" in section:
+        return 0.18
+    if ("baseline" in lower_question or "metrics" in lower_question) and "evaluation" in section:
+        return 0.18
+    if any(token in lower_question for token in ["genai", "can we use"]) and "academic integrity" in text:
+        return 0.20
+    if any(token in lower_question for token in ["workstream", "workstreams", "prioritise", "prioritize", "stay on track"]) and any(
+        token in section for token in ["task overview", "objective", "requirements", "report sections", "submission due"]
+    ):
+        return 0.22
+    if any(token in lower_question for token in ["presentation story", "story", "narrative"]) and any(
+        token in section for token in ["objective", "presentation", "content and relevance", "project goal"]
+    ):
+        return 0.20
+    if any(token in lower_question for token in ["software demo", "more than software"]) and any(
+        token in text
+        for token in [
+            "go beyond software development",
+            "integration of multiple ai paradigms",
+            "rigorous empirical evaluation",
+            "critical reflection",
+        ]
+    ):
+        return 0.22
+    if any(token in lower_question for token in ["limitations", "ethical risks"]) and any(
+        token in section for token in ["critical reflection", "findings, contributions and limitations", "academic integrity"]
+    ):
+        return 0.20
+    if "reduces hallucination" in lower_question and any(
+        token in text for token in ["retrieves relevant evidence", "grounded", "rule-based reasoning", "not enough evidence"]
+    ):
+        return 0.20
+    if any(token in lower_question for token in ["story", "scenario", "application"]) and any(
+        token in section for token in ["project goal", "objective", "the presentation should"]
+    ):
+        return 0.20
+    if any(token in lower_question for token in ["more time", "future work", "improvements"]) and any(
+        token in section for token in ["future work", "alternative methods and improvements", "critical reflection"]
+    ):
+        return 0.18
 
     return 0.0
 
@@ -127,6 +247,7 @@ class SemanticRetriever:
                 (0.76 * float(cosine_scores[index]))
                 + (0.16 * lexical_overlap)
                 + category_bonus(query_focus, chunk)
+                + question_specific_bonus(question, chunk)
             )
             ranked_candidates.append((index, combined_score))
 
@@ -140,6 +261,7 @@ class SemanticRetriever:
                 "rank": rank,
                 "chunk_id": chunk["chunk_id"],
                 "source_file": chunk["source_file"],
+                "authority": chunk.get("authority", "project"),
                 "section": chunk.get("section", ""),
                 "category": chunk.get("category", ""),
                 "score": float(cosine_scores[index]),

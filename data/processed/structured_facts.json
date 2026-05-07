@@ -1,6 +1,454 @@
 {
+  "schema_version": "2026-05-general-single-brief-v2",
+  "brief_source_file": "assessment_brief.txt",
+  "brief_source_path": "C:\\Users\\brohao\\Desktop\\UTS\\36121\\AT2\\ai-document-assistant\\data\\raw\\assessment_brief.txt",
+  "fact_extraction": {
+    "schema_version": "2026-05-general-single-brief-v2",
+    "llm_requested": false,
+    "llm_used": false,
+    "llm_model": "",
+    "field_count": 24,
+    "validated_field_count": 23,
+    "missing_field_count": 1
+  },
+  "field_records": {
+    "assessment_name": {
+      "value": "Assessment 3: Real World Applications of Artificial Intelligence",
+      "normalized_value": "Assessment 3: Real World Applications of Artificial Intelligence",
+      "evidence": "Assessment 3: Real World Applications of Artificial Intelligence",
+      "source_section": "Document Overview",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "course": {
+      "value": "",
+      "normalized_value": null,
+      "evidence": "",
+      "source_section": "Document Overview",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "missing",
+      "confidence": 0.0,
+      "extraction_method": "heuristic"
+    },
+    "report_due_date": {
+      "value": "16 May 2026 23:59",
+      "normalized_value": {
+        "date": "16 May 2026",
+        "time": "23:59"
+      },
+      "evidence": "The report is due on 16 May 2026 at 23:59.",
+      "source_section": "Full Document",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "report_word_limit": {
+      "value": "Up to 3500 words, including references",
+      "normalized_value": {
+        "max_words": 3500,
+        "includes_references": true
+      },
+      "evidence": "Up to 3500 words, including references.",
+      "source_section": "Length",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "report_font": {
+      "value": "11-point Times or Arial fonts",
+      "normalized_value": {
+        "font_size": 11,
+        "allowed_fonts": [
+          "Times",
+          "Arial"
+        ]
+      },
+      "evidence": "Use 11-point Times or Arial fonts.",
+      "source_section": "Length",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "report_format": {
+      "value": "PDF",
+      "normalized_value": "PDF",
+      "evidence": "Report submission: PDF.",
+      "source_section": "Submission Format",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "report_filename": {
+      "value": "AT3_Report_Group_xxxx.pdf",
+      "normalized_value": "AT3_Report_Group_xxxx.pdf",
+      "evidence": "The report filename should be AT3_Report_Group_xxxx.pdf, where xxxx is the group number.",
+      "source_section": "Requirements",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "slide_format": {
+      "value": "PPTX",
+      "normalized_value": "PPTX",
+      "evidence": "The PowerPoint presentation filename should be AT3_Slide_Group_xxxx.pptx, where xxxx is the group number.",
+      "source_section": "Requirements",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "slide_filename": {
+      "value": "AT3_Slide_Group_xxxx.pptx",
+      "normalized_value": "AT3_Slide_Group_xxxx.pptx",
+      "evidence": "The PowerPoint presentation filename should be AT3_Slide_Group_xxxx.pptx, where xxxx is the group number.",
+      "source_section": "Requirements",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "presentation_duration": {
+      "value": "8 minutes in total, including a 7-minute presentation plus 1-minute Q&A",
+      "normalized_value": {
+        "total_minutes": 8,
+        "presentation_minutes": 7,
+        "qa_minutes": 1
+      },
+      "evidence": "The presentation is 8 minutes in total, including a 7-minute presentation plus 1-minute Q&A.",
+      "source_section": "Presentation Session",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "presentation_submission": {
+      "value": "The group's PowerPoint presentation must be submitted before the in-class presentation.",
+      "normalized_value": "The group's PowerPoint presentation must be submitted before the in-class presentation.",
+      "evidence": "The group's PowerPoint presentation must be submitted before the in-class presentation.",
+      "source_section": "Oral Presentation",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "presentation_due_dates": {
+      "value": {
+        "group_a": "7 May 2026",
+        "group_b": "14 May 2026"
+      },
+      "normalized_value": {
+        "group_a": "7 May 2026",
+        "group_b": "14 May 2026"
+      },
+      "evidence": "Presentation due in Week 12 for Group A on 7 May 2026. | Presentation due in Week 13 for Group B on 14 May 2026.",
+      "source_section": "Submission Due",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "similarity_limit": {
+      "value": "20%",
+      "normalized_value": {
+        "max_percent": 20
+      },
+      "evidence": "The maximum allowed similarity score is 20%, including quoted material and excluding references.",
+      "source_section": "Similarity Checks",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "group_submission": {
+      "value": "Only one member from the group needs to submit the report and presentation files.",
+      "normalized_value": "Only one member from the group needs to submit the report and presentation files.",
+      "evidence": "Only one member from the group needs to submit the report. | Only one member from the group needs to submit the presentation file.",
+      "source_section": "Submission Format",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "first_page_requirements": {
+      "value": [
+        "all group members' names",
+        "student IDs"
+      ],
+      "normalized_value": [
+        "all group members' names",
+        "student IDs"
+      ],
+      "evidence": "The first page must clearly list all group members' names and student IDs.",
+      "source_section": "Submission Format",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "first_slide_requirements": {
+      "value": [
+        "the group number",
+        "all group members' names",
+        "student IDs"
+      ],
+      "normalized_value": [
+        "the group number",
+        "all group members' names",
+        "student IDs"
+      ],
+      "evidence": "The first slide must clearly list the group number, all group members' names, and student IDs.",
+      "source_section": "Oral Presentation",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "presentation_highlights": {
+      "value": [
+        "the real-world problem",
+        "the AI-based approach",
+        "findings",
+        "contributions"
+      ],
+      "normalized_value": [
+        "the real-world problem",
+        "the AI-based approach",
+        "findings",
+        "contributions"
+      ],
+      "evidence": "The presentation should highlight the real-world problem, the AI-based approach, findings, and contributions.",
+      "source_section": "Part 2 Presentation",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "report_sections": {
+      "value": [
+        "Introduction",
+        "Theoretical Justifications",
+        "Workflow and Empirical Analysis",
+        "Critical Reflection"
+      ],
+      "normalized_value": [
+        "Introduction",
+        "Theoretical Justifications",
+        "Workflow and Empirical Analysis",
+        "Critical Reflection"
+      ],
+      "evidence": "Introduction. Clearly define the real-world problem the group aims to address. Explain its real-world significance and impact, identify key challenges and constraints, clearly state project objectives and scope, and explain the benefits of an effective solution. Theoretical Justifications. Provide a detailed explanation of the proposed AI-based method. Justify why the methods are appropriate for the problem and support the argument with relevant academic literature. Workflow and Empirical Analysis. Describe the workflow of the developed solution, including key steps such as data preprocessing, algorithmic approach, and implementation details. Explain model design, algorithmic choices, and integration of multiple AI paradigms. Clearly distinguish design decisions from implementation details. Present experimental results using either real-world datasets sourced online or synthetic data created by the group. Include empirical analysis that demonstrates the effectiveness of the solution. Describe the experimental setup, use appropriate evaluation metrics, present results clearly using tables or figures, and provide a link to a publicly accessible GitHub repository containing the full code implementation. The report should focus on describing the workflow rather than including raw code. Critical Reflection. Critically evaluate limitations and failure cases of the approach, trade-offs such as optimality versus efficiency or accuracy versus interpretability, scalability, and computational constraints, and when alternative approaches may be more suitable. Additional Expectations. Use academic references where appropriate, demonstrate critical thinking rather than just implementation, clearly distinguish design choices from results, and avoid focusing solely on software engineering. Emphasise AI reasoning and evaluation.",
+      "source_section": "The report must include the following sections",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "github_required": {
+      "value": true,
+      "normalized_value": true,
+      "evidence": "Describe the experimental setup, use appropriate evaluation metrics, present results clearly using tables or figures, and provide a link to a publicly accessible GitHub repository containing the full code implementation.",
+      "source_section": "The report must include the following sections",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "individual_contribution_required": {
+      "value": true,
+      "normalized_value": true,
+      "evidence": "Each group member must clearly document their contributions at the end of the report.",
+      "source_section": "Task Overview",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "maximum_group_size": {
+      "value": "maximum group size is six students",
+      "normalized_value": {
+        "max_students": null
+      },
+      "evidence": "The maximum group size is six students.",
+      "source_section": "Groupwork",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "extension_policy": {
+      "value": "An extension can only be requested for the report component of Assessment 3. If the group requires a short extension for the report, all group members must discuss and unanimously agree before applying. The person designated to submit the group assignment must request the short extension through the Assignment Extension tool in Canvas. The same person must then email the Subject Coordinators, state that all group members agree on the need for a short extension, include all group members in the cc field, and include the group number.",
+      "normalized_value": "An extension can only be requested for the report component of Assessment 3. If the group requires a short extension for the report, all group members must discuss and unanimously agree before applying. The person designated to submit the group assignment must request the short extension through the Assignment Extension tool in Canvas. The same person must then email the Subject Coordinators, state that all group members agree on the need for a short extension, include all group members in the cc field, and include the group number.",
+      "evidence": "An extension can only be requested for the report component of Assessment 3. If the group requires a short extension for the report, all group members must discuss and unanimously agree before applying. The person designated to submit the group assignment must request the short extension through the Assignment Extension tool in Canvas. The same person must then email the Subject Coordinators, state that all group members agree on the need for a short extension, include all group members in the cc field, and include the group number.",
+      "source_section": "Extensions",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "academic_integrity_guidance": {
+      "value": "Academic integrity is about demonstrating honesty, trust, fairness, respect, responsibility, and courage in studies. A breach of academic integrity is academic misconduct and includes behaviours such as plagiarism and cheating. Penalties apply. If students are thinking about using GenAI in the subject or assessment, they must check the rules for whether and how it can be used via the subject site, tutor, lecturer, or subject coordinator. They should also use GenAI ethically and reference or acknowledge its use when required.",
+      "normalized_value": "Academic integrity is about demonstrating honesty, trust, fairness, respect, responsibility, and courage in studies. A breach of academic integrity is academic misconduct and includes behaviours such as plagiarism and cheating. Penalties apply. If students are thinking about using GenAI in the subject or assessment, they must check the rules for whether and how it can be used via the subject site, tutor, lecturer, or subject coordinator. They should also use GenAI ethically and reference or acknowledge its use when required.",
+      "evidence": "Academic integrity is about demonstrating honesty, trust, fairness, respect, responsibility, and courage in studies. A breach of academic integrity is academic misconduct and includes behaviours such as plagiarism and cheating. Penalties apply. If students are thinking about using GenAI in the subject or assessment, they must check the rules for whether and how it can be used via the subject site, tutor, lecturer, or subject coordinator. They should also use GenAI ethically and reference or acknowledge its use when required.",
+      "source_section": "Academic Integrity",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    },
+    "rubric_sections": {
+      "value": [
+        {
+          "scope": "report",
+          "title": "Executive Summary and Introduction",
+          "slug": "executive_summary_and_introduction",
+          "hd_requirement": "Comprehensive and concise executive summary capturing objectives, AI approach, and key findings. Clearly defines a real-world problem with strong significance, well-structured context, challenges, scope, and impact. Demonstrates clear linkage between the problem and AI-based solution, with awareness of ethical and real-world implications."
+        },
+        {
+          "scope": "report",
+          "title": "Theoretical Justification",
+          "slug": "theoretical_justification",
+          "hd_requirement": "Provides a rigorous, well-structured explanation of AI methods with strong theoretical foundations such as search, probabilistic reasoning, multi-layer networks, reinforcement learning, GenAI, or LLMs. Demonstrates deep understanding and clearly justifies suitability using relevant academic literature. Shows critical engagement with theory."
+        },
+        {
+          "scope": "report",
+          "title": "Workflow and Methodology",
+          "slug": "workflow_and_methodology",
+          "hd_requirement": "Presents a clear, logical, and well-structured workflow. Thoroughly explains data preprocessing, feature engineering if applicable, model design, and algorithmic approach. Demonstrates effective integration of multiple AI paradigms. Clearly distinguishes design decisions from implementation."
+        },
+        {
+          "scope": "report",
+          "title": "Empirical Analysis and Results",
+          "slug": "empirical_analysis_and_results",
+          "hd_requirement": "Presents comprehensive experiments with a well-defined setup, datasets, and parameters, with insightful empirical analysis demonstrating solution effectiveness and supported by ethical considerations where relevant. Uses appropriate evaluation metrics such as accuracy, memory usage, or runtime. Results are clearly presented using tables or figures and interpreted insightfully. Demonstrates strong evidence of effectiveness and includes reproducibility via a well-documented GitHub repository."
+        },
+        {
+          "scope": "report",
+          "title": "Critical Reflection",
+          "slug": "critical_reflection",
+          "hd_requirement": "Provides deep and critical evaluation of limitations, failure cases, and trade-offs such as accuracy versus efficiency. Analyses scalability and computational constraints. Thoughtfully discusses when alternative approaches may be more suitable."
+        },
+        {
+          "scope": "report",
+          "title": "Conclusion, Future Work and References",
+          "slug": "conclusion_future_work_and_references",
+          "hd_requirement": "Provides a clear, concise, and insightful conclusion that effectively links results to project objectives and highlights key AI-related findings. Demonstrates strong critical understanding by proposing realistic, technically sound, and well-justified future work such as addressing limitations, improving scalability, or exploring alternative AI methods. Uses high-quality, relevant academic references that are consistent and well integrated into the report."
+        },
+        {
+          "scope": "report",
+          "title": "Individual Contribution",
+          "slug": "individual_contribution",
+          "hd_requirement": "Clearly documents specific, substantial, and verifiable contributions of each member. Demonstrates balanced and active participation."
+        },
+        {
+          "scope": "presentation",
+          "title": "Content and Relevance",
+          "slug": "content_and_relevance",
+          "hd_requirement": "Presents a highly relevant real-world problem and AI solution, demonstrates clear integration of AI techniques and strong alignment between problem and chosen methods, clearly articulates significance, impact, and ethical considerations, and stays within the 7-minute limit."
+        },
+        {
+          "scope": "presentation",
+          "title": "AI Method Explanation and Justification",
+          "slug": "ai_method_explanation_and_justification",
+          "hd_requirement": "Clearly and concisely explains the AI-based method, demonstrates deep understanding, provides strong justification for method selection, compares with alternative approaches, explains trade-offs, and shows excellent alignment between the chosen method and the problem."
+        },
+        {
+          "scope": "presentation",
+          "title": "Findings, Contributions, and Limitations",
+          "slug": "findings_contributions_and_limitations",
+          "hd_requirement": "Insightful findings and contributions with clear empirical results, showing solution effectiveness and innovation. Limitations are critically analysed with ethical implications."
+        },
+        {
+          "scope": "presentation",
+          "title": "Presentation Delivery and Interaction",
+          "slug": "presentation_delivery_and_interaction",
+          "hd_requirement": "Delivers an engaging, confident, and well-paced presentation with excellent use of visuals, clear articulation, and strong audience interaction. Responds to questions with insightful, accurate, and confident answers, demonstrates deep understanding, and addresses ethical implications effectively."
+        }
+      ],
+      "normalized_value": [
+        {
+          "scope": "report",
+          "title": "Executive Summary and Introduction",
+          "slug": "executive_summary_and_introduction",
+          "hd_requirement": "Comprehensive and concise executive summary capturing objectives, AI approach, and key findings. Clearly defines a real-world problem with strong significance, well-structured context, challenges, scope, and impact. Demonstrates clear linkage between the problem and AI-based solution, with awareness of ethical and real-world implications."
+        },
+        {
+          "scope": "report",
+          "title": "Theoretical Justification",
+          "slug": "theoretical_justification",
+          "hd_requirement": "Provides a rigorous, well-structured explanation of AI methods with strong theoretical foundations such as search, probabilistic reasoning, multi-layer networks, reinforcement learning, GenAI, or LLMs. Demonstrates deep understanding and clearly justifies suitability using relevant academic literature. Shows critical engagement with theory."
+        },
+        {
+          "scope": "report",
+          "title": "Workflow and Methodology",
+          "slug": "workflow_and_methodology",
+          "hd_requirement": "Presents a clear, logical, and well-structured workflow. Thoroughly explains data preprocessing, feature engineering if applicable, model design, and algorithmic approach. Demonstrates effective integration of multiple AI paradigms. Clearly distinguishes design decisions from implementation."
+        },
+        {
+          "scope": "report",
+          "title": "Empirical Analysis and Results",
+          "slug": "empirical_analysis_and_results",
+          "hd_requirement": "Presents comprehensive experiments with a well-defined setup, datasets, and parameters, with insightful empirical analysis demonstrating solution effectiveness and supported by ethical considerations where relevant. Uses appropriate evaluation metrics such as accuracy, memory usage, or runtime. Results are clearly presented using tables or figures and interpreted insightfully. Demonstrates strong evidence of effectiveness and includes reproducibility via a well-documented GitHub repository."
+        },
+        {
+          "scope": "report",
+          "title": "Critical Reflection",
+          "slug": "critical_reflection",
+          "hd_requirement": "Provides deep and critical evaluation of limitations, failure cases, and trade-offs such as accuracy versus efficiency. Analyses scalability and computational constraints. Thoughtfully discusses when alternative approaches may be more suitable."
+        },
+        {
+          "scope": "report",
+          "title": "Conclusion, Future Work and References",
+          "slug": "conclusion_future_work_and_references",
+          "hd_requirement": "Provides a clear, concise, and insightful conclusion that effectively links results to project objectives and highlights key AI-related findings. Demonstrates strong critical understanding by proposing realistic, technically sound, and well-justified future work such as addressing limitations, improving scalability, or exploring alternative AI methods. Uses high-quality, relevant academic references that are consistent and well integrated into the report."
+        },
+        {
+          "scope": "report",
+          "title": "Individual Contribution",
+          "slug": "individual_contribution",
+          "hd_requirement": "Clearly documents specific, substantial, and verifiable contributions of each member. Demonstrates balanced and active participation."
+        },
+        {
+          "scope": "presentation",
+          "title": "Content and Relevance",
+          "slug": "content_and_relevance",
+          "hd_requirement": "Presents a highly relevant real-world problem and AI solution, demonstrates clear integration of AI techniques and strong alignment between problem and chosen methods, clearly articulates significance, impact, and ethical considerations, and stays within the 7-minute limit."
+        },
+        {
+          "scope": "presentation",
+          "title": "AI Method Explanation and Justification",
+          "slug": "ai_method_explanation_and_justification",
+          "hd_requirement": "Clearly and concisely explains the AI-based method, demonstrates deep understanding, provides strong justification for method selection, compares with alternative approaches, explains trade-offs, and shows excellent alignment between the chosen method and the problem."
+        },
+        {
+          "scope": "presentation",
+          "title": "Findings, Contributions, and Limitations",
+          "slug": "findings_contributions_and_limitations",
+          "hd_requirement": "Insightful findings and contributions with clear empirical results, showing solution effectiveness and innovation. Limitations are critically analysed with ethical implications."
+        },
+        {
+          "scope": "presentation",
+          "title": "Presentation Delivery and Interaction",
+          "slug": "presentation_delivery_and_interaction",
+          "hd_requirement": "Delivers an engaging, confident, and well-paced presentation with excellent use of visuals, clear articulation, and strong audience interaction. Responds to questions with insightful, accurate, and confident answers, demonstrates deep understanding, and addresses ethical implications effectively."
+        }
+      ],
+      "evidence": "Executive Summary and Introduction | Theoretical Justification | Workflow and Methodology | Empirical Analysis and Results | Critical Reflection | Conclusion, Future Work and References | Individual Contribution | Content and Relevance | AI Method Explanation and Justification | Findings, Contributions, and Limitations | Presentation Delivery and Interaction",
+      "source_section": "Rubric Sections",
+      "source_file": "assessment_brief.txt",
+      "validation_status": "passed",
+      "confidence": 0.99,
+      "extraction_method": "heuristic"
+    }
+  },
   "assessment_name": "Assessment 3: Real World Applications of Artificial Intelligence",
-  "course": "36121 Artificial Intelligence Principles and Applications",
+  "course": "",
   "report_due_date": "16 May 2026 23:59",
   "report_word_limit": "Up to 3500 words, including references",
   "report_font": "11-point Times or Arial fonts",
@@ -8,99 +456,121 @@
   "report_filename": "AT3_Report_Group_xxxx.pdf",
   "slide_format": "PPTX",
   "slide_filename": "AT3_Slide_Group_xxxx.pptx",
-  "presentation_duration": "7-minute presentation plus 1-minute Q&A",
-  "presentation_submission": "Submit the PowerPoint presentation before the in-class presentation",
+  "presentation_duration": "8 minutes in total, including a 7-minute presentation plus 1-minute Q&A",
+  "presentation_submission": "The group's PowerPoint presentation must be submitted before the in-class presentation.",
   "presentation_due_dates": {
     "group_a": "7 May 2026",
     "group_b": "14 May 2026"
   },
   "similarity_limit": "20%",
-  "group_submission": "Only one member from the group needs to submit the report and presentation file",
+  "group_submission": "Only one member from the group needs to submit the report and presentation files.",
   "first_page_requirements": [
-    "All group members' names",
-    "Student IDs"
+    "all group members' names",
+    "student IDs"
   ],
   "first_slide_requirements": [
-    "Group Number",
-    "All group members' names",
-    "Student IDs"
+    "the group number",
+    "all group members' names",
+    "student IDs"
   ],
   "presentation_highlights": [
-    "Real-world problem",
-    "AI-based approach",
-    "Findings",
-    "Individual and group contributions"
+    "the real-world problem",
+    "the AI-based approach",
+    "findings",
+    "contributions"
   ],
   "report_sections": [
-    "Executive Summary",
     "Introduction",
-    "Theoretical Justification",
-    "Workflow and Methodology",
-    "Empirical Analysis and Results",
-    "Critical Reflection",
-    "GitHub Repository",
-    "Conclusion",
-    "Individual Contributions",
-    "References"
+    "Theoretical Justifications",
+    "Workflow and Empirical Analysis",
+    "Critical Reflection"
   ],
   "github_required": true,
   "individual_contribution_required": true,
-  "system_positioning": "The system should be presented as a hybrid AI system rather than a simple chatbot because it combines retrieval, structured knowledge, rule-based reasoning, evidence-grounded answer generation and empirical evaluation.",
-  "system_pipeline_steps": [
-    "Input document collection",
-    "Text extraction and cleaning",
-    "Chunking and metadata tagging",
-    "Vector knowledge base and structured rule base",
-    "Query router",
-    "Retrieval or rule-based reasoning",
-    "Evidence-grounded answer generation",
-    "Final answer with evidence and confidence level"
+  "maximum_group_size": "maximum group size is six students",
+  "extension_policy": "An extension can only be requested for the report component of Assessment 3. If the group requires a short extension for the report, all group members must discuss and unanimously agree before applying. The person designated to submit the group assignment must request the short extension through the Assignment Extension tool in Canvas. The same person must then email the Subject Coordinators, state that all group members agree on the need for a short extension, include all group members in the cc field, and include the group number.",
+  "academic_integrity_guidance": "Academic integrity is about demonstrating honesty, trust, fairness, respect, responsibility, and courage in studies. A breach of academic integrity is academic misconduct and includes behaviours such as plagiarism and cheating. Penalties apply. If students are thinking about using GenAI in the subject or assessment, they must check the rules for whether and how it can be used via the subject site, tutor, lecturer, or subject coordinator. They should also use GenAI ethically and reference or acknowledge its use when required.",
+  "rubric_sections": [
+    {
+      "scope": "report",
+      "title": "Executive Summary and Introduction",
+      "slug": "executive_summary_and_introduction",
+      "hd_requirement": "Comprehensive and concise executive summary capturing objectives, AI approach, and key findings. Clearly defines a real-world problem with strong significance, well-structured context, challenges, scope, and impact. Demonstrates clear linkage between the problem and AI-based solution, with awareness of ethical and real-world implications."
+    },
+    {
+      "scope": "report",
+      "title": "Theoretical Justification",
+      "slug": "theoretical_justification",
+      "hd_requirement": "Provides a rigorous, well-structured explanation of AI methods with strong theoretical foundations such as search, probabilistic reasoning, multi-layer networks, reinforcement learning, GenAI, or LLMs. Demonstrates deep understanding and clearly justifies suitability using relevant academic literature. Shows critical engagement with theory."
+    },
+    {
+      "scope": "report",
+      "title": "Workflow and Methodology",
+      "slug": "workflow_and_methodology",
+      "hd_requirement": "Presents a clear, logical, and well-structured workflow. Thoroughly explains data preprocessing, feature engineering if applicable, model design, and algorithmic approach. Demonstrates effective integration of multiple AI paradigms. Clearly distinguishes design decisions from implementation."
+    },
+    {
+      "scope": "report",
+      "title": "Empirical Analysis and Results",
+      "slug": "empirical_analysis_and_results",
+      "hd_requirement": "Presents comprehensive experiments with a well-defined setup, datasets, and parameters, with insightful empirical analysis demonstrating solution effectiveness and supported by ethical considerations where relevant. Uses appropriate evaluation metrics such as accuracy, memory usage, or runtime. Results are clearly presented using tables or figures and interpreted insightfully. Demonstrates strong evidence of effectiveness and includes reproducibility via a well-documented GitHub repository."
+    },
+    {
+      "scope": "report",
+      "title": "Critical Reflection",
+      "slug": "critical_reflection",
+      "hd_requirement": "Provides deep and critical evaluation of limitations, failure cases, and trade-offs such as accuracy versus efficiency. Analyses scalability and computational constraints. Thoughtfully discusses when alternative approaches may be more suitable."
+    },
+    {
+      "scope": "report",
+      "title": "Conclusion, Future Work and References",
+      "slug": "conclusion_future_work_and_references",
+      "hd_requirement": "Provides a clear, concise, and insightful conclusion that effectively links results to project objectives and highlights key AI-related findings. Demonstrates strong critical understanding by proposing realistic, technically sound, and well-justified future work such as addressing limitations, improving scalability, or exploring alternative AI methods. Uses high-quality, relevant academic references that are consistent and well integrated into the report."
+    },
+    {
+      "scope": "report",
+      "title": "Individual Contribution",
+      "slug": "individual_contribution",
+      "hd_requirement": "Clearly documents specific, substantial, and verifiable contributions of each member. Demonstrates balanced and active participation."
+    },
+    {
+      "scope": "presentation",
+      "title": "Content and Relevance",
+      "slug": "content_and_relevance",
+      "hd_requirement": "Presents a highly relevant real-world problem and AI solution, demonstrates clear integration of AI techniques and strong alignment between problem and chosen methods, clearly articulates significance, impact, and ethical considerations, and stays within the 7-minute limit."
+    },
+    {
+      "scope": "presentation",
+      "title": "AI Method Explanation and Justification",
+      "slug": "ai_method_explanation_and_justification",
+      "hd_requirement": "Clearly and concisely explains the AI-based method, demonstrates deep understanding, provides strong justification for method selection, compares with alternative approaches, explains trade-offs, and shows excellent alignment between the chosen method and the problem."
+    },
+    {
+      "scope": "presentation",
+      "title": "Findings, Contributions, and Limitations",
+      "slug": "findings_contributions_and_limitations",
+      "hd_requirement": "Insightful findings and contributions with clear empirical results, showing solution effectiveness and innovation. Limitations are critically analysed with ethical implications."
+    },
+    {
+      "scope": "presentation",
+      "title": "Presentation Delivery and Interaction",
+      "slug": "presentation_delivery_and_interaction",
+      "hd_requirement": "Delivers an engaging, confident, and well-paced presentation with excellent use of visuals, clear articulation, and strong audience interaction. Responds to questions with insightful, accurate, and confident answers, demonstrates deep understanding, and addresses ethical implications effectively."
+    }
   ],
-  "exact_question_strategy": "Exact factual questions are answered using structured knowledge representation and rule-based reasoning over stored assessment facts.",
-  "open_ended_question_strategy": "Open-ended rubric questions are answered using retrieval-augmented generation, which retrieves relevant document chunks before answer generation and grounds the final answer in evidence.",
-  "evaluation_summary": "The system should be evaluated with representative test questions, baseline comparisons, answer accuracy, retrieval accuracy at 3, citation support rate, hallucination rate, unsupported handling accuracy, and average response time.",
-  "evaluation_baselines": [
-    "Keyword Search",
-    "RAG-only",
-    "LLM-only"
-  ],
-  "evaluation_metrics": [
-    "Answer accuracy",
-    "Retrieval accuracy at 3",
-    "Citation support rate",
-    "Hallucination rate",
-    "Unsupported handling accuracy",
-    "Average response time"
-  ],
-  "evaluation_question_categories": [
-    "Factual constraints",
-    "Submission rules",
-    "Rubric interpretation",
-    "Workflow planning",
-    "Unsupported questions"
-  ],
-  "unsupported_question_rationale": "Unsupported questions should be included so the system can be assessed on unsupported handling accuracy and cautious behaviour.",
   "rubric_hd_requirements": {
-    "executive_summary_and_introduction": "A comprehensive and concise executive summary with clear objectives, AI approach and key findings, plus a well-structured introduction that defines a significant real-world problem, explains constraints and impact, links the problem to the AI solution, and acknowledges ethical implications.",
-    "theoretical_justification": "A rigorous and well-structured explanation of the AI methods with strong theoretical foundations, clear justification of suitability, clear reasons to justify why the methods fit the problem, comparison with alternatives when relevant, and support from academic literature.",
-    "workflow_and_methodology": "A clear, logical and well-structured workflow that thoroughly explains preprocessing, feature preparation, model design, algorithmic choices and effective integration of multiple AI paradigms, while clearly distinguishing design decisions from implementation details.",
-    "empirical_analysis_and_results": "Comprehensive experiments with a well-defined setup, datasets or test collections, parameters and appropriate evaluation metrics, plus clearly presented tables or figures, insightful interpretation, reproducibility through GitHub, and relevant ethical considerations.",
-    "critical_reflection": "Deep and critical evaluation of limitations, failure cases and trade-offs, with analysis of scalability, computational constraints and situations where alternative approaches may be more suitable.",
-    "conclusion_future_work_and_references": "A clear, concise and insightful conclusion that links findings back to project objectives, realistic and technically justified future work, and relevant academic references that are consistently integrated into the report.",
-    "individual_contribution": "Specific, substantial and verifiable contributions for each member that demonstrate balanced and active participation."
+    "executive_summary_and_introduction": "Comprehensive and concise executive summary capturing objectives, AI approach, and key findings. Clearly defines a real-world problem with strong significance, well-structured context, challenges, scope, and impact. Demonstrates clear linkage between the problem and AI-based solution, with awareness of ethical and real-world implications.",
+    "theoretical_justification": "Provides a rigorous, well-structured explanation of AI methods with strong theoretical foundations such as search, probabilistic reasoning, multi-layer networks, reinforcement learning, GenAI, or LLMs. Demonstrates deep understanding and clearly justifies suitability using relevant academic literature. Shows critical engagement with theory.",
+    "workflow_and_methodology": "Presents a clear, logical, and well-structured workflow. Thoroughly explains data preprocessing, feature engineering if applicable, model design, and algorithmic approach. Demonstrates effective integration of multiple AI paradigms. Clearly distinguishes design decisions from implementation.",
+    "empirical_analysis_and_results": "Presents comprehensive experiments with a well-defined setup, datasets, and parameters, with insightful empirical analysis demonstrating solution effectiveness and supported by ethical considerations where relevant. Uses appropriate evaluation metrics such as accuracy, memory usage, or runtime. Results are clearly presented using tables or figures and interpreted insightfully. Demonstrates strong evidence of effectiveness and includes reproducibility via a well-documented GitHub repository.",
+    "critical_reflection": "Provides deep and critical evaluation of limitations, failure cases, and trade-offs such as accuracy versus efficiency. Analyses scalability and computational constraints. Thoughtfully discusses when alternative approaches may be more suitable.",
+    "conclusion_future_work_and_references": "Provides a clear, concise, and insightful conclusion that effectively links results to project objectives and highlights key AI-related findings. Demonstrates strong critical understanding by proposing realistic, technically sound, and well-justified future work such as addressing limitations, improving scalability, or exploring alternative AI methods. Uses high-quality, relevant academic references that are consistent and well integrated into the report.",
+    "individual_contribution": "Clearly documents specific, substantial, and verifiable contributions of each member. Demonstrates balanced and active participation."
   },
   "presentation_rubric_hd_requirements": {
-    "content_and_relevance": "A highly relevant real-world problem and AI solution with strong alignment, clear significance, impact and ethical considerations, delivered within the time limit.",
-    "ai_method_explanation_and_justification": "A clear and concise explanation of the AI method that demonstrates deep understanding, justifies method selection and explains trade-offs and alternatives.",
-    "findings_contributions_and_limitations": "Insightful findings and contributions supported by empirical results, with critical analysis of limitations and ethical implications.",
-    "delivery_and_interaction": "An engaging, confident and well-paced presentation with effective visuals, clear articulation and insightful responses to questions."
-  },
-  "required_ai_methods": [
-    "Retrieval-Augmented Generation",
-    "Semantic embedding retrieval",
-    "Structured knowledge representation",
-    "Rule-based reasoning",
-    "Evidence-grounded answer generation",
-    "Empirical evaluation against baseline methods"
-  ]
+    "content_and_relevance": "Presents a highly relevant real-world problem and AI solution, demonstrates clear integration of AI techniques and strong alignment between problem and chosen methods, clearly articulates significance, impact, and ethical considerations, and stays within the 7-minute limit.",
+    "ai_method_explanation_and_justification": "Clearly and concisely explains the AI-based method, demonstrates deep understanding, provides strong justification for method selection, compares with alternative approaches, explains trade-offs, and shows excellent alignment between the chosen method and the problem.",
+    "findings_contributions_and_limitations": "Insightful findings and contributions with clear empirical results, showing solution effectiveness and innovation. Limitations are critically analysed with ethical implications.",
+    "presentation_delivery_and_interaction": "Delivers an engaging, confident, and well-paced presentation with excellent use of visuals, clear articulation, and strong audience interaction. Responds to questions with insightful, accurate, and confident answers, demonstrates deep understanding, and addresses ethical implications effectively."
+  }
 }

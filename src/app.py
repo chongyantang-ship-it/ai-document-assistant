@@ -28,6 +28,7 @@ class AcademicDocumentAssistant:
     def __init__(self):
         """Load structured facts and initialize the semantic retriever."""
         self.facts = load_facts()
+        self.active_brief_source = self.facts.get("brief_source_file", "unknown")
         self.retriever = SemanticRetriever()
 
     def answer(self, question, top_k=4):
@@ -83,6 +84,7 @@ if __name__ == "__main__":
     assistant = AcademicDocumentAssistant()
 
     print("AI Academic Document Assistant")
+    print(f"Active Brief Source: {assistant.active_brief_source}")
     print("Type 'exit' to quit.")
 
     while True:

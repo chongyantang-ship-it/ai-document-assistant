@@ -1,6 +1,7 @@
 import os
 import re
 import time
+from datetime import datetime
 from pathlib import Path
 
 try:
@@ -153,13 +154,27 @@ def _question_tokens(question):
 
 
 def _detect_answer_intent(question):
-    """Infer whether the response should emphasise planning, evaluation, or explanation."""
+    """Infer whether the response should emphasise planning, evaluation, policy, or explanation."""
     lower_question = question.lower()
 
+    if any(
+        token in lower_question
+        for token in [
+            "plan",
+            "roadmap",
+            "divide work",
+            "finish project",
+            "timeline",
+            "role allocation",
+            "group members",
+            "six group members",
+        ]
+    ):
+        return "plan"
+    if any(token in lower_question for token in ["ethic", "ethical", "genai", "allowed", "policy", "integrity"]):
+        return "policy"
     if any(token in lower_question for token in ["evaluate", "evaluation", "metric", "baseline", "experiment"]):
         return "evaluation"
-    if any(token in lower_question for token in ["plan", "roadmap", "divide work", "finish project", "timeline"]):
-        return "plan"
     if any(token in lower_question for token in ["rubric", "hd", "high distinction", "criterion"]):
         return "rubric"
 
@@ -231,18 +246,18 @@ def _generate_structured_template_answer(question, retrieved_chunks):
 
 def _generate_template_plan_answer(question, retrieved_chunks):
     """Generate a deterministic planning-oriented fallback answer."""
-    points = _extract_relevant_points(question, retrieved_chunks, max_points=2)
+    points = _extract_relevant_points(question, retrieved_chunks, max_points=3)
     direct_answer = (
-        "Use the assignment documents to confirm deliverables first, then complete implementation, "
-        "evaluation, and final report integration in that order."
+        "Use the official brief to prioritise problem definition, theory, workflow, evaluation, "
+        "reflection, and presentation preparation, and leave time for integration and rehearsal."
     )
     evidence_lines = "\n".join(f"- {point}" for point in points) if points else "- No strong planning evidence was retrieved."
     return (
         f"Direct Answer: {direct_answer}\n"
         "Action Plan:\n"
-        "1. Confirm deliverables, dates, report structure, and presentation constraints.\n"
-        "2. Finalise the prototype, evaluation setup, and report figures.\n"
-        "3. Integrate the report, presentation, and GitHub repository.\n"
+        "1. Confirm deadlines, submission rules, required report sections, and presentation constraints.\n"
+        "2. Divide ownership across implementation, evaluation, report writing, and presentation preparation.\n"
+        "3. Finish integration, final checks, and rehearsal before the final submission window.\n"
         "Evidence Used:\n"
         f"{evidence_lines}"
     )
@@ -262,6 +277,25 @@ def _generate_template_evaluation_answer(question, retrieved_chunks):
         "1. Build a question set covering factual, rubric, workflow, and unsupported cases.\n"
         "2. Compare the hybrid system with keyword, RAG-only, and LLM-only baselines.\n"
         "3. Report answer accuracy, retrieval hit rate, citation support, hallucination rate, and response time.\n"
+        "Evidence Used:\n"
+        f"{evidence_lines}"
+    )
+
+
+def _generate_template_policy_answer(question, retrieved_chunks):
+    """Generate a deterministic policy-oriented fallback answer."""
+    points = _extract_relevant_points(question, retrieved_chunks, max_points=3)
+    direct_answer = (
+        "Use the documents cautiously: they support responsible AI use, but they do not grant blanket permission "
+        "to use GenAI without checking subject rules."
+    )
+    evidence_lines = "\n".join(f"- {point}" for point in points) if points else "- No strong policy evidence was retrieved."
+    return (
+        f"Direct Answer: {direct_answer}\n"
+        "Policy Interpretation:\n"
+        "- Follow the explicit assignment and subject guidance before relying on GenAI.\n"
+        "- Use AI as support rather than as a replacement for your own work or official teaching advice.\n"
+        "- Acknowledge and reference GenAI use when required.\n"
         "Evidence Used:\n"
         f"{evidence_lines}"
     )
@@ -369,7 +403,8 @@ def _build_evidence_block(retrieved_chunks):
     evidence_lines = []
     for rank, chunk in enumerate(retrieved_chunks, start=1):
         evidence_lines.append(
-            f"[{rank}] source={chunk.get('source_file', 'unknown')} "
+            f"[{rank}] authority={chunk.get('authority', 'unknown')} "
+            f"source={chunk.get('source_file', 'unknown')} "
             f"section={chunk.get('section', 'unknown')} "
             f"chunk_id={chunk.get('chunk_id', 'unknown')} "
             f"score={round(chunk.get('score', 0), 4)}\n{chunk.get('text', '')}"
@@ -381,12 +416,15 @@ def _build_grounded_prompts(question, retrieved_chunks):
     """Create the system and user prompts for evidence-grounded generation."""
     evidence_block = _build_evidence_block(retrieved_chunks)
     intent = _detect_answer_intent(question)
+    current_date = datetime.now().strftime("%Y-%m-%d")
 
     system_prompt = (
         "You are an academic document assistant. "
         "Answer only from the supplied evidence. "
         "If the evidence is insufficient, say so explicitly. "
-        "Do not invent requirements, dates, policies, or performance claims."
+        "Do not invent requirements, dates, policies, or performance claims. "
+        "Treat official course documents as authoritative for deadlines, submission rules, academic integrity, "
+        "and GenAI guidance. Treat project planning documents as suggestions for workflow and team coordination."
     )
 
     if intent == "evaluation":
@@ -402,6 +440,18 @@ def _build_grounded_prompts(question, retrieved_chunks):
             "- <short evidence point>\n"
             "Keep the answer precise and report-friendly."
         )
+    elif intent == "policy":
+        format_instruction = (
+            "Return the response in this exact structure:\n"
+            "Direct Answer: <1-2 lines>\n"
+            "Policy Interpretation:\n"
+            "- <policy point>\n"
+            "- <policy point>\n"
+            "Evidence Used:\n"
+            "- <short evidence point>\n"
+            "- <short evidence point>\n"
+            "Be cautious when the evidence says to check official subject rules."
+        )
     elif intent == "plan":
         format_instruction = (
             "Return the response in this exact structure:\n"
@@ -413,7 +463,7 @@ def _build_grounded_prompts(question, retrieved_chunks):
             "Evidence Used:\n"
             "- <short evidence point>\n"
             "- <short evidence point>\n"
-            "Keep the answer practical and concise."
+            "Keep the answer practical, grounded, and deadline-aware."
         )
     else:
         format_instruction = (
@@ -428,11 +478,8 @@ def _build_grounded_prompts(question, retrieved_chunks):
             "Keep the answer concise and academically precise."
         )
 
-    user_prompt = (
-        f"Question:\n{question}\n\n"
-        f"Evidence:\n{evidence_block}\n\n"
-        f"{format_instruction}"
-    )
+    prompt_prefix = f"Current Date: {current_date}\n\n" if intent == "plan" else ""
+    user_prompt = f"{prompt_prefix}Question:\n{question}\n\nEvidence:\n{evidence_block}\n\n{format_instruction}"
     return intent, system_prompt, user_prompt
 
 
@@ -548,9 +595,17 @@ def generate_rag_answer(question, retrieved_chunks, min_confidence_score=0.23):
             "route": "rag",
         }
 
+    intent = _detect_answer_intent(question)
+    minimum_score_by_intent = {
+        "plan": 0.16,
+        "policy": 0.16,
+        "evaluation": 0.18,
+        "rubric": 0.18,
+        "general": min_confidence_score,
+    }
     best_chunk = retrieved_chunks[0]
     best_score = best_chunk.get("score", 0)
-    if best_score < min_confidence_score:
+    if best_score < minimum_score_by_intent.get(intent, min_confidence_score):
         return {
             "answer": "The provided documents do not contain enough evidence to answer this question confidently.",
             "evidence": retrieved_chunks,
@@ -562,11 +617,12 @@ def generate_rag_answer(question, retrieved_chunks, min_confidence_score=0.23):
     generation_mode = "llm"
 
     if answer is None:
-        intent = _detect_answer_intent(question)
         if intent == "evaluation":
             answer = _generate_template_evaluation_answer(question, retrieved_chunks)
         elif intent == "plan":
             answer = _generate_template_plan_answer(question, retrieved_chunks)
+        elif intent == "policy":
+            answer = _generate_template_policy_answer(question, retrieved_chunks)
         else:
             answer = _generate_structured_template_answer(question, retrieved_chunks)
         generation_mode = "template"

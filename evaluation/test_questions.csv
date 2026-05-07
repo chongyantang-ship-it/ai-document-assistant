@@ -1,41 +1,29 @@
 question_id,question,category
-Q001,When is the report due?,factual_constraints
-Q002,What is the report word limit?,factual_constraints
-Q003,What is the maximum allowed similarity score?,factual_constraints
-Q004,What font should the report use?,factual_constraints
-Q005,How long is the presentation?,factual_constraints
-Q006,When is the Group A presentation due?,factual_constraints
-Q007,When is the Group B presentation due?,factual_constraints
-Q008,What file format should the report use?,submission_rules
-Q009,What file format should the slides use?,submission_rules
-Q010,What filename should the report use?,submission_rules
-Q011,What filename should the slides use?,submission_rules
-Q012,What should be included on the first presentation slide?,submission_rules
-Q013,What should be included on the first page of the report?,submission_rules
-Q014,Who needs to submit the group report and presentation?,submission_rules
-Q015,Is a GitHub repository required?,submission_rules
-Q016,Do individual contributions need to be documented?,submission_rules
-Q017,What sections should be included in the report?,report_structure
-Q018,What should the presentation highlight?,report_structure
-Q019,What does HD require in the executive summary and introduction?,rubric_interpretation
-Q020,What does HD require in theoretical justification?,rubric_interpretation
-Q021,What does HD require in workflow and methodology?,rubric_interpretation
-Q022,What does HD require in empirical analysis and results?,rubric_interpretation
-Q023,What does HD require in critical reflection?,rubric_interpretation
-Q024,What does HD require in the conclusion and future work section?,rubric_interpretation
-Q025,What does HD require for individual contributions?,rubric_interpretation
-Q026,What does HD require for presentation delivery and interaction?,rubric_interpretation
-Q027,What AI methods are used in this project?,workflow
-Q028,What is the system pipeline?,workflow
-Q029,Why should the system not be presented as a simple chatbot?,workflow
-Q030,How are exact factual questions answered?,workflow
-Q031,How are open-ended rubric questions answered?,workflow
-Q032,How should the system be evaluated?,evaluation
-Q033,Which baseline methods are appropriate for comparison?,evaluation
-Q034,Which metrics should be reported in the evaluation?,evaluation
-Q035,What categories should the evaluation questions cover?,evaluation
-Q036,Why should unsupported questions be included in the evaluation?,evaluation
-Q037,Can we submit late without approval?,unsupported
-Q038,Can the assistant write the whole assignment for me?,unsupported
-Q039,Can we bypass Turnitin if the answer looks correct?,unsupported
-Q040,Can the assistant replace official course guidance?,unsupported
+Q001,"When is the report due?",factual_constraints
+Q002,"What is the report word limit and font requirement?",factual_constraints
+Q003,"What is the maximum allowed similarity score?",factual_constraints
+Q004,"What report file should we submit, and what filename should it use?",submission_rules
+Q005,"What must be included on the first page of the report?",submission_rules
+Q006,"What must be included on the first presentation slide?",submission_rules
+Q007,"Who needs to submit the group files?",submission_rules
+Q008,"What sections should be included in the report?",submission_rules
+Q009,"Can the group request an extension for the presentation?",brief_interpretation
+Q010,"What does HD require in executive summary and introduction?",rubric_interpretation
+Q011,"What does HD require in theoretical justification?",rubric_interpretation
+Q012,"What does HD require in workflow and methodology?",rubric_interpretation
+Q013,"What does HD require in empirical analysis and results?",rubric_interpretation
+Q014,"What does HD require in critical reflection?",rubric_interpretation
+Q015,"What does HD require in conclusion, future work, and references?",rubric_interpretation
+Q016,"For the presentation, what does HD require in content and relevance?",rubric_interpretation
+Q017,"For the presentation, what does HD require in AI method explanation and justification?",rubric_interpretation
+Q018,"For the presentation, what does HD require in findings, contributions, and limitations?",rubric_interpretation
+Q019,"Based on the brief, what workstreams should the group cover before submission?",planning_and_story
+Q020,"If we want a strong presentation story, what key beats should we cover?",planning_and_story
+Q021,"What would make this project look like more than just a software demo?",planning_and_story
+Q022,"Can we use GenAI for this assignment?",ethics_policy
+Q023,"How should this prototype be positioned in the demo or report?",system_explanation
+Q024,"How should the system be evaluated?",evaluation_design
+Q025,"Can the documents tell us the exact six-person role split we must use?",unsupported
+Q026,"Can the documents provide a day-by-day plan from 8 May 2026 to the report deadline?",unsupported
+Q027,"Can the assistant guarantee a High Distinction if we follow its advice?",unsupported
+Q028,"Can the assistant replace official course guidance or write the whole assignment for us?",unsupported

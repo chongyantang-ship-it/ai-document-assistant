@@ -1,5 +1,4 @@
-method,answer_accuracy,retrieval_hit_at_3,citation_support_rate,hallucination_rate,unsupported_handling_accuracy,average_response_time
-Keyword Search,0.3,0.175,0.025,0.7,0.9,0.00013
-LLM-only,0.125,0.0,0.0,0.875,0.9,20.583895000000002
-Proposed Hybrid System,1.0,0.65,0.9,0.0,1.0,3.5e-05
-RAG-only,0.575,0.175,0.1,0.425,0.9,21.5234725
+method,answer_accuracy,route_accuracy,retrieval_hit_at_3,citation_support_rate,hallucination_rate,unsupported_handling_accuracy,average_response_time
+Keyword Search,0.0,0.0,0.39285714285714285,0.0,0.7142857142857143,0.75,8.214285714285714e-05
+Proposed Hybrid System,0.75,0.8928571428571429,0.6428571428571429,0.5714285714285714,0.25,0.8928571428571429,5.482753571428572
+RAG-only,0.32142857142857145,0.4642857142857143,0.35714285714285715,0.2857142857142857,0.5,0.75,288.98606785714287

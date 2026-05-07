@@ -10,3 +10,6 @@ matplotlib
 # OpenAI-compatible LLM access and environment loading
 openai
 python-dotenv
+
+# Optional document ingestion helpers
+pypdf
