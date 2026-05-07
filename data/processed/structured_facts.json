@@ -1,42 +1,112 @@
 {
-  "assessment_name": "Assessment 3: Real World Applications of Artificial Intelligence",
-  "course": "36121 Artificial Intelligence Principles and Applications",
-  "report_due_date": "16 May 2026 23:59",
-  "report_word_limit": "Up to 3500 words, including references",
-  "report_font": "11-point Times or Arial fonts",
-  "report_format": "PDF",
-  "report_filename": "AT3_Report_Group_xxxx.pdf",
-  "slide_format": "PPTX",
-  "slide_filename": "AT3_Slide_Group_xxxx.pptx",
-  "presentation_duration": "7-minute presentation plus 1-minute Q&A",
-  "presentation_submission": "Submit the PowerPoint presentation before the in-class presentation",
-  "similarity_limit": "20%",
-  "group_submission": "Only one member from the group needs to submit the report and presentation file",
-  "first_slide_requirements": [
-    "Group Number",
-    "All group members' names",
-    "Student IDs"
-  ],
-  "report_sections": [
-    "Executive Summary",
-    "Introduction",
-    "Theoretical Justification",
-    "Workflow and Methodology",
-    "Empirical Analysis and Results",
-    "Critical Reflection",
-    "GitHub Repository",
-    "Conclusion",
-    "Individual Contributions",
-    "References"
-  ],
-  "github_required": true,
-  "individual_contribution_required": true,
-  "required_ai_methods": [
-    "Retrieval-Augmented Generation",
-    "Semantic embedding retrieval",
-    "Structured knowledge representation",
-    "Rule-based reasoning",
-    "Evidence-grounded answer generation",
-    "Empirical evaluation against baseline methods"
-  ]
+  "report_due_date": {
+    "value": "16 May 2026 23:59",
+    "evidence": "The report is due on 16 May 2026 23:59."
+  },
+  "word_limit": {
+    "value": "3500 words including references",
+    "evidence": "The report word limit is up to 3500 words, including references."
+  },
+  "report_format": {
+    "value": "PDF",
+    "evidence": "The report should be submitted as a PDF file."
+  },
+  "slide_format": {
+    "value": "PPTX",
+    "evidence": "The presentation slides should be submitted as a PPTX file."
+  },
+  "presentation_duration": {
+    "value": "7-minute presentation plus 1-minute Q&A",
+    "evidence": "The presentation includes a 7-minute presentation and 1-minute Q&A."
+  },
+  "similarity_limit": {
+    "value": "20%",
+    "evidence": "The maximum allowed similarity score is 20%."
+  },
+  "github_required": {
+    "value": "Yes. A GitHub repository is required for the project.",
+    "evidence": "The assignment requires evidence of implementation and technical development through a project repository."
+  },
+  "report_sections": {
+    "value": "executive summary, introduction, theoretical justification, workflow and empirical analysis, critical reflection, GitHub repository, conclusion, individual contributions, and references",
+    "evidence": "The report structure includes executive summary, introduction, theoretical justification, workflow and empirical analysis, critical reflection, GitHub repository, conclusion, individual contributions, and references."
+  },
+  "required_ai_methods": {
+    "value": "retrieval-augmented generation, semantic embedding retrieval, structured knowledge representation, rule-based reasoning, evidence-grounded answer generation, and empirical evaluation",
+    "evidence": "This is derived from the project design and implemented system architecture."
+  },
+  "evaluation_summary": {
+    "value": "test questions, baseline comparison, answer accuracy, retrieval accuracy at 3, citation support rate, hallucination rate, unsupported handling accuracy, and response time",
+    "evidence": "The system should be evaluated with test questions, baseline comparison, answer accuracy, retrieval accuracy at 3, citation support rate, hallucination rate, unsupported handling accuracy, and response time."
+  },
+  "official_guidance_warning": {
+    "value": "The assistant is a learning support tool and should not replace official course guidance, lecturers, tutors, or assessment instructions.",
+    "evidence": "This is an ethical limitation of the system."
+  },
+  "report_font": {
+    "value": "11-point Times or Arial",
+    "evidence": "The report should use 11-point Times or Arial fonts."
+  },
+  "presentation_due_dates": {
+    "group_a": {
+      "value": "7 May 2026 (Week 11)",
+      "evidence": "The Group A presentation is due on 7 May 2026 in Week 11."
+    },
+    "group_b": {
+      "value": "14 May 2026 (Week 12)",
+      "evidence": "The Group B presentation is due on 14 May 2026 in Week 12."
+    }
+  },
+  "report_filename": {
+    "value": "AT3_Report_Group_xxxx.pdf",
+    "evidence": "The suggested report filename is AT3_Report_Group_xxxx.pdf."
+  },
+  "slide_filename": {
+    "value": "AT3_Slide_Group_xxxx.pptx",
+    "evidence": "The suggested slide filename is AT3_Slide_Group_xxxx.pptx."
+  },
+  "first_slide_requirements": {
+    "value": "group number, names, and student IDs",
+    "evidence": "The first presentation slide should include the group number, names, and student IDs."
+  },
+  "first_page_requirements": {
+    "value": "all group members' names and student IDs",
+    "evidence": "The first page of the report should include all group members' names and student IDs."
+  },
+  "group_submission": {
+    "value": "Only one group member needs to submit the report and presentation files.",
+    "evidence": "Only one group member needs to submit the group report and presentation files."
+  },
+  "individual_contribution_required": {
+    "value": "Yes. Individual contributions must be documented.",
+    "evidence": "Individual contributions must be documented for the group project."
+  },
+  "first_presentation_slide": {
+    "value": "group number, names, and student IDs",
+    "evidence": "The first presentation slide should include the group number, names, and student IDs."
+  },
+  "individual_contributions": {
+    "value": "Yes. Individual contributions need to be documented.",
+    "evidence": "Individual contributions must be documented in the report."
+  },
+  "system_pipeline": {
+    "value": "text extraction, chunking, query router, rule-based checker, semantic retriever, evidence-grounded answer generator, and evaluation script",
+    "evidence": "The system pipeline includes text extraction, chunking, query router, rule-based checking, semantic retrieval, answer generation, and evaluation."
+  },
+  "evaluation_metrics": {
+    "value": "answer accuracy, retrieval accuracy at 3, citation support rate, hallucination rate, unsupported handling accuracy, and average response time",
+    "evidence": "The evaluation metrics include answer accuracy, retrieval accuracy at 3, citation support rate, hallucination rate, unsupported handling accuracy, and average response time."
+  },
+  "evaluation_categories": {
+    "value": "factual constraints, submission rules, report structure, rubric interpretation, workflow, evaluation, and unsupported questions",
+    "evidence": "The evaluation questions cover factual constraints, submission rules, report structure, rubric interpretation, workflow, evaluation, and unsupported questions."
+  },
+  "unsupported_questions_reason": {
+    "value": "Unsupported questions should be included to test unsupported handling accuracy and ensure the assistant gives cautious refusals instead of hallucinated answers.",
+    "evidence": "Unsupported questions are included to evaluate cautious refusal behaviour and unsupported handling accuracy."
+  },
+  "hd_individual_contribution": {
+    "value": "HD requires specific, substantial, verifiable, and balanced individual contributions.",
+    "evidence": "HD individual contribution evidence should be specific, verifiable, and balanced."
+  }
 }

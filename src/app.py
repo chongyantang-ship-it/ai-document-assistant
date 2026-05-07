@@ -1,15 +1,18 @@
 
 import sys
 from pathlib import Path
+import os
 
-SRC_DIR = Path("/content/ai-document-assistant/src")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+SRC_DIR = PROJECT_ROOT / "src"
 if str(SRC_DIR) not in sys.path:
-    sys.path.append(str(SRC_DIR))
+    sys.path.insert(0, str(SRC_DIR))
 
 from rule_checker import load_facts, check_rule_based_answer
 from retrieval import SemanticRetriever
 from query_router import route_query
 from answer_generator import generate_rag_answer, generate_unsupported_answer
+from openai_self_check import build_openai_self_check, format_openai_self_check
 
 
 class AcademicDocumentAssistant:
@@ -23,32 +26,38 @@ class AcademicDocumentAssistant:
     """
 
     def __init__(self):
+        """Load structured facts and initialize the semantic retriever."""
         self.facts = load_facts()
         self.retriever = SemanticRetriever()
 
-    def answer(self, question, top_k=3):
+    def answer(self, question, top_k=4):
+        """
+        Answer a user question.
+
+        The assistant first checks whether the question can be answered safely
+        using structured facts and deterministic rules. If no rule matches,
+        it falls back to semantic retrieval and evidence-grounded generation.
+        """
         route = route_query(question)
 
         if route == "unsupported":
             return generate_unsupported_answer()
 
-        if route == "rule":
-            rule_result = check_rule_based_answer(question, self.facts)
-            if rule_result is not None:
-                return rule_result
-
-            # fallback to RAG if no rule matched
-            retrieved_chunks = self.retriever.retrieve(question, top_k=top_k)
-            return generate_rag_answer(question, retrieved_chunks)
+        rule_result = check_rule_based_answer(question, self.facts)
+        if rule_result is not None:
+            return rule_result
 
         retrieved_chunks = self.retriever.retrieve(question, top_k=top_k)
         return generate_rag_answer(question, retrieved_chunks)
 
 
 def print_answer(question, result):
+    """Print a formatted answer record for the command-line interface."""
     print("\n" + "=" * 80)
     print("Question:", question)
     print("Route:", result.get("route"))
+    if result.get("generation_mode"):
+        print("Generation Mode:", result.get("generation_mode"))
     print("Confidence:", result.get("confidence"))
 
     print("\nAnswer:")
@@ -70,6 +79,8 @@ def print_answer(question, result):
 
 
 if __name__ == "__main__":
+    run_remote_check = os.getenv("OPENAI_SELF_CHECK_REMOTE", "0").strip() == "1"
+    print(format_openai_self_check(build_openai_self_check(run_remote_check=run_remote_check)))
     assistant = AcademicDocumentAssistant()
 
     print("AI Academic Document Assistant")
