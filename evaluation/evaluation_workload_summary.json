@@ -6,9 +6,9 @@
   "fact_extraction_requests": 1,
   "rag_only_requests": 34,
   "hybrid_generation_requests": 12,
-  "llm_only_requests": 0,
-  "total_api_requests": 47,
+  "llm_only_requests": 8,
+  "total_api_requests": 55,
   "request_estimate_seconds": 8.0,
-  "estimated_total_seconds": 376.0,
-  "estimated_total_minutes": 6.27
+  "estimated_total_seconds": 440.0,
+  "estimated_total_minutes": 7.33
 }

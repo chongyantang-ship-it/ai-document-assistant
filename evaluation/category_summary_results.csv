@@ -4,13 +4,16 @@ Keyword Search,planning_and_story,0.0,1.0,1.0
 Keyword Search,rubric_interpretation,0.4,0.8,0.6
 Keyword Search,submission_rules,0.3333333333333333,1.0,0.6666666666666666
 Keyword Search,unsupported,0.0,0.0,1.0
+LLM-only,planning_and_story,0.0,0.0,1.0
+LLM-only,rubric_interpretation,0.0,0.0,1.0
+LLM-only,unsupported,0.0,0.0,1.0
 Proposed Hybrid System,factual_constraints,1.0,1.0,0.0
-Proposed Hybrid System,planning_and_story,0.5,1.0,0.5
-Proposed Hybrid System,rubric_interpretation,0.9,0.9,0.1
+Proposed Hybrid System,planning_and_story,0.0,1.0,1.0
+Proposed Hybrid System,rubric_interpretation,0.8,0.9,0.2
 Proposed Hybrid System,submission_rules,1.0,1.0,0.0
 Proposed Hybrid System,unsupported,0.6666666666666666,0.0,0.3333333333333333
-RAG-only,factual_constraints,1.0,1.0,0.0
-RAG-only,planning_and_story,0.5,1.0,0.5
+RAG-only,factual_constraints,0.8571428571428571,1.0,0.14285714285714285
+RAG-only,planning_and_story,0.0,1.0,1.0
 RAG-only,rubric_interpretation,0.9,0.9,0.1
 RAG-only,submission_rules,0.8888888888888888,0.8888888888888888,0.1111111111111111
 RAG-only,unsupported,0.0,0.0,1.0
