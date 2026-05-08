@@ -217,7 +217,6 @@ Notes:
 - `src/app.py` prints a masked startup self-check so configuration mistakes are easier to diagnose.
 - Set `OPENAI_SELF_CHECK_REMOTE=1` if you want the startup check to test live authentication as well.
 
-  
 ## Running The Prototype
 Rebuild the processed assets after changing the active brief or runtime source configuration:
 
@@ -289,6 +288,7 @@ The final-answer layer compares:
 - `Keyword Search`
 - `RAG-only`
 - `Proposed Hybrid System`
+- optionally, `LLM-only` when `ENABLE_LLM_ONLY_BASELINE=1`
 
 The codebase also includes an `LLM-only` baseline implementation for a reduced diagnostic subset. It is disabled by default to keep the standard evaluation run faster and cheaper. If you want to include it, set:
 
@@ -317,22 +317,26 @@ The current benchmark is an example case-study benchmark for the currently confi
 - fact extraction is scored independently through `evaluation/fact_ground_truth.json`
 - live LLM outputs can be cached between runs so the benchmark can evolve without becoming too slow to iterate on
 
-The latest explicitly approved GLM-enabled run was regenerated on `2026-05-08` with `ENABLE_LLM_ONLY_BASELINE=0`. It used GLM-assisted fact extraction and produced the following final-answer comparison.
+The latest explicitly approved GLM-enabled run was regenerated on `2026-05-08` with `ENABLE_LLM_ONLY_BASELINE=1`. It used GLM-assisted fact extraction and included the optional LLM-only baseline in the final-answer comparison.
 
 The latest GLM-enabled run reports these headline results:
 
 - `Fact Extraction`: LLM-assisted fact extraction was enabled, with `llm_requested=true`, `llm_used=true`, and `llm_model=glm-4-flash`.
-- `Final Answer`: `Proposed Hybrid System` answer accuracy `0.8529`, evidence-support rate `0.7941`, hallucination rate `0.1471`, unsupported-handling accuracy `0.9412`.
+- `Proposed Hybrid System`: answer accuracy `0.8235`, evidence-support rate `0.7941`, hallucination rate `0.1765`, unsupported-handling accuracy `0.9412`.
 - `RAG-only`: answer accuracy `0.6765`, evidence-support rate `0.7647`, hallucination rate `0.3235`, unsupported-handling accuracy `0.8235`.
 - `Keyword Search`: answer accuracy `0.2941`, evidence-support rate `0.7353`, hallucination rate `0.7059`, unsupported-handling accuracy `0.8235`.
+- `LLM-only`: answer accuracy `0.0000`, evidence-support rate `0.0000`, hallucination rate `1.0000`, unsupported-handling accuracy `0.7500`.
 
 | Method | Answer Accuracy | Evidence Support Rate | Hallucination Rate | Unsupported Handling Accuracy | Average Response Time |
 |---|---:|---:|---:|---:|---:|
 | Keyword Search | 0.2941 | 0.7353 | 0.7059 | 0.8235 | 0.0003 |
-| RAG-only | 0.6765 | 0.7647 | 0.3235 | 0.8235 | 7.6163 |
-| Proposed Hybrid System | 0.8529 | 0.7941 | 0.1471 | 0.9412 | 4.3350 |
+| LLM-only | 0.0000 | 0.0000 | 1.0000 | 0.7500 | 6.9029 |
+| RAG-only | 0.6765 | 0.7647 | 0.3235 | 0.8235 | 5.4601 |
+| Proposed Hybrid System | 0.8235 | 0.7941 | 0.1765 | 0.9412 | 2.9720 |
 
-The hybrid system remains the strongest method overall. Compared with the keyword baseline and the RAG-only baseline, it gives higher answer accuracy, better unsupported-question handling, and a much lower hallucination rate. The result also shows that enabling GLM-assisted fact extraction does not replace the original deterministic structure; instead, it strengthens the structured-fact pipeline by adding LLM-assisted verification and merge metadata.
+The hybrid system remains the strongest method overall. Compared with keyword search, RAG-only, and LLM-only, it gives the best balance of answer accuracy, evidence support, hallucination reduction, and unsupported-question handling.
+
+The LLM-only baseline performs poorly because it receives only the question text without structured facts or retrieved evidence. This result supports the project argument that a pure LLM is not reliable enough for assignment-specific academic document assistance, while the proposed hybrid system is more practical because it combines structured facts, rule-based reasoning, retrieval evidence, and cautious unsupported-question handling.
 
 The current summary CSV files reflect the latest approved GLM-enabled run:
 
@@ -474,7 +478,7 @@ The evaluation script produces outputs that can be cited or adapted in the repor
 - `report_figures/hallucination_rate_chart.png`
 - `report_figures/category_accuracy_chart.png`
 
-These artefacts were regenerated in the latest approved GLM-enabled report-mode run on `2026-05-08`.
+These artefacts were regenerated in the latest approved GLM-enabled report-mode run with `ENABLE_LLM_ONLY_BASELINE=1` on `2026-05-08`.
 
 These artefacts are especially useful for:
 
