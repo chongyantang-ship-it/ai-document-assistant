@@ -1,29 +1,41 @@
-question_id,question,category
-Q001,"When is the report due?",factual_constraints
-Q002,"What is the report word limit and font requirement?",factual_constraints
-Q003,"What is the maximum allowed similarity score?",factual_constraints
-Q004,"What report file should we submit, and what filename should it use?",submission_rules
-Q005,"What must be included on the first page of the report?",submission_rules
-Q006,"What must be included on the first presentation slide?",submission_rules
-Q007,"Who needs to submit the group files?",submission_rules
-Q008,"What sections should be included in the report?",submission_rules
-Q009,"Can the group request an extension for the presentation?",brief_interpretation
-Q010,"What does HD require in executive summary and introduction?",rubric_interpretation
-Q011,"What does HD require in theoretical justification?",rubric_interpretation
-Q012,"What does HD require in workflow and methodology?",rubric_interpretation
-Q013,"What does HD require in empirical analysis and results?",rubric_interpretation
-Q014,"What does HD require in critical reflection?",rubric_interpretation
-Q015,"What does HD require in conclusion, future work, and references?",rubric_interpretation
-Q016,"For the presentation, what does HD require in content and relevance?",rubric_interpretation
-Q017,"For the presentation, what does HD require in AI method explanation and justification?",rubric_interpretation
-Q018,"For the presentation, what does HD require in findings, contributions, and limitations?",rubric_interpretation
-Q019,"Based on the brief, what workstreams should the group cover before submission?",planning_and_story
-Q020,"If we want a strong presentation story, what key beats should we cover?",planning_and_story
-Q021,"What would make this project look like more than just a software demo?",planning_and_story
-Q022,"Can we use GenAI for this assignment?",ethics_policy
-Q023,"How should this prototype be positioned in the demo or report?",system_explanation
-Q024,"How should the system be evaluated?",evaluation_design
-Q025,"Can the documents tell us the exact six-person role split we must use?",unsupported
-Q026,"Can the documents provide a day-by-day plan from 8 May 2026 to the report deadline?",unsupported
-Q027,"Can the assistant guarantee a High Distinction if we follow its advice?",unsupported
-Q028,"Can the assistant replace official course guidance or write the whole assignment for us?",unsupported
+question_id,question,category,question_type,expected_route,include_in_report_run
+Q001,When is the report due?,factual_constraints,factual,rule-based,yes
+Q002,What is the report word limit and font requirement?,factual_constraints,factual,rule-based,yes
+Q003,What is the maximum allowed similarity score?,factual_constraints,factual,rule-based,yes
+Q004,"What report file should we submit, and what filename should it use?",submission_rules,factual,rule-based,yes
+Q005,What must be included on the first page of the report?,submission_rules,factual,rule-based,yes
+Q006,What must be included on the first presentation slide?,submission_rules,factual,rule-based,yes
+Q007,Who needs to submit the group files?,submission_rules,factual,rule-based,yes
+Q008,What sections should be included in the report?,submission_rules,factual,rule-based,yes
+Q009,How long is the presentation?,factual_constraints,factual,rule-based,yes
+Q010,When is the Group A presentation due?,factual_constraints,factual,rule-based,yes
+Q011,When is the Group B presentation due?,factual_constraints,factual,rule-based,yes
+Q012,What is the maximum group size?,factual_constraints,factual,rule-based,yes
+Q013,Is a GitHub repository required?,submission_rules,factual,rule-based,yes
+Q014,Do we need to document individual contributions?,submission_rules,factual,rule-based,yes
+Q015,What filename should the presentation slides use?,submission_rules,factual,rule-based,yes
+Q016,What should the presentation highlight?,submission_rules,factual,rule-based,yes
+Q017,What does HD require in executive summary and introduction?,rubric_interpretation,interpretive,rag,yes
+Q018,What does HD require in theoretical justification?,rubric_interpretation,interpretive,rag,yes
+Q019,What does HD require in workflow and methodology?,rubric_interpretation,interpretive,rag,yes
+Q020,What does HD require in empirical analysis and results?,rubric_interpretation,interpretive,rag,yes
+Q021,What does HD require in critical reflection?,rubric_interpretation,interpretive,rag,yes
+Q022,"What does HD require in conclusion, future work, and references?",rubric_interpretation,interpretive,rag,yes
+Q023,"For the presentation, what does HD require in content and relevance?",rubric_interpretation,interpretive,rag,yes
+Q024,"For the presentation, what does HD require in AI method explanation and justification?",rubric_interpretation,interpretive,rag,yes
+Q025,"For the presentation, what does HD require in findings, contributions, and limitations?",rubric_interpretation,interpretive,rag,yes
+Q026,"For the presentation, what does HD require in delivery and interaction?",rubric_interpretation,interpretive,rag,yes
+Q027,"Based on the brief, what workstreams should the group cover before submission?",planning_and_story,interpretive,rag,yes
+Q028,"If we want a strong presentation story, what key beats should we cover?",planning_and_story,interpretive,rag,yes
+Q029,What would make this project look like more than just a software demo?,planning_and_story,interpretive,rag,no
+Q030,Can we use GenAI for this assignment?,ethics_policy,interpretive,rag,no
+Q031,How should the prototype be positioned in the demo or report?,system_explanation,interpretive,rag,no
+Q032,How should the system be evaluated?,evaluation_design,interpretive,rag,no
+Q033,"If the report deadline is close, what should the group prioritise first?",planning_and_story,interpretive,rag,no
+Q034,What risks should the group acknowledge if they rely on GenAI support?,ethics_policy,interpretive,rag,no
+Q035,Can the documents tell us the exact six-person role split we must use?,unsupported,unsupported,unsupported,yes
+Q036,Can the documents provide a day-by-day plan from 8 May 2026 to the report deadline?,unsupported,unsupported,unsupported,yes
+Q037,Can the assistant guarantee a High Distinction if we follow its advice?,unsupported,unsupported,unsupported,yes
+Q038,Can the assistant replace official course guidance or write the whole assignment for us?,unsupported,unsupported,unsupported,yes
+Q039,Will the tutor definitely approve a late submission if we email them?,unsupported,unsupported,unsupported,yes
+Q040,Can we ignore the similarity rules if the prototype works well?,unsupported,unsupported,unsupported,yes

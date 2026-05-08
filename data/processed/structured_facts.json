@@ -4,7 +4,7 @@
   "brief_source_path": "C:\\Users\\brohao\\Desktop\\UTS\\36121\\AT2\\ai-document-assistant\\data\\raw\\assessment_brief.txt",
   "fact_extraction": {
     "schema_version": "2026-05-general-single-brief-v2",
-    "llm_requested": false,
+    "llm_requested": true,
     "llm_used": false,
     "llm_model": "",
     "field_count": 24,
@@ -253,12 +253,12 @@
     "github_required": {
       "value": true,
       "normalized_value": true,
-      "evidence": "Describe the experimental setup, use appropriate evaluation metrics, present results clearly using tables or figures, and provide a link to a publicly accessible GitHub repository containing the full code implementation.",
-      "source_section": "The report must include the following sections",
+      "evidence": "Include empirical analysis that demonstrates the effectiveness of the solution... and provide a link to a publicly accessible GitHub repository containing the full code implementation.",
+      "source_section": "Part 1 Report",
       "source_file": "assessment_brief.txt",
       "validation_status": "passed",
       "confidence": 0.99,
-      "extraction_method": "heuristic"
+      "extraction_method": "hybrid_merge"
     },
     "individual_contribution_required": {
       "value": true,
@@ -268,7 +268,7 @@
       "source_file": "assessment_brief.txt",
       "validation_status": "passed",
       "confidence": 0.99,
-      "extraction_method": "heuristic"
+      "extraction_method": "hybrid_merge"
     },
     "maximum_group_size": {
       "value": "maximum group size is six students",

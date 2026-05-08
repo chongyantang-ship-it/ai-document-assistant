@@ -276,7 +276,31 @@ The current benchmark is an example case-study benchmark for the currently confi
 - fact extraction is scored independently through `evaluation/fact_ground_truth.json`
 - live LLM outputs can be cached between runs so the benchmark can evolve without becoming too slow to iterate on
 
-Any CSV summaries or figures already present in the repository should be treated as historical artefacts until the user explicitly approves a fresh evaluation run.
+The latest explicitly approved `report` run was regenerated on `2026-05-08` with `ENABLE_LLM_ONLY_BASELINE=0`. It produced the following workload profile:
+
+- `34` report-subset questions
+- `12` interpretive questions that required hybrid RAG generation
+- `47` estimated API-backed requests in total
+- `6.27` estimated minutes at the default `8s` request budget
+- about `7.6` minutes observed locally for the full run
+
+The four evaluation layers now report these headline results:
+
+- `Fact Extraction`: overall field accuracy `0.952`, missing-field rate `0.000`, evidence-support rate `1.000`, hallucinated-fact rate `0.048`
+- `Routing`: overall routing accuracy `0.853`, macro-F1 `0.841`
+- `Retrieval`: top-1 accuracy `0.500`, Recall@3 `0.917`, Recall@5 `0.917`, MRR `0.667`
+- `Final Answer`: `Hybrid` answer accuracy `0.882`, `RAG-only` `0.735`, `Keyword Search` `0.294`
+
+The fresh run is therefore much more credible than the earlier near-perfect legacy results. The hybrid system is clearly strongest overall, but the benchmark still exposes real weaknesses in unsupported handling and planning/story questions instead of flattening everything into a misleading `1.0`.
+
+The current summary CSV files now reflect the latest approved run rather than older historical artefacts:
+
+- `evaluation/fact_extraction_summary.csv`
+- `evaluation/routing_summary.csv`
+- `evaluation/retrieval_summary.csv`
+- `evaluation/final_answer_summary.csv`
+- `evaluation/final_answer_category_summary.csv`
+- compatibility copies in `evaluation/summary_results.csv` and `evaluation/category_summary_results.csv`
 
 ## Evaluation Data Separation
 The prototype does not read the benchmark answers during normal question answering.
@@ -409,6 +433,8 @@ The evaluation script produces outputs that can be cited or adapted in the repor
 - `report_figures/hallucination_rate_chart.png`
 - `report_figures/category_accuracy_chart.png`
 
+These artefacts were regenerated in the latest approved report-mode run on `2026-05-08`.
+
 These artefacts are especially useful for:
 
 - `Workflow and Methodology`
@@ -426,6 +452,7 @@ This version of the prototype now provides enough concrete material to support a
 ## Important Limitations
 - The benchmark is still an example case-study benchmark on one currently configured brief. High scores should be reported honestly as performance on the current controlled question set, not as broad general intelligence.
 - The strongest hybrid results come from deliberate structured coverage of known question types. This is appropriate for the assignment scenario, but it should be acknowledged in the report.
+- The newest benchmark still shows clear weak spots: hybrid unsupported accuracy is `0.667`, planning/story accuracy is `0.500`, and routing still misclassifies some factual policy questions as `rag`.
 - The optional `LLM-only` diagnostic subset depends on live provider availability, API billing configuration, and quota.
 - `core` and `report` mode assume one live fact-extraction request for the active brief, which should be counted when estimating runtime and API cost.
 - The current ingestion pipeline supports plain text, markdown, DOCX, and text-based PDF briefs. Scanned-image OCR is still future work.
