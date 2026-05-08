@@ -21,6 +21,35 @@ The current version is intentionally shaped to support a stronger HD-level repor
 
 Assignment-policy answers in this repository must come only from the user-supplied official course documents placed in `data/raw/`. Project scaffolding files outside that runtime document set must not be treated as authoritative evidence.
 
+
+## Branch Update: GLM-assisted Fact Extraction
+
+This branch, `glm-llm-extraction-enabled`, builds directly on the `LLM_and_Evaluation_Design` branch. It keeps the original general single-brief assistant architecture, including runtime brief configuration, document loading, structured fact extraction, chunking, query routing, RAG retrieval, unsupported-question handling, and four-layer evaluation.
+
+The main update in this branch is that the optional LLM-assisted fact extraction path has been enabled and tested with Zhipu GLM through an OpenAI-compatible API endpoint. The latest approved run uses:
+
+```env
+FACT_EXTRACTION_USE_LLM=1
+OPENAI_BASE_URL=https://open.bigmodel.cn/api/paas/v4
+OPENAI_MODEL=glm-4-flash
+```
+
+The API key is not stored in this repository. It must be provided through the runtime environment as `OPENAI_API_KEY`.
+
+After rebuilding the processed assets, `data/processed/structured_facts.json` records:
+
+```json
+{
+  "llm_requested": true,
+  "llm_used": true,
+  "llm_model": "glm-4-flash"
+}
+```
+
+Several extracted fields are now marked as `heuristic+llm_verified` or `hybrid_merge+llm_verified`, meaning the system combines deterministic heuristic extraction with LLM-assisted extraction and verification.
+
+
+
 ## What The Prototype Can Now Support
 - Exact assessment constraints such as due dates, word limits, similarity limits, file formats, filenames, presentation timing, and submission responsibilities.
 - HD-oriented rubric questions for report sections and presentation criteria.
@@ -155,7 +184,8 @@ python -m pip install -r requirements.txt
 ```
 
 ## LLM Configuration
-The prototype uses an OpenAI-compatible client interface. It can work with the default OpenAI endpoint or with compatible providers such as Gemini through a custom base URL.
+
+The prototype uses an OpenAI-compatible client interface. It can work with the default OpenAI endpoint or with compatible providers through a custom base URL.
 
 Create a `.env` file in the project root with:
 
@@ -166,17 +196,28 @@ OPENAI_BASE_URL=https://your-compatible-endpoint/v1
 LLM_FREE_MODE=1
 ```
 
-The current default local configuration uses `gemini-3.1-flash-lite-preview` through the Gemini OpenAI-compatible endpoint.
+The original configuration supports OpenAI-compatible providers such as Gemini. In this branch, the latest approved run uses Zhipu GLM through the OpenAI-compatible endpoint with `glm-4-flash`.
+
+For the GLM-enabled run used in this branch, the environment can be configured as:
+
+```env
+FACT_EXTRACTION_USE_LLM=1
+OPENAI_API_KEY=your_key_here
+OPENAI_BASE_URL=https://open.bigmodel.cn/api/paas/v4
+OPENAI_MODEL=glm-4-flash
+```
+
+Do not commit real API keys to the repository. API keys should only be provided through local environment variables, Colab runtime variables, or a private `.env` file excluded from version control.
 
 Notes:
 
 - If `OPENAI_BASE_URL` is omitted, the code defaults to `https://api.openai.com/v1`.
-- For Gemini OpenAI-compatible mode, keep the Gemini-compatible base URL and model name in `.env`.
-- `LLM_FREE_MODE=1` is enabled by default for this project. When the model is a Gemini text model, the code applies a stricter request spacing than the published RPM limit to reduce the chance of `429` errors during evaluation.
-- The current conservative Gemini free-mode caps are `8 RPM` for `gemini-2.5-flash-lite`, `4 RPM` for `gemini-2.5-flash`, `12 RPM` for `gemini-3.1-flash-lite` and preview variants, and `4 RPM` for `gemini-3-flash`.
+- For GLM OpenAI-compatible mode, keep the GLM-compatible base URL and model name in the runtime environment or `.env`.
+- `LLM_FREE_MODE=1` can be used to reduce the chance of provider rate-limit errors during evaluation.
 - `src/app.py` prints a masked startup self-check so configuration mistakes are easier to diagnose.
 - Set `OPENAI_SELF_CHECK_REMOTE=1` if you want the startup check to test live authentication as well.
 
+  
 ## Running The Prototype
 Rebuild the processed assets after changing the active brief or runtime source configuration:
 
@@ -276,24 +317,24 @@ The current benchmark is an example case-study benchmark for the currently confi
 - fact extraction is scored independently through `evaluation/fact_ground_truth.json`
 - live LLM outputs can be cached between runs so the benchmark can evolve without becoming too slow to iterate on
 
-The latest explicitly approved `report` run was regenerated on `2026-05-08` with `ENABLE_LLM_ONLY_BASELINE=0`. It produced the following workload profile:
+The latest explicitly approved GLM-enabled run was regenerated on `2026-05-08` with `ENABLE_LLM_ONLY_BASELINE=0`. It used GLM-assisted fact extraction and produced the following final-answer comparison.
 
-- `34` report-subset questions
-- `12` interpretive questions that required hybrid RAG generation
-- `47` estimated API-backed requests in total
-- `6.27` estimated minutes at the default `8s` request budget
-- about `7.6` minutes observed locally for the full run
+The latest GLM-enabled run reports these headline results:
 
-The four evaluation layers now report these headline results:
+- `Fact Extraction`: LLM-assisted fact extraction was enabled, with `llm_requested=true`, `llm_used=true`, and `llm_model=glm-4-flash`.
+- `Final Answer`: `Proposed Hybrid System` answer accuracy `0.8529`, evidence-support rate `0.7941`, hallucination rate `0.1471`, unsupported-handling accuracy `0.9412`.
+- `RAG-only`: answer accuracy `0.6765`, evidence-support rate `0.7647`, hallucination rate `0.3235`, unsupported-handling accuracy `0.8235`.
+- `Keyword Search`: answer accuracy `0.2941`, evidence-support rate `0.7353`, hallucination rate `0.7059`, unsupported-handling accuracy `0.8235`.
 
-- `Fact Extraction`: overall field accuracy `0.952`, missing-field rate `0.000`, evidence-support rate `1.000`, hallucinated-fact rate `0.048`
-- `Routing`: overall routing accuracy `0.853`, macro-F1 `0.841`
-- `Retrieval`: top-1 accuracy `0.500`, Recall@3 `0.917`, Recall@5 `0.917`, MRR `0.667`
-- `Final Answer`: `Hybrid` answer accuracy `0.882`, `RAG-only` `0.735`, `Keyword Search` `0.294`
+| Method | Answer Accuracy | Evidence Support Rate | Hallucination Rate | Unsupported Handling Accuracy | Average Response Time |
+|---|---:|---:|---:|---:|---:|
+| Keyword Search | 0.2941 | 0.7353 | 0.7059 | 0.8235 | 0.0003 |
+| RAG-only | 0.6765 | 0.7647 | 0.3235 | 0.8235 | 7.6163 |
+| Proposed Hybrid System | 0.8529 | 0.7941 | 0.1471 | 0.9412 | 4.3350 |
 
-The fresh run is therefore much more credible than the earlier near-perfect legacy results. The hybrid system is clearly strongest overall, but the benchmark still exposes real weaknesses in unsupported handling and planning/story questions instead of flattening everything into a misleading `1.0`.
+The hybrid system remains the strongest method overall. Compared with the keyword baseline and the RAG-only baseline, it gives higher answer accuracy, better unsupported-question handling, and a much lower hallucination rate. The result also shows that enabling GLM-assisted fact extraction does not replace the original deterministic structure; instead, it strengthens the structured-fact pipeline by adding LLM-assisted verification and merge metadata.
 
-The current summary CSV files now reflect the latest approved run rather than older historical artefacts:
+The current summary CSV files reflect the latest approved GLM-enabled run:
 
 - `evaluation/fact_extraction_summary.csv`
 - `evaluation/routing_summary.csv`
@@ -452,7 +493,7 @@ This version of the prototype now provides enough concrete material to support a
 ## Important Limitations
 - The benchmark is still an example case-study benchmark on one currently configured brief. High scores should be reported honestly as performance on the current controlled question set, not as broad general intelligence.
 - The strongest hybrid results come from deliberate structured coverage of known question types. This is appropriate for the assignment scenario, but it should be acknowledged in the report.
-- The newest benchmark still shows clear weak spots: hybrid unsupported accuracy is `0.667`, planning/story accuracy is `0.500`, and routing still misclassifies some factual policy questions as `rag`.
+- The newest GLM-enabled benchmark still shows room for improvement. Although the hybrid system improves unsupported handling overall, remaining errors still appear in some planning, interpretation, and evidence-selection questions. These failures should be discussed as controlled case-study weaknesses rather than hidden system limitations.
 - The optional `LLM-only` diagnostic subset depends on live provider availability, API billing configuration, and quota.
 - `core` and `report` mode assume one live fact-extraction request for the active brief, which should be counted when estimating runtime and API cost.
 - The current ingestion pipeline supports plain text, markdown, DOCX, and text-based PDF briefs. Scanned-image OCR is still future work.
