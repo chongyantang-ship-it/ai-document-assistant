@@ -712,10 +712,19 @@ def _extract_facts_with_llm(section_pairs):
             response_text = _call_chat_completion(client, model, system_prompt, user_prompt)
         else:
             response_text = _call_responses_api(client, model, system_prompt, user_prompt)
-    except Exception:
+    except Exception as exc:
+        print("LLM fact extraction failed:")
+        print(type(exc).__name__)
+        print(exc)
         return {}, model
 
-    return _parse_llm_json_response(response_text), model
+    parsed_payload = _parse_llm_json_response(response_text)
+    if parsed_payload:
+        print("LLM fact extraction succeeded.")
+        print("Parsed LLM fields:", list(parsed_payload.keys()))
+    else:
+        print("LLM fact extraction returned no parseable fields.")
+    return parsed_payload, model
 
 
 def _build_records_from_llm_payload(llm_payload, source_file):
@@ -1122,6 +1131,33 @@ def extract_structured_facts(brief_path=None, use_llm=None):
         llm_records = _build_records_from_llm_payload(llm_payload, source_file)
 
     merged_records = _merge_fact_records(heuristic_records, llm_records)
+
+    # If an LLM payload was successfully parsed, mark fields that were validated
+    # by both heuristic extraction and LLM extraction. This preserves the more
+    # stable heuristic value when appropriate, while correctly recording that
+    # LLM-assisted extraction was used in the pipeline.
+    if should_use_llm and llm_records:
+        for field_name, llm_record in llm_records.items():
+            if not llm_record:
+                continue
+
+            llm_value = llm_record.get("value")
+            llm_status = llm_record.get("validation_status")
+            merged_record = merged_records.get(field_name)
+
+            if (
+                merged_record
+                and llm_value not in MISSING_VALUES
+                and llm_status == "passed"
+                and "llm" not in str(merged_record.get("extraction_method", "")).lower()
+            ):
+                merged_record["extraction_method"] = (
+                    str(merged_record.get("extraction_method", "heuristic"))
+                    + "+llm_verified"
+                )
+                merged_record["llm_evidence"] = llm_record.get("evidence", "")
+                merged_record["llm_value"] = llm_value
+
     flat_values = _records_to_flat_values(merged_records)
 
     rubric_sections = flat_values.get("rubric_sections") or heuristic_values.get("rubric_sections", [])
