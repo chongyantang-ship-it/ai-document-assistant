@@ -302,7 +302,7 @@ ENABLE_LLM_ONLY_BASELINE=1
 EVALUATION_REQUEST_ESTIMATE_SECONDS=8
 ```
 
-When `LLM_FREE_MODE=1`, every live Gemini generation request made by the prototype or the evaluation pipeline is throttled through the same conservative rate limiter.
+When `LLM_FREE_MODE=1`, live LLM generation requests made by the prototype or the evaluation pipeline are throttled through the same conservative rate limiter when provider-specific limits are configured.
 
 Evaluation responses are cached automatically in `evaluation/response_cache.json` so repeated benchmark runs do not keep re-calling the live LLM. Set `EVALUATION_REFRESH_CACHE=1` if you want to force fresh outputs.
 
@@ -474,7 +474,7 @@ The evaluation script produces outputs that can be cited or adapted in the repor
 - `report_figures/hallucination_rate_chart.png`
 - `report_figures/category_accuracy_chart.png`
 
-These artefacts were regenerated in the latest approved report-mode run on `2026-05-08`.
+These artefacts were regenerated in the latest approved GLM-enabled report-mode run on `2026-05-08`.
 
 These artefacts are especially useful for:
 
