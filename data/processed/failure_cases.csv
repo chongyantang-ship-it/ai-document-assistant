@@ -1,0 +1,194 @@
+question_id,category,method,question,answer,route,keyword_hit_count,required_keyword_target,evidence_supported,hallucinated,used_cache
+Q001,factual_constraints,RAG-only,When is the report due?,"Direct Answer:
+Report due in Week 13 on 16 May 2026.
+
+Key Points:
+- The report is due in Week 13.
+- The specific due date is 16 May 2026.
+
+Evidence Used:
+- authority=official source=assessment_brief.txt section=Submission Due chunk_id=assessment_brief__submission_due__01 score=0.6446
+- authority=official source=assessment_brief.txt section=Overview chunk_id=assessment_brief__overview__01 score=0.3708",rag,1,2,1,1,0
+Q002,factual_constraints,Keyword Search,What is the report word limit and font requirement?,Keyword baseline retrieved this evidence: - When is the report due? - What is the report word limit? - What sections must be included in the report? - What does the rubric require for HD? - Does the project need a GitHub repository? - How should a group divide the work? - What are the limitations and ,keyword,0,4,1,1,0
+Q004,submission_rules,Keyword Search,"What report file should we submit, and what filename should it use?","Keyword baseline retrieved this evidence: Students must identify and solve a real-world problem using AI techniques, develop a detailed report, and present findings as a group. They must demonstrate collaboration, theoretical justification, workflow analysis, and empirical validation. Only one member ",keyword,0,2,1,1,0
+Q006,submission_rules,Keyword Search,What must be included on the first presentation slide?,"Keyword baseline retrieved this evidence: Students must identify and solve a real-world problem using AI techniques, develop a detailed report, and present findings as a group. They must demonstrate collaboration, theoretical justification, workflow analysis, and empirical validation. Only one member ",keyword,0,3,1,1,0
+Q008,submission_rules,Keyword Search,What sections should be included in the report?,Keyword baseline retrieved this evidence: - When is the report due? - What is the report word limit? - What sections must be included in the report? - What does the rubric require for HD? - Does the project need a GitHub repository? - How should a group divide the work? - What are the limitations and ,keyword,0,4,1,1,0
+Q008,submission_rules,RAG-only,What sections should be included in the report?,"Direct Answer:
+What sections must be included in the report?
+
+Key Points:
+- The evidence provided does not specify the sections that must be included in the report.
+
+Evidence Used:
+- [1] authority=project source=project_design.txt section=The system can answer questions such as chunk_id=project_design__the_system_can_answer_questions_such_as__01 score=0.4272
+- [2] authority=official source=assessment_brief.txt section=Type chunk_id=assessment_brief__type__01 score=0.5108
+- [3] authority=official source=assessment_brief.txt section=Submission Due chunk_id=assessment_brief__submission_due__01 score=0.4825
+- [4] authority=official source=assessment_brief.txt section=Part 1 Report chunk_id=assessment_brief__part_1_report__01 score=0.4707",rag,0,4,0,1,0
+Q009,factual_constraints,Keyword Search,How long is the presentation?,Keyword baseline retrieved this evidence: Assessment 3 is a group project with a report and an oral presentation. It is worth 40% and focuses on applying AI techniques to solve a real-world problem. The report is due on 16 May 2026 at 23:59. The oral presentation is due in Week 12 for Group A on 7 May,keyword,0,2,0,1,0
+Q010,factual_constraints,Keyword Search,When is the Group A presentation due?,Keyword baseline retrieved this evidence: Assessment 3 is a group project with a report and an oral presentation. It is worth 40% and focuses on applying AI techniques to solve a real-world problem. The report is due on 16 May 2026 at 23:59. The oral presentation is due in Week 12 for Group A on 7 May,keyword,0,1,1,1,0
+Q011,factual_constraints,Keyword Search,When is the Group B presentation due?,Keyword baseline retrieved this evidence: Assessment 3 is a group project with a report and an oral presentation. It is worth 40% and focuses on applying AI techniques to solve a real-world problem. The report is due on 16 May 2026 at 23:59. The oral presentation is due in Week 12 for Group A on 7 May,keyword,0,1,1,1,0
+Q013,submission_rules,Keyword Search,Is a GitHub repository required?,"Keyword baseline retrieved this evidence: Introduction. Clearly define the real-world problem the group aims to address. Explain its real-world significance and impact, identify key challenges and constraints, clearly state project objectives and scope, and explain the benefits of an effective solutio",keyword,0,2,1,1,0
+Q014,submission_rules,Keyword Search,Do we need to document individual contributions?,"Keyword baseline retrieved this evidence: This is a group assignment. While the project is collaborative, individual contributions will be assessed separately. Each group member must clearly document their contributions at the end of the report. The assessment reflects postgraduate-level expectations ",keyword,1,2,1,1,0
+Q015,submission_rules,Keyword Search,What filename should the presentation slides use?,"Keyword baseline retrieved this evidence: Students must identify and solve a real-world problem using AI techniques, develop a detailed report, and present findings as a group. They must demonstrate collaboration, theoretical justification, workflow analysis, and empirical validation. Only one member ",keyword,0,1,1,1,0
+Q018,rubric_interpretation,Keyword Search,What does HD require in theoretical justification?,"Keyword baseline retrieved this evidence: Students must identify and solve a real-world problem using AI techniques, develop a detailed report, and present findings as a group. They must demonstrate collaboration, theoretical justification, workflow analysis, and empirical validation. Only one member ",keyword,0,4,0,1,0
+Q019,rubric_interpretation,Keyword Search,What does HD require in workflow and methodology?,"Keyword baseline retrieved this evidence: Students must identify and solve a real-world problem using AI techniques, develop a detailed report, and present findings as a group. They must demonstrate collaboration, theoretical justification, workflow analysis, and empirical validation. Only one member ",keyword,0,4,1,1,0
+Q020,rubric_interpretation,Keyword Search,What does HD require in empirical analysis and results?,"Keyword baseline retrieved this evidence: Introduction. Clearly define the real-world problem the group aims to address. Explain its real-world significance and impact, identify key challenges and constraints, clearly state project objectives and scope, and explain the benefits of an effective solutio",keyword,0,5,1,1,0
+Q021,rubric_interpretation,Keyword Search,What does HD require in critical reflection?,"Keyword baseline retrieved this evidence: This is a group assignment. While the project is collaborative, individual contributions will be assessed separately. Each group member must clearly document their contributions at the end of the report. The assessment reflects postgraduate-level expectations ",keyword,0,5,0,1,0
+Q022,rubric_interpretation,Keyword Search,"What does HD require in conclusion, future work, and references?","Keyword baseline retrieved this evidence: HD: Provides a clear, concise, and insightful conclusion that effectively links results to project objectives and highlights key AI-related findings. Demonstrates strong critical understanding by proposing realistic, technically sound, and well-justified futur",keyword,2,4,1,1,0
+Q023,rubric_interpretation,Proposed Hybrid System,"For the presentation, what does HD require in content and relevance?","Direct Answer: For the presentation, HD requires an engaging, confident, well-paced delivery with excellent use of visuals, clear articulation, strong audience interaction, insightful answers, deep understanding, and effective addressing of ethical implications.
+
+Key Points:
+- Engaging and confident presentation delivery
+- Excellent use of visuals and clear articulation
+- Strong audience interaction and insightful answers
+- Demonstrates deep understanding and addresses ethical implications effectively
+
+Evidence Used:
+- [1] authority=official source=assessment_brief.txt section=Presentation Rubric: Presentation Delivery and Interaction chunk_id=assessment_brief__presentation_rubric_presentation_delivery_and_interaction__01 score=0.6269",rag,0,5,0,1,0
+Q023,rubric_interpretation,RAG-only,"For the presentation, what does HD require in content and relevance?","Direct Answer: For the presentation, HD requires an engaging, confident, well-paced delivery with excellent visuals, clear articulation, strong audience interaction, insightful answers, deep understanding, and effective addressing of ethical implications.
+
+Key Points:
+- Engaging and confident presentation delivery
+- Excellent use of visuals and clear articulation
+- Strong audience interaction and insightful answers
+- Demonstrates deep understanding and addresses ethical implications effectively
+
+Evidence Used:
+- [1] authority=official source=assessment_brief.txt section=Presentation Rubric: Presentation Delivery and Interaction chunk_id=assessment_brief__presentation_rubric_presentation_delivery_and_interaction__01 score=0.6269",rag,0,5,0,1,0
+Q025,rubric_interpretation,Keyword Search,"For the presentation, what does HD require in findings, contributions, and limitations?","Keyword baseline retrieved this evidence: Each group will deliver a presentation to demonstrate the proposed solution and project outcomes. All members of the group are required to be present for the group presentation. The presentation should highlight the real-world problem, the AI-based approach, f",keyword,0,4,1,1,0
+Q027,planning_and_story,Keyword Search,"Based on the brief, what workstreams should the group cover before submission?",Keyword baseline retrieved this evidence: Report submission: PDF. Only one member from the group needs to submit the report. The first page must clearly list all group members' names and student IDs. The PowerPoint slide file must also be submitted along with the report submission.,keyword,0,5,1,1,0
+Q027,planning_and_story,Proposed Hybrid System,"Based on the brief, what workstreams should the group cover before submission?","Direct Answer:
+Before submission, the group should cover workstreams related to problem identification and solution using AI techniques, report development, collaboration documentation, and presentation preparation.
+
+Key Points:
+- Identify and solve a real-world problem using AI techniques.
+- Develop a detailed report and prepare a PowerPoint presentation.
+- Document individual contributions within the report.
+- Ensure the report and presentation filenames follow the specified format.
+- Prepare for the group presentation session according to the assigned session number.
+
+Evidence Used:
+- Students must identify and solve a real-world problem using AI techniques, develop a detailed report, and present findings as a group. (Evidence [2])
+- The report must clearly list all group members' names and student IDs on the first page. The report filename should be AT3_Report_Group_xxxx.pdf, where xxxx is the group number. The PowerPoint presentation filename should be AT3_Slide_Group_xxxx.pptx, where xxxx is the group number. (Evidence [2])
+- Each group member must clearly document their contributions at the end of the report. (Evidence [3])
+- The group presentation session will be held in Session 10 for Group A, which covers Group 1 to Group 11, and Session 11 for Group B, which covers Group 12 to Group 28. (Evidence [4])",rag,2,5,1,1,0
+Q027,planning_and_story,RAG-only,"Based on the brief, what workstreams should the group cover before submission?","Direct Answer:
+Before submission, the group should cover workstreams related to problem identification and solution using AI techniques, report development, collaboration documentation, and presentation preparation.
+
+Key Points:
+- Identifying and solving a real-world problem using AI techniques.
+- Developing a detailed report and preparing a PowerPoint presentation.
+- Demonstrating collaboration, theoretical justification, workflow analysis, and empirical validation.
+- Documenting individual contributions and ensuring the report and presentation filenames follow the specified format.
+
+Evidence Used:
+- Students must identify and solve a real-world problem using AI techniques, develop a detailed report, and present findings as a group. (Evidence [2])
+- The report must clearly list all group members' names and student IDs on the first page. The report filename should be AT3_Report_Group_xxxx.pdf, where xxxx is the group number. The PowerPoint presentation filename should be AT3_Slide_Group_xxxx.pptx, where xxxx is the group number. (Evidence [2])
+- Each group member must clearly document their contributions at the end of the report. (Evidence [3])",rag,4,5,1,1,0
+Q028,planning_and_story,Keyword Search,"If we want a strong presentation story, what key beats should we cover?","Keyword baseline retrieved this evidence: Identify a real-world problem that can be effectively addressed using artificial intelligence techniques. The solution must go beyond software development and demonstrate integration of multiple AI paradigms such as logic, structural knowledge representation, ",keyword,1,5,1,1,0
+Q028,planning_and_story,Proposed Hybrid System,"If we want a strong presentation story, what key beats should we cover?","Direct Answer:
+To create a strong presentation story, cover the real-world problem, the AI-based approach, findings, and contributions.
+
+Key Points:
+- Highlight the real-world problem
+- Present the AI-based approach
+- Discuss the findings
+- Emphasize the contributions
+
+Evidence Used:
+- ""The presentation should highlight the real-world problem, the AI-based approach, findings, and contributions."" [1]
+- ""Each group will deliver a presentation to demonstrate the proposed solution and project outcomes. The presentation should highlight the real-world problem, the AI-based approach, findings, and contributions."" [3]",rag,4,5,1,1,0
+Q028,planning_and_story,RAG-only,"If we want a strong presentation story, what key beats should we cover?","Direct Answer: To create a strong presentation story, cover the real-world problem, the AI-based approach, findings, and contributions.
+
+Key Points:
+- Highlight the real-world problem
+- Present the AI-based approach
+- Discuss the findings
+- Emphasize the contributions
+
+Evidence Used:
+- The presentation should highlight the real-world problem, the AI-based approach, findings, and contributions. (Evidence [1], [3])
+- Students should be prepared to answer questions regarding the problem, solution, and overall project insights. (Evidence [1], [3])",rag,4,5,1,1,0
+Q035,unsupported,Keyword Search,Can the documents tell us the exact six-person role split we must use?,"Keyword baseline retrieved this evidence: Identify a real-world problem that can be effectively addressed using artificial intelligence techniques. The solution must go beyond software development and demonstrate integration of multiple AI paradigms such as logic, structural knowledge representation, ",keyword,0,1,0,1,0
+Q035,unsupported,RAG-only,Can the documents tell us the exact six-person role split we must use?,"Direct Answer:
+The documents do not specify the exact six-person role split for the group assignment.
+
+Key Points:
+- The maximum group size is six students.
+- Individual contributions will be assessed separately.
+Evidence Used:
+- Evidence [1] indicates the group size but not the role split.
+- Evidence [3] mentions individual contributions but not the role split.",rag,0,1,0,1,0
+Q036,unsupported,Keyword Search,Can the documents provide a day-by-day plan from 8 May 2026 to the report deadline?,"Keyword baseline retrieved this evidence: Introduction. Clearly define the real-world problem the group aims to address. Explain its real-world significance and impact, identify key challenges and constraints, clearly state project objectives and scope, and explain the benefits of an effective solutio",keyword,0,1,0,1,0
+Q036,unsupported,Proposed Hybrid System,Can the documents provide a day-by-day plan from 8 May 2026 to the report deadline?,"Direct Answer: The documents do not provide a day-by-day plan from 8 May 2026 to the report deadline.
+
+Action Plan:
+1. Review the official course documents for any additional information regarding the report's schedule or specific tasks leading up to the deadline.
+2. Consult with the group members to establish a timeline for completing the report and presentation tasks.
+3. Use the project planning document as a guide for dividing the work and setting milestones.
+
+Evidence Used:
+- Evidence [1] provides the due dates for the report and presentations but does not include a day-by-day plan.
+- Evidence [2] outlines the due dates and the nature of the assessment but does not provide a detailed timeline.
+- Evidence [3] discusses extensions for the report but does not offer a day-by-day plan.
+- Evidence [4] describes the project's technical aspects and the hybrid AI system but does not provide a day-by-day plan.",rag,0,1,0,1,0
+Q036,unsupported,RAG-only,Can the documents provide a day-by-day plan from 8 May 2026 to the report deadline?,"Direct Answer: The documents do not provide a day-by-day plan from 8 May 2026 to the report deadline.
+
+Action Plan:
+1. Review the official course documents for any additional information on the report's schedule or specific tasks leading up to the deadline.
+2. Consult with the group members to establish a timeline for completing the report and presentation tasks.
+3. Use the project planning document as a guide for dividing work and managing the project's workflow.
+
+Evidence Used:
+- The official assessment brief states the report is due on 16 May 2026 (Evidence [1], [2]).
+- The project planning document suggests considering how to divide work and manage the project's workflow (Evidence [4]).",rag,0,1,0,1,0
+Q037,unsupported,Keyword Search,Can the assistant guarantee a High Distinction if we follow its advice?,"Keyword baseline retrieved this evidence: Introduction. Clearly define the real-world problem the group aims to address. Explain its real-world significance and impact, identify key challenges and constraints, clearly state project objectives and scope, and explain the benefits of an effective solutio",keyword,0,1,0,1,0
+Q037,unsupported,RAG-only,Can the assistant guarantee a High Distinction if we follow its advice?,"Direct Answer: The assistant cannot guarantee a High Distinction; it can only provide advice that aligns with the criteria set out in the assessment brief.
+
+Key Points:
+- Meeting the criteria for a High Distinction requires a clear and deep understanding of the AI method, its relevance to a real-world problem, and its theoretical justification.
+- The assistant's advice must be aligned with the specific requirements outlined in the assessment brief for each section (Presentation Rubric, Findings, Contributions, and Limitations, Theoretical Justification).
+
+Evidence Used:
+- The evidence provided details the specific criteria for achieving a High Distinction in each section of the assessment (Presentation Rubric, Findings, Contributions, and Limitations, Theoretical Justification).",rag,0,1,0,1,0
+Q038,unsupported,Keyword Search,Can the assistant replace official course guidance or write the whole assignment for us?,"Keyword baseline retrieved this evidence: The project aims to develop an AI-powered academic document assistant that helps students understand complex assignment documents, rubrics, templates and presentation requirements.",keyword,0,1,0,1,0
+Q038,unsupported,RAG-only,Can the assistant replace official course guidance or write the whole assignment for us?,"Direct Answer:
+The assistant cannot replace official course guidance or write the whole assignment for you.
+
+Key Points:
+- The project aims to assist students in understanding complex assignment documents, rubrics, templates, and presentation requirements.
+- Individual contributions must be documented, and the assessment reflects postgraduate-level expectations with the application of AI techniques and critical evaluation.
+Evidence Used:
+- The project design outlines the assistant's role in aiding students with understanding documents.
+- The assessment brief specifies the requirements for individual contributions and the application of AI techniques.",rag,0,1,0,1,0
+Q039,unsupported,Keyword Search,Will the tutor definitely approve a late submission if we email them?,"Keyword baseline retrieved this evidence: Similarity checks on the report will be done by Turnitin. Multiple submissions are allowed. The maximum allowed similarity score is 20%, including quoted material and excluding references. Marks may be lost if the similarity score is higher than 20%.",keyword,0,1,0,1,0
+Q039,unsupported,Proposed Hybrid System,Will the tutor definitely approve a late submission if we email them?,"Direct Answer:
+The tutor will not definitely approve a late submission if you email them.
+
+Key Points:
+- An extension must be requested through the Assignment Extension tool in Canvas and involves unanimous agreement from all group members.
+- The evidence provided does not support the possibility of a tutor approving a late submission via email alone.
+
+Evidence Used:
+- An extension can only be requested for the report component of Assessment 3 and requires a specific process involving the Assignment Extension tool and group agreement.
+- The evidence does not mention email as a method for approving late submissions.",rag,0,1,0,1,0
+Q039,unsupported,RAG-only,Will the tutor definitely approve a late submission if we email them?,"Direct Answer:
+The tutor will not definitely approve a late submission just by email. Extensions must be requested through the Assignment Extension tool in Canvas and involve all group members' unanimous agreement.
+
+Key Points:
+- Extensions must be requested through the Assignment Extension tool in Canvas.
+- All group members must agree on the need for an extension.
+Evidence Used:
+- Evidence [1] indicates the process for requesting an extension.
+- Evidence [3] provides the due date for the report submission.",rag,0,1,0,1,0
+Q040,unsupported,Keyword Search,Can we ignore the similarity rules if the prototype works well?,"Keyword baseline retrieved this evidence: HD: Provides a rigorous, well-structured explanation of AI methods with strong theoretical foundations such as search, probabilistic reasoning, multi-layer networks, reinforcement learning, GenAI, or LLMs. Demonstrates deep understanding and clearly justifies ",keyword,0,1,0,1,0
+Q040,unsupported,RAG-only,Can we ignore the similarity rules if the prototype works well?,"Direct Answer:
+No, we cannot ignore the similarity rules even if the prototype works well.
+
+Key Points:
+- The official assessment brief explicitly states that similarity checks will be done by Turnitin, and the maximum allowed similarity score is 20%.
+- The theoretical justification for AI methods must be rigorous and well-structured, with strong theoretical foundations and clear justification using relevant academic literature.
+
+Evidence Used:
+- [1] official source=assessment_brief.txt section=Similarity Checks
+- [4] official source=assessment_brief.txt section=Report Rubric: Theoretical Justification",rag,0,1,0,1,0

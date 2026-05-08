@@ -1,0 +1,22 @@
+field,category,validation_status,field_accuracy,missing_field,evidence_supported,hallucinated_fact,confidence,extraction_method,source_section,value_preview
+assessment_name,core_brief,passed,1,0,1,0,0.99,heuristic+llm_verified,Document Overview,"""Assessment 3: Real World Applications of Artificial Intelligence"""
+report_due_date,deadlines_and_formats,passed,1,0,1,0,0.99,hybrid_merge+llm_verified,Overview,"""16 May 2026 at 23:59"""
+report_word_limit,deadlines_and_formats,passed,1,0,1,0,0.99,heuristic+llm_verified,Length,"""Up to 3500 words, including references"""
+report_font,deadlines_and_formats,passed,1,0,1,0,0.99,heuristic+llm_verified,Length,"""11-point Times or Arial fonts"""
+report_format,deadlines_and_formats,passed,1,0,1,0,0.99,heuristic+llm_verified,Submission Format,"""PDF"""
+report_filename,deadlines_and_formats,passed,1,0,1,0,0.99,heuristic+llm_verified,Requirements,"""AT3_Report_Group_xxxx.pdf"""
+slide_format,deadlines_and_formats,passed,1,0,1,0,0.99,heuristic,Requirements,"""PPTX"""
+slide_filename,deadlines_and_formats,passed,1,0,1,0,0.99,heuristic+llm_verified,Requirements,"""AT3_Slide_Group_xxxx.pptx"""
+presentation_duration,deadlines_and_formats,passed,1,0,1,0,0.99,heuristic+llm_verified,Presentation Session,"""8 minutes in total, including a 7-minute presentation plus 1-minute Q&A"""
+presentation_due_dates,deadlines_and_formats,passed,1,0,1,0,0.99,heuristic+llm_verified,Submission Due,"{""group_a"": ""7 May 2026"", ""group_b"": ""14 May 2026""}"
+similarity_limit,deadlines_and_formats,passed,1,0,1,0,0.99,heuristic+llm_verified,Similarity Checks,"""20%"""
+group_submission,report_requirements,passed,1,0,1,0,0.99,heuristic+llm_verified,Submission Format,"""Only one member from the group needs to submit the report and presentation files."""
+first_page_requirements,report_requirements,passed,1,0,1,0,0.99,heuristic+llm_verified,Submission Format,"[""all group members' names"", ""student IDs""]"
+first_slide_requirements,report_requirements,passed,1,0,1,0,0.99,heuristic+llm_verified,Oral Presentation,"[""the group number"", ""all group members' names"", ""student IDs""]"
+report_sections,report_requirements,passed,1,0,1,0,0.99,hybrid_merge+llm_verified,Part 1 Report,"[""Introduction"", ""Theoretical Justifications"", ""Workflow and Empirical Analysis"", ""Critical Reflection"", ""Additional Expectations""]"
+github_required,report_requirements,passed,1,0,1,0,0.99,hybrid_merge+llm_verified,Part 1 Report,true
+individual_contribution_required,report_requirements,passed,1,0,1,0,0.99,hybrid_merge+llm_verified,Task Overview,true
+maximum_group_size,report_requirements,passed,1,0,1,0,0.99,heuristic+llm_verified,Groupwork,"""maximum group size is six students"""
+extension_policy,policy_and_integrity,passed,0,0,1,1,0.99,heuristic+llm_verified,Extensions,"""An extension can only be requested for the report component of Assessment 3. If the group requires a short extension for the report, all group members must discuss and unanimously agree before applying. The person designated to submit the group assignment must request the short "
+academic_integrity_guidance,policy_and_integrity,passed,1,0,1,0,0.99,heuristic+llm_verified,Academic Integrity,"""Academic integrity is about demonstrating honesty, trust, fairness, respect, responsibility, and courage in studies. A breach of academic integrity is academic misconduct and includes behaviours such as plagiarism and cheating. Penalties apply. If students are thinking about usi"
+rubric_sections,rubric_criteria,passed,1,0,1,0,0.99,heuristic+llm_verified,Rubric Sections,"[{""scope"": ""report"", ""title"": ""Executive Summary and Introduction"", ""slug"": ""executive_summary_and_introduction"", ""hd_requirement"": ""Comprehensive and concise executive summary capturing objectives, AI approach, and key findings. Clearly defines a real-world problem with strong s"
