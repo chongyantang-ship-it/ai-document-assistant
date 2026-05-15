@@ -1,0 +1,140 @@
+[
+  {
+    "question_id": "Q017",
+    "category": "rubric_interpretation",
+    "acceptable_evidence_ids": [
+      "assessment_brief__report_rubric_executive_summary_and_introduction__01"
+    ]
+  },
+  {
+    "question_id": "Q018",
+    "category": "rubric_interpretation",
+    "acceptable_evidence_ids": [
+      "assessment_brief__report_rubric_theoretical_justification__01"
+    ]
+  },
+  {
+    "question_id": "Q019",
+    "category": "rubric_interpretation",
+    "acceptable_evidence_ids": [
+      "assessment_brief__report_rubric_workflow_and_methodology__01"
+    ]
+  },
+  {
+    "question_id": "Q020",
+    "category": "rubric_interpretation",
+    "acceptable_evidence_ids": [
+      "assessment_brief__report_rubric_empirical_analysis_and_results__01"
+    ]
+  },
+  {
+    "question_id": "Q021",
+    "category": "rubric_interpretation",
+    "acceptable_evidence_ids": [
+      "assessment_brief__report_rubric_critical_reflection__01"
+    ]
+  },
+  {
+    "question_id": "Q022",
+    "category": "rubric_interpretation",
+    "acceptable_evidence_ids": [
+      "assessment_brief__report_rubric_conclusion_future_work_and_references__01"
+    ]
+  },
+  {
+    "question_id": "Q023",
+    "category": "rubric_interpretation",
+    "acceptable_evidence_ids": [
+      "assessment_brief__presentation_rubric_content_and_relevance__01"
+    ]
+  },
+  {
+    "question_id": "Q024",
+    "category": "rubric_interpretation",
+    "acceptable_evidence_ids": [
+      "assessment_brief__presentation_rubric_ai_method_explanation_and_justification__01"
+    ]
+  },
+  {
+    "question_id": "Q025",
+    "category": "rubric_interpretation",
+    "acceptable_evidence_ids": [
+      "assessment_brief__presentation_rubric_findings_contributions_and_limitations__01"
+    ]
+  },
+  {
+    "question_id": "Q026",
+    "category": "rubric_interpretation",
+    "acceptable_evidence_ids": [
+      "assessment_brief__presentation_rubric_presentation_delivery_and_interaction__01"
+    ]
+  },
+  {
+    "question_id": "Q027",
+    "category": "planning_and_story",
+    "acceptable_evidence_ids": [
+      "assessment_brief__task_overview__01",
+      "assessment_brief__the_report_must_include_the_following_sections__01",
+      "assessment_brief__part_2_presentation__01",
+      "assessment_brief__oral_presentation__01"
+    ]
+  },
+  {
+    "question_id": "Q028",
+    "category": "planning_and_story",
+    "acceptable_evidence_ids": [
+      "assessment_brief__objective__01",
+      "assessment_brief__presentation__01",
+      "assessment_brief__presentation_rubric_content_and_relevance__01"
+    ]
+  },
+  {
+    "question_id": "Q029",
+    "category": "planning_and_story",
+    "acceptable_evidence_ids": [
+      "assessment_brief__objective__01",
+      "assessment_brief__report_rubric_empirical_analysis_and_results__01",
+      "assessment_brief__report_rubric_critical_reflection__01"
+    ]
+  },
+  {
+    "question_id": "Q030",
+    "category": "ethics_policy",
+    "acceptable_evidence_ids": [
+      "assessment_brief__academic_integrity__01"
+    ]
+  },
+  {
+    "question_id": "Q031",
+    "category": "system_explanation",
+    "acceptable_evidence_ids": [
+      "project_design__project_goal__01",
+      "project_design__ai_methods__01"
+    ]
+  },
+  {
+    "question_id": "Q032",
+    "category": "evaluation_design",
+    "acceptable_evidence_ids": [
+      "project_design__evaluation__01"
+    ]
+  },
+  {
+    "question_id": "Q033",
+    "category": "planning_and_story",
+    "acceptable_evidence_ids": [
+      "assessment_brief__submission_due__01",
+      "assessment_brief__requirements__01",
+      "assessment_brief__the_report_must_include_the_following_sections__01",
+      "assessment_brief__part_2_presentation__01"
+    ]
+  },
+  {
+    "question_id": "Q034",
+    "category": "ethics_policy",
+    "acceptable_evidence_ids": [
+      "assessment_brief__academic_integrity__01",
+      "assessment_brief__report_rubric_critical_reflection__01"
+    ]
+  }
+]

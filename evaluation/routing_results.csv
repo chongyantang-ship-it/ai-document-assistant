@@ -1,0 +1,35 @@
+question_id,category,question_type,question,expected_route,predicted_route,route_correct
+Q001,factual_constraints,factual,When is the report due?,rule-based,rule-based,1
+Q002,factual_constraints,factual,What is the report word limit and font requirement?,rule-based,rule-based,1
+Q003,factual_constraints,factual,What is the maximum allowed similarity score?,rule-based,rule-based,1
+Q004,submission_rules,factual,"What report file should we submit, and what filename should it use?",rule-based,rule-based,1
+Q005,submission_rules,factual,What must be included on the first page of the report?,rule-based,rule-based,1
+Q006,submission_rules,factual,What must be included on the first presentation slide?,rule-based,rule-based,1
+Q007,submission_rules,factual,Who needs to submit the group files?,rule-based,rule-based,1
+Q008,submission_rules,factual,What sections should be included in the report?,rule-based,rule-based,1
+Q009,factual_constraints,factual,How long is the presentation?,rule-based,rule-based,1
+Q010,factual_constraints,factual,When is the Group A presentation due?,rule-based,rule-based,1
+Q011,factual_constraints,factual,When is the Group B presentation due?,rule-based,rule-based,1
+Q012,factual_constraints,factual,What is the maximum group size?,rule-based,rule-based,1
+Q013,submission_rules,factual,Is a GitHub repository required?,rule-based,rag,0
+Q014,submission_rules,factual,Do we need to document individual contributions?,rule-based,rag,0
+Q015,submission_rules,factual,What filename should the presentation slides use?,rule-based,rule-based,1
+Q016,submission_rules,factual,What should the presentation highlight?,rule-based,rag,0
+Q017,rubric_interpretation,interpretive,What does HD require in executive summary and introduction?,rag,rag,1
+Q018,rubric_interpretation,interpretive,What does HD require in theoretical justification?,rag,rag,1
+Q019,rubric_interpretation,interpretive,What does HD require in workflow and methodology?,rag,rag,1
+Q020,rubric_interpretation,interpretive,What does HD require in empirical analysis and results?,rag,rag,1
+Q021,rubric_interpretation,interpretive,What does HD require in critical reflection?,rag,rag,1
+Q022,rubric_interpretation,interpretive,"What does HD require in conclusion, future work, and references?",rag,rag,1
+Q023,rubric_interpretation,interpretive,"For the presentation, what does HD require in content and relevance?",rag,rag,1
+Q024,rubric_interpretation,interpretive,"For the presentation, what does HD require in AI method explanation and justification?",rag,rag,1
+Q025,rubric_interpretation,interpretive,"For the presentation, what does HD require in findings, contributions, and limitations?",rag,rag,1
+Q026,rubric_interpretation,interpretive,"For the presentation, what does HD require in delivery and interaction?",rag,rag,1
+Q027,planning_and_story,interpretive,"Based on the brief, what workstreams should the group cover before submission?",rag,rag,1
+Q028,planning_and_story,interpretive,"If we want a strong presentation story, what key beats should we cover?",rag,rag,1
+Q035,unsupported,unsupported,Can the documents tell us the exact six-person role split we must use?,unsupported,unsupported,1
+Q036,unsupported,unsupported,Can the documents provide a day-by-day plan from 8 May 2026 to the report deadline?,unsupported,rag,0
+Q037,unsupported,unsupported,Can the assistant guarantee a High Distinction if we follow its advice?,unsupported,unsupported,1
+Q038,unsupported,unsupported,Can the assistant replace official course guidance or write the whole assignment for us?,unsupported,unsupported,1
+Q039,unsupported,unsupported,Will the tutor definitely approve a late submission if we email them?,unsupported,rag,0
+Q040,unsupported,unsupported,Can we ignore the similarity rules if the prototype works well?,unsupported,unsupported,1

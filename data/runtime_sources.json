@@ -1,0 +1,6 @@
+{
+  "brief_source": "data/raw/assessment_brief.txt",
+  "supporting_sources": [
+    "data/raw/project_design.txt"
+  ]
+}

@@ -1,51 +1,371 @@
 [
   {
-    "chunk_id": "chunk_001",
+    "chunk_id": "assessment_brief__document_overview__01",
     "source_file": "assessment_brief.txt",
-    "section": "auto_chunked_section",
+    "authority": "official",
+    "role": "brief",
+    "section": "Document Overview",
+    "category": "general",
+    "text": "Assessment 3: Real World Applications of Artificial Intelligence"
+  },
+  {
+    "chunk_id": "assessment_brief__overview__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Overview",
     "category": "factual_constraints",
-    "text": "Assessment 3: Real World Applications of Artificial Intelligence\n\nPurpose:\nIn Assessment 3 students focus on how to apply AI techniques to solve real-world problems, showcasing theoretical knowledge, collaboration, and practical implementation.\n\nType:\nReport and Oral Presentation.\n\nGroupwork:\nGroup assignment with individually assessed contributions.\n\nWeighting:\n40%.\n\nLength:\nUp to 3500 words, including references. Use 11-point Times or Arial fonts.\n\nSimilarity checks:\nSimilarity checks on the report will be done by Turnitin. The maximum allowed similarity score is 20%, including quoted material and excluding references.\n\nSubmission format:\nReport submission: PDF. Only one member from the group needs to submit the report.\nThe first page must clearly list all group members' names and student IDs.\nPlease also submit the PowerPoint slide file along with the report submission.\n\nPresentation session:\n8 minutes total, including a 7-minute presentation plus 1-minute Q&A.\nThe PowerPoint file should be submitted before the class presentation session.\n\nSubmission Due:\nReport due in Week 13, 16 May 2026.\nPresentation due in Week 12 for Group A and Week 13 for Group B."
+    "text": "Assessment 3 is a group project with a report and an oral presentation. It is worth 40% and focuses on applying AI techniques to solve a real-world problem. The report is due on 16 May 2026 at 23:59. The oral presentation is due in Week 12 for Group A on 7 May 2026 and in Week 13 for Group B on 14 May 2026."
   },
   {
-    "chunk_id": "chunk_002",
+    "chunk_id": "assessment_brief__purpose__01",
     "source_file": "assessment_brief.txt",
-    "section": "auto_chunked_section",
-    "category": "evaluation",
-    "text": "Task Overview:\nThis is a group assignment. Each group member must clearly document their contributions at the end of the report.\nThe assessment requires application of AI techniques, critical evaluation, comparative analysis, and research-informed decision-making.\n\nObjective:\nIdentify a real-world problem that can be effectively addressed using artificial intelligence techniques.\nThe solution must demonstrate:\n- Integration of multiple AI paradigms.\n- Strong theoretical justification.\n- Rigorous empirical evaluation.\n- Critical reflection on limitations, trade-offs, and scalability.\n\nExample domains:\n- Intelligent document processing.\n- Decision support systems.\n- Recommendation systems.\n- Autonomous agents or optimisation problems.\n\nReport Sections:\nThe report should include Introduction, Theoretical Justification, Workflow and Empirical Analysis, Critical Reflection, GitHub Repository, Conclusion, Individual Contributions, and References."
+    "authority": "official",
+    "role": "brief",
+    "section": "Purpose",
+    "category": "general",
+    "text": "In Assessment 3, students focus on how to apply AI techniques to solve real-world problems, showcasing theoretical knowledge, collaboration, and practical implementation."
   },
   {
-    "chunk_id": "chunk_003",
-    "source_file": "oral_presentation.txt",
-    "section": "auto_chunked_section",
+    "chunk_id": "assessment_brief__learning_outcomes__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Learning Outcomes",
+    "category": "general",
+    "text": "SLO1 Understand general problem-solving approaches in AI.\nSLO2 Apply knowledge of logic and structural knowledge representation.\nSLO4 Multilayer networks, reinforcement learning, Generative AI, and LLM.\nSLO5 Explore real-world applications of AI considering AI ethics and responsible AI design."
+  },
+  {
+    "chunk_id": "assessment_brief__type__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Type",
+    "category": "general",
+    "text": "Report and Oral Presentation."
+  },
+  {
+    "chunk_id": "assessment_brief__groupwork__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Groupwork",
+    "category": "general",
+    "text": "This is a group assignment with individually assessed contributions. The maximum group size is six students."
+  },
+  {
+    "chunk_id": "assessment_brief__weighting__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Weighting",
+    "category": "general",
+    "text": "40%."
+  },
+  {
+    "chunk_id": "assessment_brief__length__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Length",
+    "category": "general",
+    "text": "Up to 3500 words, including references. Use 11-point Times or Arial fonts."
+  },
+  {
+    "chunk_id": "assessment_brief__similarity_checks__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Similarity Checks",
+    "category": "factual_constraints",
+    "text": "Similarity checks on the report will be done by Turnitin. Multiple submissions are allowed. The maximum allowed similarity score is 20%, including quoted material and excluding references. Marks may be lost if the similarity score is higher than 20%."
+  },
+  {
+    "chunk_id": "assessment_brief__submission_format__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Submission Format",
+    "category": "factual_constraints",
+    "text": "Report submission: PDF. Only one member from the group needs to submit the report. The first page must clearly list all group members' names and student IDs. The PowerPoint slide file must also be submitted along with the report submission."
+  },
+  {
+    "chunk_id": "assessment_brief__presentation_session__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Presentation Session",
     "category": "presentation",
-    "text": "Assessment 3: Real World Applications of Artificial Intelligence - Oral Presentation\n\nIn-class assessment. Oral presentation of Assignment 3 group project.\n\nSubmission:\nPlease submit the group's PowerPoint presentation before the in-class presentation.\nOnly one member from the group needs to submit the presentation file.\n\nPowerPoint Presentation Filename:\nAT3_Slide_Group_xxxx.pptx, where xxxx is the Group Number.\n\nFirst slide requirements:\nThe first slide must clearly list:\n1. Group Number\n2. All group members' names\n3. Student IDs\n\nPresentation:\nEach group will deliver a presentation to demonstrate their proposed solution and project outcomes.\nAll members of the group are required to be present for the group presentation.\n\nThe presentation should:\n- Highlight the real-world problem.\n- Explain the AI-based approach.\n- Present findings.\n- Explain individual and group contributions.\n- Be prepared to answer questions from the class about the problem, solution, and project insights."
+    "text": "The presentation is 8 minutes in total, including a 7-minute presentation plus 1-minute Q&A. The PowerPoint file should be submitted before the class presentation session."
   },
   {
-    "chunk_id": "chunk_004",
+    "chunk_id": "assessment_brief__submission_due__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Submission Due",
+    "category": "factual_constraints",
+    "text": "Report due in Week 13 on 16 May 2026.\nPresentation due in Week 12 for Group A on 7 May 2026.\nPresentation due in Week 13 for Group B on 14 May 2026."
+  },
+  {
+    "chunk_id": "assessment_brief__task_overview__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Task Overview",
+    "category": "workflow_planning",
+    "text": "This is a group assignment. While the project is collaborative, individual contributions will be assessed separately. Each group member must clearly document their contributions at the end of the report. The assessment reflects postgraduate-level expectations and requires application of AI techniques, critical evaluation, comparative analysis, and research-informed decision-making."
+  },
+  {
+    "chunk_id": "assessment_brief__objective__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Objective",
+    "category": "workflow_planning",
+    "text": "Identify a real-world problem that can be effectively addressed using artificial intelligence techniques. The solution must go beyond software development and demonstrate integration of multiple AI paradigms such as logic, structural knowledge representation, predictive modelling, probabilistic reasoning, multi-layer networks, reinforcement learning, GenAI, or LLM, together with strong theoretical justification, rigorous empirical evaluation, and critical reflection on limitations, trade-offs, and scalability."
+  },
+  {
+    "chunk_id": "assessment_brief__example_domains__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Example Domains",
+    "category": "ai_methods",
+    "text": "Example domains include intelligent document processing such as CV parsing plus LLM-based querying, decision support systems, recommendation systems, and autonomous agents or optimisation problems. Students are encouraged to be creative, but the solution must centre on AI techniques rather than simply on software development."
+  },
+  {
+    "chunk_id": "assessment_brief__part_1_report__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Part 1 Report",
+    "category": "general",
+    "text": "The report is worth 30 marks."
+  },
+  {
+    "chunk_id": "assessment_brief__the_report_must_include_the_following_sections__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "The report must include the following sections",
+    "category": "evaluation",
+    "text": "Introduction. Clearly define the real-world problem the group aims to address. Explain its real-world significance and impact, identify key challenges and constraints, clearly state project objectives and scope, and explain the benefits of an effective solution.\nTheoretical Justifications. Provide a detailed explanation of the proposed AI-based method. Justify why the methods are appropriate for the problem and support the argument with relevant academic literature.\nWorkflow and Empirical Analysis. Describe the workflow of the developed solution, including key steps such as data preprocessing, algorithmic approach, and implementation details. Explain model design, algorithmic choices, and integration of multiple AI paradigms. Clearly distinguish design decisions from implementation details. Present experimental results using either real-world datasets sourced online or synthetic data created by the group. Include empirical analysis that demonstrates the effectiveness of the solution. Describe the experimental setup, use appropriate evaluation metrics, present results clearly using tables or figures, and provide a link to a publicly accessible GitHub repository containing the full code implementation. The report should focus on describing the workflow rather than including raw code.\nCritical Reflection. Critically evaluate limitations and failure cases of the approach, trade-offs such as optimality versus efficiency or accuracy versus interpretability, scalability, and computational constraints, and when alternative approaches may be more suitable.\nAdditional Expectations. Use academic references where appropriate, demonstrate critical thinking rather than just implementation, clearly distinguish design choices from results, and avoid focusing solely on software engineering. Emphasise AI reasoning and evaluation."
+  },
+  {
+    "chunk_id": "assessment_brief__part_2_presentation__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Part 2 Presentation",
+    "category": "presentation",
+    "text": "The presentation is worth 10 marks. Each group will deliver a presentation to demonstrate the proposed solution and project outcomes. The presentation should highlight the real-world problem, the AI-based approach, findings, and contributions. Students should be prepared to answer questions from the class regarding the problem, solution, and overall project insights."
+  },
+  {
+    "chunk_id": "assessment_brief__presentation_sessions__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Presentation Sessions",
+    "category": "presentation",
+    "text": "The group presentation session will be held in Session 10 for Group A, which covers Group 1 to Group 11, and Session 11 for Group B, which covers Group 12 to Group 28."
+  },
+  {
+    "chunk_id": "assessment_brief__requirements__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Requirements",
+    "category": "workflow_planning",
+    "text": "Students must identify and solve a real-world problem using AI techniques, develop a detailed report, and present findings as a group. They must demonstrate collaboration, theoretical justification, workflow analysis, and empirical validation. Only one member from the group needs to submit the report. The report must clearly list all group members' names and student IDs on the first page. The report filename should be AT3_Report_Group_xxxx.pdf, where xxxx is the group number. The PowerPoint presentation filename should be AT3_Slide_Group_xxxx.pptx, where xxxx is the group number."
+  },
+  {
+    "chunk_id": "assessment_brief__extensions__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Extensions",
+    "category": "workflow_planning",
+    "text": "An extension can only be requested for the report component of Assessment 3.\nIf the group requires a short extension for the report, all group members must discuss and unanimously agree before applying. The person designated to submit the group assignment must request the short extension through the Assignment Extension tool in Canvas. The same person must then email the Subject Coordinators, state that all group members agree on the need for a short extension, include all group members in the cc field, and include the group number."
+  },
+  {
+    "chunk_id": "assessment_brief__academic_integrity__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Academic Integrity",
+    "category": "ethics_policy",
+    "text": "Academic integrity is about demonstrating honesty, trust, fairness, respect, responsibility, and courage in studies. A breach of academic integrity is academic misconduct and includes behaviours such as plagiarism and cheating. Penalties apply. If students are thinking about using GenAI in the subject or assessment, they must check the rules for whether and how it can be used via the subject site, tutor, lecturer, or subject coordinator. They should also use GenAI ethically and reference or acknowledge its use when required."
+  },
+  {
+    "chunk_id": "assessment_brief__report_rubric_executive_summary_and_introduction__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Report Rubric: Executive Summary and Introduction",
+    "category": "rubric",
+    "text": "HD: Comprehensive and concise executive summary capturing objectives, AI approach, and key findings. Clearly defines a real-world problem with strong significance, well-structured context, challenges, scope, and impact. Demonstrates clear linkage between the problem and AI-based solution, with awareness of ethical and real-world implications.\nD: Clear overview and problem definition with good explanation of impact and challenges. Minor gaps in clarity, structure, or linkage to AI approach.\nC: Adequate description of the problem and context, but lacks depth, clarity, or strong justification of significance. Limited connection to AI solution.\nP: Basic or unclear problem definition with minimal discussion of impact or relevance. Weak structure and limited understanding.\nF: No summary provided. Fails to define a relevant problem or provides no coherent explanation."
+  },
+  {
+    "chunk_id": "assessment_brief__report_rubric_theoretical_justification__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Report Rubric: Theoretical Justification",
+    "category": "rubric",
+    "text": "HD: Provides a rigorous, well-structured explanation of AI methods with strong theoretical foundations such as search, probabilistic reasoning, multi-layer networks, reinforcement learning, GenAI, or LLMs. Demonstrates deep understanding and clearly justifies suitability using relevant academic literature. Shows critical engagement with theory.\nD: Explains AI methods with solid theoretical grounding and appropriate justification. Some use of references, but minor gaps in depth or critical insight.\nC: Describes AI methods with basic theoretical support. Limited justification or weak connection to the problem. Minimal use of literature.\nP: Superficial or unclear explanation of methods with little or no theoretical support. Poor justification.\nF: No justification provided."
+  },
+  {
+    "chunk_id": "assessment_brief__report_rubric_workflow_and_methodology__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Report Rubric: Workflow and Methodology",
+    "category": "rubric",
+    "text": "HD: Presents a clear, logical, and well-structured workflow. Thoroughly explains data preprocessing, feature engineering if applicable, model design, and algorithmic approach. Demonstrates effective integration of multiple AI paradigms. Clearly distinguishes design decisions from implementation.\nD: Well-organised workflow with clear explanation of key steps. Minor gaps in integration or clarity of design decisions.\nC: Basic workflow description with limited detail or clarity. Weak explanation of model design or integration.\nP: Unclear or incomplete workflow. Minimal explanation of methodology or AI components.\nF: No workflow or methodology provided."
+  },
+  {
+    "chunk_id": "assessment_brief__report_rubric_empirical_analysis_and_results__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Report Rubric: Empirical Analysis and Results",
+    "category": "rubric",
+    "text": "HD: Presents comprehensive experiments with a well-defined setup, datasets, and parameters, with insightful empirical analysis demonstrating solution effectiveness and supported by ethical considerations where relevant. Uses appropriate evaluation metrics such as accuracy, memory usage, or runtime. Results are clearly presented using tables or figures and interpreted insightfully. Demonstrates strong evidence of effectiveness and includes reproducibility via a well-documented GitHub repository.\nD: Presents solid results with clear empirical analysis showing effectiveness, with minor gaps in depth or dataset quality. The GitHub link is functional with adequate prototype documentation.\nC: Presents basic results with limited analysis or questionable dataset quality. GitHub documentation lacks clarity or detail.\nP: Minimally presents results with weak or incomplete analysis. GitHub documentation is unclear or incomplete.\nF: No results, analysis, or GitHub documentation provided."
+  },
+  {
+    "chunk_id": "assessment_brief__report_rubric_critical_reflection__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Report Rubric: Critical Reflection",
+    "category": "rubric",
+    "text": "HD: Provides deep and critical evaluation of limitations, failure cases, and trade-offs such as accuracy versus efficiency. Analyses scalability and computational constraints. Thoughtfully discusses when alternative approaches may be more suitable.\nD: Good reflection on limitations and trade-offs. Some discussion of scalability and alternatives, with minor gaps in depth.\nC: Basic reflection with limited discussion of limitations or trade-offs. Lacks depth in analysis.\nP: Minimal critical reflection. Limited discussion to identify key limitations or issues.\nF: No critical reflection. Fails to identify key limitations."
+  },
+  {
+    "chunk_id": "assessment_brief__report_rubric_conclusion_future_work_and_references__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Report Rubric: Conclusion, Future Work and References",
+    "category": "rubric",
+    "text": "HD: Provides a clear, concise, and insightful conclusion that effectively links results to project objectives and highlights key AI-related findings. Demonstrates strong critical understanding by proposing realistic, technically sound, and well-justified future work such as addressing limitations, improving scalability, or exploring alternative AI methods. Uses high-quality, relevant academic references that are consistent and well integrated into the report.\nD: Presents a clear conclusion with good linkage to objectives and findings. Suggests reasonable future improvements with some justification. Uses relevant references, though minor inconsistencies may be present.\nC: Provides a basic conclusion with limited insight or weak connection to objectives. Future work is generic or lacks strong justification. References are limited in quality or relevance.\nP: Conclusion is superficial or unclear, with little connection to results or objectives. Future work is unrealistic or weakly related to the project. Few references are used, or citation practices are inconsistent.\nF: Conclusion is missing or incorrect. No meaningful future work is provided. References are absent, irrelevant, or improperly cited, indicating a lack of academic engagement."
+  },
+  {
+    "chunk_id": "assessment_brief__report_rubric_individual_contribution__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Report Rubric: Individual Contribution",
+    "category": "rubric",
+    "text": "HD: Clearly documents specific, substantial, and verifiable contributions of each member. Demonstrates balanced and active participation.\nD: Clear contributions listed with minor gaps in detail or balance.\nC: Basic contribution description with limited detail or clarity.\nP: Unclear or missing contribution statements.\nF: No documentation or evidence of participation provided."
+  },
+  {
+    "chunk_id": "assessment_brief__oral_presentation__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Oral Presentation",
+    "category": "presentation",
+    "text": "This is an in-class assessment. The group's PowerPoint presentation must be submitted before the in-class presentation. Only one member from the group needs to submit the presentation file. The first slide must clearly list the group number, all group members' names, and student IDs. The filename should be AT3_Slide_Group_xxxx.pptx."
+  },
+  {
+    "chunk_id": "assessment_brief__presentation__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Presentation",
+    "category": "presentation",
+    "text": "Each group will deliver a presentation to demonstrate the proposed solution and project outcomes. All members of the group are required to be present for the group presentation. The presentation should highlight the real-world problem, the AI-based approach, findings, and contributions. Students should be prepared to answer questions regarding the problem, solution, and overall project insights."
+  },
+  {
+    "chunk_id": "assessment_brief__presentation_rubric_content_and_relevance__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Presentation Rubric: Content and Relevance",
+    "category": "rubric",
+    "text": "HD: Presents a highly relevant real-world problem and AI solution, demonstrates clear integration of AI techniques and strong alignment between problem and chosen methods, clearly articulates significance, impact, and ethical considerations, and stays within the 7-minute limit.\nD: Presents a relevant real-world problem and AI solution with generally clear alignment between the problem and chosen methods. Demonstrates some integration of AI techniques and explains significance and impact with minor gaps in depth or clarity. Ethical considerations are addressed but may lack detail. Stays within the time limit with minor issues in pacing.\nC: Presents a real-world problem and AI solution with basic or partial alignment between the problem and methods. Integration of AI techniques is limited or not clearly explained. Discussion of significance and impact is present but lacks depth. Ethical considerations are brief or superficial. May slightly exceed or fall short of the time limit.\nP: Presents a weakly defined or minimally relevant problem or solution. Alignment between the problem and AI methods is unclear or poorly justified, with little evidence of integration of AI techniques. Significance and impact are unclear or underdeveloped. Ethical considerations are minimal or absent. Noticeable issues with timing.\nF: Fails to present a coherent or relevant real-world problem or AI solution. No clear alignment between problem and methods, and no meaningful integration of AI techniques. Significance, impact, and ethical considerations are absent or incorrect. Presentation shows major issues with structure and timing."
+  },
+  {
+    "chunk_id": "assessment_brief__presentation_rubric_ai_method_explanation_and_justification__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Presentation Rubric: AI Method Explanation and Justification",
+    "category": "rubric",
+    "text": "HD: Clearly and concisely explains the AI-based method, demonstrates deep understanding, provides strong justification for method selection, compares with alternative approaches, explains trade-offs, and shows excellent alignment between the chosen method and the problem.\nD: Explains the AI method clearly with good understanding and appropriate justification. Includes some comparison or reasoning about alternative methods, though depth may be limited. Demonstrates good alignment between method and problem, with minor gaps in explanation.\nC: Provides a basic explanation of the AI method with limited depth. Justification is present but weak or mostly descriptive, with little or no meaningful comparison to alternatives. Suitability of the method is only partially explained.\nP: Provides a minimal or unclear explanation of the AI method. Justification is weak or missing, and there is no meaningful comparison or reasoning about method choice. Limited understanding of how the method fits the problem.\nF: Fails to explain the AI method adequately or provides incorrect or irrelevant information. No justification of method choice is provided, and there is no evidence of understanding of the method or its suitability for the problem."
+  },
+  {
+    "chunk_id": "assessment_brief__presentation_rubric_findings_contributions_and_limitations__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Presentation Rubric: Findings, Contributions, and Limitations",
+    "category": "rubric",
+    "text": "HD: Insightful findings and contributions with clear empirical results, showing solution effectiveness and innovation. Limitations are critically analysed with ethical implications.\nD: Solid findings and contributions with some empirical support. Limitations are discussed with basic ethical considerations.\nC: Basic findings with limited empirical support. Limitations are mentioned but lack depth or ethical considerations.\nP: Minimal findings, lacking empirical support. Limitations are vague or absent, and there are no ethical considerations.\nF: No findings, contributions, or limitations are presented."
+  },
+  {
+    "chunk_id": "assessment_brief__presentation_rubric_presentation_delivery_and_interaction__01",
+    "source_file": "assessment_brief.txt",
+    "authority": "official",
+    "role": "brief",
+    "section": "Presentation Rubric: Presentation Delivery and Interaction",
+    "category": "rubric",
+    "text": "HD: Delivers an engaging, confident, and well-paced presentation with excellent use of visuals, clear articulation, and strong audience interaction. Responds to questions with insightful, accurate, and confident answers, demonstrates deep understanding, and addresses ethical implications effectively.\nD: Delivers a clear and engaging presentation with good visuals and articulation, but with minor issues in pacing or audience engagement. Responds to questions with clear and accurate answers, but with minor gaps in depth or ethical considerations.\nC: Delivers an adequate presentation with basic visuals. Articulation or engagement is limited. Responses to questions are basic and have limited depth or accuracy. Ethical considerations are minimal.\nP: Delivery is unclear, unengaging, or poorly paced. Visuals are minimal or ineffective. Responses to questions are inaccurate or incomplete. Ethical considerations are absent.\nF: Delivery is incoherent, unprofessional, or fails to engage. No visuals are used. The presenter fails to respond to questions or provides irrelevant answers."
+  },
+  {
+    "chunk_id": "project_design__project_title__01",
     "source_file": "project_design.txt",
-    "section": "auto_chunked_section",
+    "authority": "project",
+    "role": "supporting",
+    "section": "Project Title",
     "category": "system_design",
-    "text": "Project Title:\nAI-Powered Academic Document Assistant Using Retrieval-Augmented Generation, Structured Knowledge Representation and Rule-Based Reasoning.\n\nProject Goal:\nThe project aims to develop an AI-powered academic document assistant that helps students understand complex assignment documents, rubrics, templates and presentation requirements.\n\nThe system can answer questions such as:\n- When is the report due?\n- What is the report word limit?\n- What sections must be included in the report?\n- What does the rubric require for HD?\n- Does the project need a GitHub repository?\n- How should a group divide the work?\n- What are the limitations and ethical risks of using AI for assignment support?\n\nThe system should not be presented as a simple chatbot. It should be presented as a hybrid AI system that combines:\n1. Retrieval-Augmented Generation\n2. Semantic embedding retrieval\n3. Structured knowledge representation\n4. Rule-based reasoning\n5. Evidence-grounded answer generation\n6. Empirical evaluation against baseline methods"
+    "text": "AI-Powered Academic Document Assistant Using Retrieval-Augmented Generation, Structured Knowledge Representation and Rule-Based Reasoning."
   },
   {
-    "chunk_id": "chunk_005",
+    "chunk_id": "project_design__project_goal__01",
     "source_file": "project_design.txt",
-    "section": "auto_chunked_section",
+    "authority": "project",
+    "role": "supporting",
+    "section": "Project Goal",
     "category": "system_design",
-    "text": "System Pipeline:\nInput Documents\nText Extraction and Cleaning\nChunking and Metadata Tagging\nVector Knowledge Base and Structured Rule Base\nQuery Router\nRetrieval or Rule-Based Reasoning\nEvidence-Grounded Answer Generation\nFinal Answer with Evidence and Confidence Level\n\nAI Methods:\nRAG retrieves relevant document chunks before generating an answer.\nSemantic embedding retrieval converts each document chunk and user question into vector representations and retrieves relevant chunks using cosine similarity.\nStructured knowledge representation stores important facts such as due date, word limit, file format, similarity limit, presentation duration and GitHub requirement.\nRule-based reasoning answers deterministic assessment constraints directly from structured facts.\nQuery router decides whether to use rule-based answer, RAG answer, hybrid answer or unsupported answer.\nEvidence-grounded answer generation produces answers using retrieved evidence only.\n\nEvaluation:\nThe system should be evaluated using test questions across factual constraints, submission rules, rubric interpretation, workflow planning, and unsupported questions.\nBaseline methods may include keyword search and RAG-only retrieval.\nMetrics may include answer accuracy, retrieval accuracy at 3, citation support rate, hallucination rate, unsupported handling accuracy and average response time."
+    "text": "The project aims to develop an AI-powered academic document assistant that helps students understand complex assignment documents, rubrics, templates and presentation requirements."
   },
   {
-    "chunk_id": "chunk_006",
-    "source_file": "report_template.txt",
-    "section": "auto_chunked_section",
-    "category": "report_template",
-    "text": "Artificial Intelligence Group Assignment Report\n36121 Artificial Intelligence Principles and Applications\n\nTable of Contents:\n1. Executive Summary\n1.1 Overview of the Project\n1.2 Objectives\n1.3 Key Findings\n\n2. Introduction\n2.1 Background and Context\n2.2 Problem Statement\n2.3 Significance and Impact\n2.4 Challenges and Constraints\n2.5 Project Objectives and Scope\n\n3. Theoretical Justification\n3.1 Overview of AI Methods Used\n3.2 Theoretical Foundations\n3.3 Justification of Selected Methods\n3.4 Related Work / Literature Support\n\n4. Workflow and Methodology\n4.1 System Architecture Overview\n4.2 Data Collection and Preprocessing\n4.3 Feature Engineering\n4.4 Model Design and Algorithmic Approach\n4.5 Integration of AI Paradigms\n4.6 Design Decisions vs Implementation Details\n\n5. Empirical Analysis and Results\n5.1 Experimental Setup\n5.2 Dataset Description\n5.3 Evaluation Metrics\n5.4 Results Tables and Figures\n5.5 Result Interpretation and Discussion\n\n6. Critical Reflection\n6.1 Limitations of the Approach\n6.2 Failure Cases\n6.3 Trade-offs\n6.4 Scalability and Computational Constraints\n6.5 Alternative Methods and Improvements\n\n7. GitHub Repository\n7.1 Repository Link\n7.2 Instructions to Run the Project\n\n8. Conclusion\n8.1 Summary of Findings\n8.2 Key Insights\n8.3 Future Work"
+    "chunk_id": "project_design__the_system_can_answer_questions_such_as__01",
+    "source_file": "project_design.txt",
+    "authority": "project",
+    "role": "supporting",
+    "section": "The system can answer questions such as",
+    "category": "system_design",
+    "text": "- When is the report due?\n- What is the report word limit?\n- What sections must be included in the report?\n- What does the rubric require for HD?\n- Does the project need a GitHub repository?\n- How should a group divide the work?\n- What are the limitations and ethical risks of using AI for assignment support?\n\nThe system should not be presented as a simple chatbot. It should be presented as a hybrid AI system that combines:\n1. Retrieval-Augmented Generation\n2. Semantic embedding retrieval\n3. Structured knowledge representation\n4. Rule-based reasoning\n5. Evidence-grounded answer generation\n6. Empirical evaluation against baseline methods"
   },
   {
-    "chunk_id": "chunk_007",
-    "source_file": "report_template.txt",
-    "section": "auto_chunked_section",
-    "category": "report_template",
-    "text": "9. Individual Contributions\n10. References"
+    "chunk_id": "project_design__system_pipeline__01",
+    "source_file": "project_design.txt",
+    "authority": "project",
+    "role": "supporting",
+    "section": "System Pipeline",
+    "category": "system_design",
+    "text": "Input Documents\nText Extraction and Cleaning\nChunking and Metadata Tagging\nVector Knowledge Base and Structured Rule Base\nQuery Router\nRetrieval or Rule-Based Reasoning\nEvidence-Grounded Answer Generation\nFinal Answer with Evidence and Confidence Level"
+  },
+  {
+    "chunk_id": "project_design__ai_methods__01",
+    "source_file": "project_design.txt",
+    "authority": "project",
+    "role": "supporting",
+    "section": "AI Methods",
+    "category": "system_design",
+    "text": "RAG retrieves relevant document chunks before generating an answer.\nSemantic embedding retrieval converts each document chunk and user question into vector representations and retrieves relevant chunks using cosine similarity.\nStructured knowledge representation stores important facts such as due date, word limit, file format, similarity limit, presentation duration and GitHub requirement.\nRule-based reasoning answers deterministic assessment constraints directly from structured facts.\nQuery router decides whether to use rule-based answer, RAG answer, hybrid answer or unsupported answer.\nEvidence-grounded answer generation produces answers using retrieved evidence only."
+  },
+  {
+    "chunk_id": "project_design__evaluation__01",
+    "source_file": "project_design.txt",
+    "authority": "project",
+    "role": "supporting",
+    "section": "Evaluation",
+    "category": "system_design",
+    "text": "The system should be evaluated using test questions across factual constraints, submission rules, rubric interpretation, workflow planning, and unsupported questions.\nBaseline methods may include keyword search and RAG-only retrieval.\nMetrics may include answer accuracy, retrieval accuracy at 3, citation support rate, hallucination rate, unsupported handling accuracy and average response time."
   }
 ]

@@ -1,0 +1,224 @@
+{
+  "schema_version": "2026-05-general-single-brief-v2",
+  "case_name": "assessment_3_case_study",
+  "fields": [
+    {
+      "field": "assessment_name",
+      "category": "core_brief",
+      "match_mode": "keywords",
+      "expected_keywords": [
+        "assessment 3",
+        "real world applications of artificial intelligence"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "report_due_date",
+      "category": "deadlines_and_formats",
+      "match_mode": "keywords",
+      "expected_keywords": [
+        "16 may 2026",
+        "23:59"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "report_word_limit",
+      "category": "deadlines_and_formats",
+      "match_mode": "keywords",
+      "expected_keywords": [
+        "3500",
+        "references"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "report_font",
+      "category": "deadlines_and_formats",
+      "match_mode": "keywords",
+      "expected_keywords": [
+        "11-point",
+        "times",
+        "arial"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "report_format",
+      "category": "deadlines_and_formats",
+      "match_mode": "keywords",
+      "expected_keywords": [
+        "pdf"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "report_filename",
+      "category": "deadlines_and_formats",
+      "match_mode": "keywords",
+      "expected_keywords": [
+        "at3_report_group_xxxx.pdf"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "slide_format",
+      "category": "deadlines_and_formats",
+      "match_mode": "keywords",
+      "expected_keywords": [
+        "pptx"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "slide_filename",
+      "category": "deadlines_and_formats",
+      "match_mode": "keywords",
+      "expected_keywords": [
+        "at3_slide_group_xxxx.pptx"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "presentation_duration",
+      "category": "deadlines_and_formats",
+      "match_mode": "keywords",
+      "expected_keywords": [
+        "7-minute presentation",
+        "1-minute q&a"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "presentation_due_dates",
+      "category": "deadlines_and_formats",
+      "match_mode": "dict_contains_all",
+      "expected_pairs": {
+        "group_a": "7 May 2026",
+        "group_b": "14 May 2026"
+      },
+      "require_evidence": true
+    },
+    {
+      "field": "similarity_limit",
+      "category": "deadlines_and_formats",
+      "match_mode": "keywords",
+      "expected_keywords": [
+        "20%"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "group_submission",
+      "category": "report_requirements",
+      "match_mode": "keywords",
+      "expected_keywords": [
+        "one member",
+        "submit",
+        "report",
+        "presentation"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "first_page_requirements",
+      "category": "report_requirements",
+      "match_mode": "list_contains_all",
+      "expected_items": [
+        "names",
+        "student ids"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "first_slide_requirements",
+      "category": "report_requirements",
+      "match_mode": "list_contains_all",
+      "expected_items": [
+        "group number",
+        "names",
+        "student ids"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "report_sections",
+      "category": "report_requirements",
+      "match_mode": "list_contains_all",
+      "expected_items": [
+        "Introduction",
+        "Theoretical Justifications",
+        "Workflow and Empirical Analysis",
+        "Critical Reflection"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "github_required",
+      "category": "report_requirements",
+      "match_mode": "boolean",
+      "expected_value": true,
+      "require_evidence": true
+    },
+    {
+      "field": "individual_contribution_required",
+      "category": "report_requirements",
+      "match_mode": "boolean",
+      "expected_value": true,
+      "require_evidence": true
+    },
+    {
+      "field": "maximum_group_size",
+      "category": "report_requirements",
+      "match_mode": "keywords",
+      "expected_keywords": [
+        "six",
+        "students"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "extension_policy",
+      "category": "policy_and_integrity",
+      "match_mode": "keywords",
+      "expected_keywords": [
+        "only the report component",
+        "all group members",
+        "assignment extension tool",
+        "subject coordinators"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "academic_integrity_guidance",
+      "category": "policy_and_integrity",
+      "match_mode": "keywords",
+      "expected_keywords": [
+        "check the rules",
+        "subject coordinator",
+        "ethically",
+        "acknowledge"
+      ],
+      "require_evidence": true
+    },
+    {
+      "field": "rubric_sections",
+      "category": "rubric_criteria",
+      "match_mode": "rubric_titles_contains_all",
+      "expected_items": [
+        "Executive Summary and Introduction",
+        "Theoretical Justification",
+        "Workflow and Methodology",
+        "Empirical Analysis and Results",
+        "Critical Reflection",
+        "Conclusion, Future Work and References",
+        "Individual Contribution",
+        "Content and Relevance",
+        "AI Method Explanation and Justification",
+        "Findings, Contributions, and Limitations",
+        "Presentation Delivery and Interaction"
+      ],
+      "require_evidence": true
+    }
+  ]
+}
